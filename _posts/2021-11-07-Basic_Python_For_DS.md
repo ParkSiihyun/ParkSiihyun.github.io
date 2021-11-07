@@ -1,6 +1,6 @@
 데이터 과학을 위한 파이썬 기초
 
-1. Print()
+Print()
 
 
 ```python
@@ -13,7 +13,7 @@ print("Hello World")
     Hello World
 
 
-2. Variables
+Variables
 
 
 ```python
@@ -31,7 +31,7 @@ print(txt)
     Hello World
 
 
-3. Data Type
+Data Type
 
 
 ```python
@@ -44,7 +44,7 @@ print(txt)
 # 자료형이 중요한 이유는 일부 예외를 제외하고 산술 및 논리 연산은 같은 자료형 간에만 가능하다. 
 ```
 
-4. arithmetic operation
+arithmetic operation
 
 
 

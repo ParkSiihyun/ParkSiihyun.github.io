@@ -64,7 +64,7 @@ print(a,b,c,d,e,f,g,h) #print 함수에 변수나 값을 ','로 연결하면 여
     20 -77 22275 123 5.0 7 3 183.68094445357434
 
 
-5. Round off
+Round off
 
 
 ```python
@@ -80,7 +80,7 @@ round(a, 3) # round 함수는 반올림 기능이 있다. 형태는 round(반올
 
 
 
-6. Absolute value
+Absolute value
 
 
 ```python
@@ -96,7 +96,7 @@ abs(a) # abs 함수는 절댓값을 표현해주는 기능이다.
 
 
 
-7. Logical operation
+Logical operation
 
 
 
@@ -114,7 +114,7 @@ print(a,b,c,d,e,f)
     True True False True False False
 
 
-8. Boolean Operators 
+Boolean Operators 
 
 
 ```python
@@ -134,8 +134,7 @@ print(B1,B2,B3,B4,B5,B6)
 
 
 **예제**
-
-**Problem**
+*Problem*
 
 * 주어진 타이타닉호 승객의 정보(passenger)에 따라 생존 여부(survived)를 True 혹은 False를  계산하는 식을 작성하세요.
 * 여성이면 생존(True)
@@ -171,7 +170,7 @@ print(Survived)
     False
 
 
-9. f-string(서식을 적용한 문자열 생성하기)
+f-string(서식을 적용한 문자열 생성하기)
 
 
 ```python
@@ -189,7 +188,7 @@ print(txt1, txt2)
     My age is 20 and my height is 167 April, 1885
 
 
-10. f-string에서 반올림하기
+f-string에서 반올림하기
 
 
 ```python
@@ -214,7 +213,7 @@ type(txt)
 
 
 
-11. Replace()
+Replace()
 
 
 ```python
@@ -228,7 +227,7 @@ print(txt2)
     World World
 
 
-12. Change "str" to float or int
+Change "str" to float or int
 
 
 ```python
@@ -256,7 +255,7 @@ type(length)
 
 
 
-13. 문자열에서 부분문자열의 위치 찾기
+문자열에서 부분문자열의 위치 찾기
 
 
 ```python
@@ -269,7 +268,7 @@ print(position)
     11
 
 
-14. List
+List
 
 
 ```python
@@ -293,7 +292,7 @@ print(grade_list)
     ['A+', 97, 2]
 
 
-15. List 갱신하기 & Value append
+List 갱신하기 & Value append
 
 
 ```python
@@ -310,7 +309,7 @@ print(food_list)
     ['apple', 'juice', 'pizza', 'truffle']
 
 
-16. split(문자열로부터 리스트 생성하기)
+split(문자열로부터 리스트 생성하기)
 
 
 ```python
@@ -323,7 +322,7 @@ print(university_list)
     ['yonsei', 'seoul', 'korea']
 
 
-17. Two-Dimensional list(Table)
+Two-Dimensional list(Table)
 
 
 ```python
@@ -339,7 +338,7 @@ print(table_list[1][1])
     87
 
 
-18. Tuple
+Tuple
 
 
 
@@ -362,7 +361,7 @@ type(good_tuple)
 
 
 
-19. Unpacking a List & Tuple
+Unpacking a List & Tuple
 
 
 ```python
@@ -378,7 +377,7 @@ print(a,b,c,d,e,f,g,h,i,j)
     10 20 30 40 50 60 3 A+ B- C0
 
 
-20. Slicing List
+Slicing List
 
 
 ```python
@@ -410,7 +409,7 @@ print(original_list[:-3])
     ['I', 'love', 'you']
 
 
-21-1. Dictionary
+Dictionary
 
 
 ```python
@@ -429,7 +428,7 @@ print(korea_dict["population"])
     5000
 
 
-21-2. 갱신하기 추가히기
+Dictionary 갱신하기 & 추가히기
 
 
 ```python
@@ -448,7 +447,7 @@ korea_dict
 
 
 
-22. Column name을 가진 표을 Dictionary로 표현하기
+Column name을 가진 표을 Dictionary로 표현하기
 (17.과 비교)
 
 실제로는 표를 이러한 방법으로 작성하는 것은 아니고 데이터과학에서 주로 사용하는 DataFrame이라는 구조를 만들기 위한 초기 데이터로 활용된다.
@@ -471,7 +470,7 @@ num_dict
 
 
 
-23. For loop(반복문)
+For loop(반복문)
 
 
 ```python
@@ -503,7 +502,7 @@ print(area_list)
     [3.14, 50.24, 153.86, 314.0, 530.66, 803.84, 1133.54, 1519.76, 1962.5, 2461.76, 3017.54]
 
 
-24. For loop(반복문) + List & Tuple & Dict
+For loop(반복문) + List & Tuple & Dict
 
 
 ```python
@@ -600,7 +599,7 @@ print(table_dict)
     {'coValue': [0.5, 0.9, 1.2, 1.3, 1.1], 'pm25Value': [10, 12, 15, 21, 19]}
 
 
-25. Python Module
+Python Module
 
 
 ```python
@@ -611,7 +610,7 @@ import random # 모듈을 가져오는 방법
 from random import randint # 모듈이 가지고 있는 특정 기능만 가져오기
 ```
 
-25-1. Random Module
+Random Module
 
 
 ```python
@@ -628,7 +627,7 @@ print(dice, color, num)
     3 green 123
 
 
-25-2. Datetime Module 
+Datetime Module 
 
 
 ```python
@@ -646,7 +645,7 @@ print(dt.month, dt.year, dt.day, dt.weekday(), dt.hour)
     10 2021 7 3 8
 
 
-26. About Function
+About Function
 
 
 ```python
@@ -658,7 +657,7 @@ print(dt.month, dt.year, dt.day, dt.weekday(), dt.hour)
 # 인수들의 순서를 바꾸어도 무방하며 더욱 직관적으로 이해할 수 있게 된다.
 ```
 
-27. 연속적인 함수 호출
+연속적인 함수 호출
 
 
 ```python

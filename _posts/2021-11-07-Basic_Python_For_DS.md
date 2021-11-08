@@ -203,95 +203,98 @@ str
 
 ```python
 txt1 = "Hello World"
-txt2 = txt1.replace("Hello", "World") # 형식은 “str”.replace(“원래 값”, “바꿀 값”)
+txt2 = txt1.replace("Hello", "World") 
 
 
 print(txt2)
 ```
+World World
 
-    World World
+**형식은 .replace(“원래 값”, “바꿀 값”)**
 
 
-Change "str" to float or int
+# 12. Change "str" to float or int
 
 
 ```python
-# important condition : 문자열이 정수나 실수 형태인 문자열이어야 한다
-
 pi = "3.141592"
-pi = float(pi) # float() 함수는 다른 형태의 Data Type을 Float으로 바꿔준다.
+pi = float(pi) 
 
 length = "170"
-length = float(length) # int() 함수는 다른 형태의 Data Type을 Int로 바꿔준다.
+length = float(length) 
 
-result = pi ** length # 같은 유형의 데이터끼리만 연산 가능
+result = pi ** length 
 
 print(pi, length, result)
 type(length)
 ```
+3.141592 170.0 3.2768985642701405e+84
+float
 
-    3.141592 170.0 3.2768985642701405e+84
+**important condition : 문자열이 정수나 실수 형태인 문자열이어야 한다.**
+
+**float() 함수는 다른 형태의 Data Type을 실수로 바꿔준다.**
+
+**int() 함수는 다른 형태의 Data Type을 정수로 바꿔준다.**
+
+**같은 유형의 데이터끼리만 연산 가능**
 
 
-
-
-
-    float
-
-
-
-문자열에서 부분문자열의 위치 찾기
+# 13. 문자열에서 부분문자열의 위치 찾기
 
 
 ```python
-name = "Allen, Mr. William Henry"
-position = name.find("William") # "full_str".find("sub_str") 
+name = "Allen, Mr.William Henry"
+position = name.find("William")
 
 print(position)
 ```
+10
 
-    11
+**단어의 경우 단어 시작점의 위치를 알려줌**
+
+**"full_str".find("sub_str")**
 
 
-List
+# 14. List
 
 
 ```python
 grade_list = ["A+", 97, 2] 
 word_list = ["apple"]
 
-# 정의 : 순서대로 나열된 값들
-# data type은 무관
-# []속 값들을 Comma로 구분
-# 각각의 값에는 index(0,1,2,...)가 부여되고 이를 이용해 읽고 쓸 수 있음
-
 print(grade_list[0])
 print(grade_list[1])
 print(grade_list[2])
-print(grade_list)
 ```
+A+
+97
+2
 
-    A+
-    97
-    2
-    ['A+', 97, 2]
+* 정의 : 순서대로 나열된 값들
+* data type은 무관
+* []속 값들은 comma로 구분
+* 각각의 값에는 index(0,1,2,...)가 부여되고 이를 이용해 읽고 쓸 수 있음
 
 
-List 갱신하기 & Value append
+# 15. List 갱신하기 & 추가하기
 
 
 ```python
 food_list = ["apple", "chicken", "pizza"] 
-food_list[1] = "juice" # 그냥 바꾸면 된다. index 1번의 값인 "chicken"이 "juice"로 갱신된 것을 확인할 수 있다.
+food_list[1] = "juice" 
 
 food_list.append("truffle") 
-# list.append() 함수를 이용하면 리스트에 새로운 값을 추가할 수 있다.
-# 이 때 food_list = food_list.append["truffle"]와 같이 변수를 설정하지 않도록 주의하자.
 
 print(food_list)
 ```
+['apple', 'juice', 'pizza', 'truffle']
 
-    ['apple', 'juice', 'pizza', 'truffle']
+**갱신할 때는 index를 활용해 그냥 바꾸면 된다. index 1번의 값인 "chicken"이 "juice"로 갱신된 것을 확인할 수 있다.**
+
+**list.append() 함수를 이용하면 리스트에 새로운 값을 추가할 수 있다.**
+
+**이 때 food_list = food_list.append["truffle"]와 같이 변수를 설정하지 않아도 된다.**
 
 
 split(문자열로부터 리스트 생성하기)

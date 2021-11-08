@@ -3,7 +3,9 @@ layout: post
 title:  "데이터 과학을 위한 파이썬 기초"
 ---
 
+
 # 1. Print()
+
 
 ```python
 print() # print 함수는 괄호 안의 값을 출력해주는 기능을 한다. 
@@ -11,6 +13,7 @@ print() # print 함수는 괄호 안의 값을 출력해주는 기능을 한다.
 print("Hello World")
 ```
 Hello World
+
 
 # 2. Variables
 
@@ -30,7 +33,7 @@ Hello World
 
 # 3. Data Type
 
-## 자료형이 중요한 이유는 일부 예외를 제외하고 산술 및 논리 연산은 같은 자료형 간에만 가능하다. 
+#**자료형이 중요한 이유는 일부 예외를 제외하고 산술 및 논리 연산은 같은 자료형 간에만 가능하기 때문이다.**
 
 * Python에는 다양한 Data Type이 존재한다.
 * 정수(int) : 1, -10, 100, 0...
@@ -38,7 +41,9 @@ Hello World
 * 문자열(str) : "Hello World", "시현"
 * 논리값(bool) : True or False, ex) r = 10 > -10, r = True, type(r) = bool
 
+
 # 4. arithmetic operation
+
 
 ```python
 a = 10 + 10 # 덧셈
@@ -54,38 +59,37 @@ print(a,b,c,d,e,f,g,h)
 ```
 20 -77 22275 123 5.0 7 3 183.68094445357434
 
-## 대괄호나 중괄호가 아닌 오직 소괄호만을 이용해 연산 순서를 지정한다. 
-## print 함수에 변수나 값을 ','로 연결하면 여러개를 한번에 보여줄 수 있다.
+**대괄호나 중괄호가 아닌 오직 소괄호만을 이용해 연산 순서를 지정한다.**
+**print 함수에 변수나 값을 ','로 연결하면 여러개를 한번에 보여줄 수 있다.**
+
 
 # 5. Round off
+
 
 ```python
 a = 13.352332423
 
-round(a, 3) # round 함수는 반올림 기능이 있다. 형태는 round(반올림 대상, 몇번째 자리까지?)
+round(a, 3) 
 ```
 13.352
 
+**round 함수는 반올림 기능이 있다. 형태는 round(반올림 대상, 몇번째 자리까지?)**
 
 
-Absolute value
+# 6. Absolute value
 
 
 ```python
 a = -13.352332423
 
-abs(a) # abs 함수는 절댓값을 표현해주는 기능이다.
+abs(a)
 ```
+13.352332423
+
+**abs 함수는 절댓값을 표현해주는 기능이다.**
 
 
-
-
-    13.352332423
-
-
-
-Logical operation
-
+# 7. Logical operation
 
 
 ```python
@@ -98,11 +102,10 @@ f = 67 < 12
 
 print(a,b,c,d,e,f)
 ```
+True True False True False False
 
-    True True False True False False
 
-
-Boolean Operators 
+# 8. abs 함수는 절댓값을 표현해주는 기능이다.Boolean Operators 
 
 
 ```python

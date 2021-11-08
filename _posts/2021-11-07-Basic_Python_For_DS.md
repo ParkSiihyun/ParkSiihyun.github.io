@@ -33,7 +33,7 @@ Hello World
 
 # 3. Data Type
 
-#**자료형이 중요한 이유는 일부 예외를 제외하고 산술 및 논리 연산은 같은 자료형 간에만 가능하기 때문이다.**
+**자료형이 중요한 이유는 일부 예외를 제외하고 산술 및 논리 연산은 같은 자료형 간에만 가능하기 때문이다.**
 
 * Python에는 다양한 Data Type이 존재한다.
 * 정수(int) : 1, -10, 100, 0...
@@ -60,6 +60,7 @@ print(a,b,c,d,e,f,g,h)
 20 -77 22275 123 5.0 7 3 183.68094445357434
 
 **대괄호나 중괄호가 아닌 오직 소괄호만을 이용해 연산 순서를 지정한다.**
+
 **print 함수에 변수나 값을 ','로 연결하면 여러개를 한번에 보여줄 수 있다.**
 
 
@@ -116,12 +117,11 @@ B4 = a or c # True or False = True
 B5 = not a # not True = False
 B6 = not c # not False = Ture
 
-# and(교집합), or(합집합), not(여집합)이라고 생각하면 이해가 쉽다.
-
 print(B1,B2,B3,B4,B5,B6)
 ```
+True False True True False True
 
-    True False True True False True
+**and(교집합), or(합집합), not(여집합)이라고 생각하면 이해가 쉽다.**
 
 
 **예제**
@@ -157,17 +157,16 @@ Survived = cond1 or cond2 and cond3
 
 print(Survived)
 ```
+False
 
-    False
 
-
-f-string(서식을 적용한 문자열 생성하기)
+# 9. f-string(서식을 적용한 문자열 생성하기)
 
 
 ```python
 age = 20
 height = 167
-txt1 = f"My age is {age} and my height is {height}" # 형식은 f”…str…{value}…str…”이며 변하지 않는 문자열은 대괄호 밖에 가변값이나 변수는 대괄호에 안에 넣는다.
+txt1 = f"My age is {age} and my height is {height}" 
 
 month = "April"
 year = 1885
@@ -175,36 +174,31 @@ txt2 = f"{month}, {year}"
 
 print(txt1, txt2)
 ```
+My age is 20 and my height is 167 April, 1885
 
-    My age is 20 and my height is 167 April, 1885
+**형식은 f”…str…{value}…str…”이며 변하지 않는 문자열은 대괄호 밖에 가변값이나 변수는 대괄호에 안에 넣는다.**
 
 
-f-string에서 반올림하기
+# 10. f-string에서 반올림하기
 
 
 ```python
 pi = 3.141592
 txt = f"pi = {pi :.1f}" # 형식은 f”…str…{value}…str…” 대괄호 사이에 value :.1f or value :.2f... 
-# 숫자는 반올림자릿수, f는 float
-# f-string과 round 함수의 결정적인 차이
-# round는 숫자 -> 숫자
-# f-string은 숫자 -> 문자열
 
 print(txt)
 type(txt)
 ```
+pi = 3.1
+str
 
-    pi = 3.1
-
-
-
-
-
-    str
-
+* 숫자는 반올림자릿수, f는 float(type)
+* f-string과 round 함수의 결정적인 차이
+* round는 숫자 -> 숫자
+* f-string은 숫자 -> 문자열
 
 
-Replace()
+# 11. Replace()
 
 
 ```python

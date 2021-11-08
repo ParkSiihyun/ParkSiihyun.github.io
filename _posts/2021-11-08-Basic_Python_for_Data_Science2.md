@@ -1,4 +1,10 @@
-14. List
+---
+layout: post
+title:  "데이터 과학을 위하 파이썬 기초 2"
+---
+
+
+# 1. List
 
 
 ```python
@@ -15,31 +21,33 @@ print(grade_list[1])
 print(grade_list[2])
 print(grade_list)
 ```
+A+
+97
+2
+['A+', 97, 2]
 
-    A+
-    97
-    2
-    ['A+', 97, 2]
 
-
-15. List 갱신하기 & Value append
+# 2. List 갱신하기 & 추가하기
 
 
 ```python
 food_list = ["apple", "chicken", "pizza"] 
-food_list[1] = "juice" # 그냥 바꾸면 된다. index 1번의 값인 "chicken"이 "juice"로 갱신된 것을 확인할 수 있다.
+food_list[1] = "juice" 
 
 food_list.append("truffle") 
-# list.append() 함수를 이용하면 리스트에 새로운 값을 추가할 수 있다.
-# 이 때 food_list = food_list.append["truffle"]와 같이 변수를 설정하지 않도록 주의하자.
 
 print(food_list)
 ```
+['apple', 'juice', 'pizza', 'truffle']
 
-    ['apple', 'juice', 'pizza', 'truffle']
+**갱신할 때는 인덱스를 활용할 수 있다. index 1번의 값인 "chicken"이 "juice"로 갱신된 것을 확인할 수 있다.**
+
+**list.append() 함수를 이용하면 리스트에 새로운 값을 추가할 수 있다.** 
+
+**이 때 food_list = food_list.append["truffle"]와 같이 변수를 설정하지 않도록 주의하자.**
 
 
-16. split(문자열로부터 리스트 생성하기)
+# 3. split(문자열로부터 리스트 생성하기)
 
 
 ```python

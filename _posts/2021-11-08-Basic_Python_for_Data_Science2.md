@@ -21,10 +21,11 @@ print(grade_list[1])
 print(grade_list[2])
 print(grade_list)
 ```
-A+
-97
-2
-['A+', 97, 2]
+
+    A+
+    97
+    2
+    ['A+', 97, 2]
 
 
 # 2. List 갱신하기 & 추가하기
@@ -41,7 +42,8 @@ food_list.append("truffle")
 
 print(food_list)
 ```
-['apple', 'juice', 'pizza', 'truffle']
+
+    ['apple', 'juice', 'pizza', 'truffle']
 
 
 # 3. split(문자열로부터 리스트 생성하기)
@@ -53,7 +55,8 @@ university_list = university_names.split(", ")
 
 print(university_list)
 ```
-['yonsei', 'seoul', 'korea']
+
+    ['yonsei', 'seoul', 'korea']
 
 
 # 4. Two-Dimensional list(Table)
@@ -70,7 +73,8 @@ table_list = [[85,91,89],
 table_list[0][2]
 print(table_list[1][1])
 ```
-87
+
+    87
 
 
 # 5. Tuple
@@ -86,7 +90,8 @@ good_tuple = (4.3,) # 이럴 때는 값 뒤에 comma를 붙여주게 된다.
 
 type(good_tuple)
 ```
-tuple
+
+    tuple
 
 
 # 6. Unpacking a List & Tuple

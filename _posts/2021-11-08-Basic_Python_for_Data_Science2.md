@@ -61,7 +61,7 @@ print(university_list)
     ['yonsei', 'seoul', 'korea']
 
 
-17. Two-Dimensional list(Table)
+# 4. Two-Dimensional list(Table)
 
 
 ```python
@@ -73,12 +73,9 @@ table_list = [[85,91,89],
 table_list[0][2] # Two-Dimensional list 또한 각각의 행과 열에 index가 부여된다.
 print(table_list[1][1])
 ```
+87
 
-    87
-
-
-18. Tuple
-
+# 5. Tuple
 
 
 ```python

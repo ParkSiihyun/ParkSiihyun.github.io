@@ -146,7 +146,7 @@ print(new_list)
 
 * original_list[a:b]는 a 이상 b 미만까지만 뽑는다는 뜻. 나중에 나올 loc문법과 혼동하지 않도록 주의하자. 
 
-* new_list의 값의 갯수는 |b-a|
+* new_list의 값의 갯수는 abs(b-a)
 
 * original_list에는 변동이 없다.
 

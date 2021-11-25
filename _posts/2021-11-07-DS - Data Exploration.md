@@ -46,7 +46,7 @@ titanic_data.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -170,7 +170,7 @@ titanic_data.corr().abs().sort_values("Survived", ascending=False)
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -316,9 +316,9 @@ df_line
 
 
 
-    
+​    
 ![png](output_5_1.png)
-    
+​    
 
 
 
@@ -330,9 +330,9 @@ AAPL_data_line = AAPL_data.plot.line(x="date", y="price",title="Apple Stock Pric
 ```
 
 
-    
+​    
 ![png](output_6_0.png)
-    
+​    
 
 
 3. Bar Chart
@@ -362,9 +362,9 @@ df_bar
 
 
 
-    
+​    
 ![png](output_8_1.png)
-    
+​    
 
 
 
@@ -383,9 +383,9 @@ AAPL_data_bar
 
 
 
-    
+​    
 ![png](output_9_1.png)
-    
+​    
 
 
 4. 그래프 병합(line-line, line bar)
@@ -397,9 +397,9 @@ df_line_bar = df2.plot.line(x="Category", y="Value2", ax=df_bar) # ax=추가할 
 ```
 
 
-    
+​    
 ![png](output_11_0.png)
-    
+​    
 
 
 5. 산점도(scatter plot)
@@ -426,9 +426,9 @@ Iris_data.plot.scatter(x="SepalLengthCm", y="SepalWidthCm")
 
 
 
-    
+​    
 ![png](output_13_2.png)
-    
+​    
 
 
 6. Histogram(히스토그램)
@@ -450,9 +450,9 @@ Iris_data["SepalLengthCm"].plot.hist(bins=5) # data.plot.hist(bins=구간의 개
 
 
 
-    
+​    
 ![png](output_15_1.png)
-    
+​    
 
 
 
@@ -468,9 +468,9 @@ Iris_data["SepalLengthCm"].plot.hist(bins=[4,5,6,7,8]) # dataframe.plot.hist(bin
 
 
 
-    
+​    
 ![png](output_16_1.png)
-    
+​    
 
 
 7. Box Plot(상자 그림)
@@ -494,9 +494,9 @@ Iris_data.boxplot() # df.plot.box()아님 주의하자 df.boxplot()WidthCm"]
 
 
 
-    
+​    
 ![png](output_18_1.png)
-    
+​    
 
 
 8. 그래프는 그려지는데 한국어로 된 column_name이 안나온다? 
@@ -530,9 +530,9 @@ sns.lmplot(x="PetalWidthCm", y="PetalLengthCm", data=Iris_data)
 
 
 
-    
+​    
 ![png](output_21_1.png)
-    
+​    
 
 
 
@@ -548,9 +548,9 @@ sns.lmplot(x="PetalWidthCm", y="PetalLengthCm", data=Iris_data, hue="Species") #
 
 
 
-    
+​    
 ![png](output_22_1.png)
-    
+​    
 
 
 9-2. scatterplot(산점도 그리기)
@@ -570,9 +570,9 @@ sns.scatterplot(x="PetalWidthCm", y="PetalLengthCm", data=Iris_data, hue="Specie
 
 
 
-    
+​    
 ![png](output_24_1.png)
-    
+​    
 
 
 9-3. boxplot(상자그림 그리기)
@@ -590,9 +590,9 @@ sns.boxplot(x="sex", y="total_bill",data=tips_data) #sns.boxplot(x=, y=, data=)
 
 
 
-    
+​    
 ![png](output_26_1.png)
-    
+​    
 
 
 
@@ -608,9 +608,9 @@ sns.boxplot(x="smoker", y="total_bill",data=tips_data)
 
 
 
-    
+​    
 ![png](output_27_1.png)
-    
+​    
 
 
 9-4. Pair Grid
@@ -632,9 +632,9 @@ grid.map(plt.scatter)
 
 
 
-    
+​    
 ![png](output_29_1.png)
-    
+​    
 
 
 9-5. PairGrid 대각선 채우기
@@ -651,9 +651,9 @@ grid.add_legend(); #legend 범례도 설정할 수 있다.
 ```
 
 
-    
+​    
 ![png](output_31_0.png)
-    
+​    
 
 
 9-6. Heat Map(히트맵)
@@ -688,7 +688,7 @@ sns.heatmap(crime_data, annot=True, fmt="d", cmap="coolwarm") # sns.heatmap(data
 
 
 
-    
+​    
 ![png](output_33_1.png)
-    
+​    
 

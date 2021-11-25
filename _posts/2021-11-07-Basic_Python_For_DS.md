@@ -22,7 +22,7 @@ Hello World
 ```python
 txt = "Hello World" 
 print(txt)
-``` 
+```
 Hello World
 
 * 변수에는 다양한 값을 넣을 수 있다.

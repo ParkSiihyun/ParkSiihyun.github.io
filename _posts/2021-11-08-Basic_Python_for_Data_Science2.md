@@ -3,18 +3,13 @@ layout: post
 title:  "데이터 과학을 위한 파이썬 기초 2"
 ---
 
-<<<<<<< HEAD
 *리스트, 튜플, 딕셔너리, 반복문, 그리고 파이썬 모듈에 대한 문법 정리*
 
 
-=======
-**리스트, 튜플, 딕셔너리, 반복문, 그리고 파이썬 모듈에 대한 문법 정리**
->>>>>>> 276c399d28c49a3ff8b14a65852fe665a3d466da
 
 # 1. List
 
 * 정의 : 순서대로 나열된 값들
-<<<<<<< HEAD
 
 * data type은 무관
 
@@ -22,11 +17,6 @@ title:  "데이터 과학을 위한 파이썬 기초 2"
 
 * 각각의 값에는 index(0,1,2,...)가 부여되고 이를 이용해 읽고 쓸 수 있음
 
-=======
-* data type은 무관
-* []속 값들을 Comma로 구분
-* 각각의 값에는 index(0,1,2,...)가 부여되고 이를 이용해 읽고 쓸 수 있음
->>>>>>> 276c399d28c49a3ff8b14a65852fe665a3d466da
 
 ```python
 grade_list = ["A+", 97, 2] 
@@ -37,27 +27,21 @@ print(grade_list[1])
 print(grade_list[2])
 print(grade_list)
 ```
-
-    A+
-    97
-    2
-    ['A+', 97, 2]
+A+
+97
+2
+['A+', 97, 2]
 
 
 
 # 2. List 갱신하기 & 추가하기
 
 * 갱신할 때는 인덱스를 활용할 수 있다. index 1번의 값인 "chicken"이 "juice"로 갱신된 것을 확인할 수 있다.
-<<<<<<< HEAD
 
 * list.append() 함수를 이용하면 리스트에 새로운 값을 추가할 수 있다.
 
 * 이 때 food_list = food_list.append["truffle"]와 같이 변수를 설정하지 않도록 주의하자.
 
-=======
-* list.append() 함수를 이용하면 리스트에 새로운 값을 추가할 수 있다.
-* 이 때 food_list = food_list.append["truffle"]와 같이 변수를 설정하지 않도록 주의하자.
->>>>>>> 276c399d28c49a3ff8b14a65852fe665a3d466da
 
 ```python
 food_list = ["apple", "chicken", "pizza"] 
@@ -67,14 +51,11 @@ food_list.append("truffle")
 
 print(food_list)
 ```
+['apple', 'juice', 'pizza', 'truffle']
 
-<<<<<<< HEAD
 
 
 # 3. split(문자열로부터 리스트 생성하기)
-=======
-    ['apple', 'juice', 'pizza', 'truffle']
->>>>>>> 276c399d28c49a3ff8b14a65852fe665a3d466da
 
 
 
@@ -89,32 +70,25 @@ print(university_list)
     ['yonsei', 'seoul', 'korea']
 
 
-<<<<<<< HEAD
 
 # 4. Two-Dimensional list(Table)
 
 
-=======
-# 4. Two-Dimensional list(Table)
->>>>>>> 276c399d28c49a3ff8b14a65852fe665a3d466da
 
-* 리스트 안에 리스트 값을 또 가지는 형태
-* Two-Dimensional list 또한 각각의 행과 열에 index가 부여된다.
 
 ```python
-table_list = [[85,91,89],[78,87,98],[49,57,59]]
+table_list = [[85,91,89],[78,87,98],[49,57,59]] # list의 값으로 또 다른 list를 가지고 있는 형태
 table_list = [[85,91,89],
               [78,87,98],
               [49,57,59]] # 보기 좋게 이렇게 표현하기도 한다.
 
-table_list[0][2]
+table_list[0][2] # Two-Dimensional list 또한 각각의 행과 열에 index가 부여된다.
 print(table_list[1][1])
 ```
 
     87
 
 
-<<<<<<< HEAD
 
 # 5. Tuple
 
@@ -124,14 +98,6 @@ print(table_list[1][1])
 
 * 대괄호 대신 소괄호를 사용한다. 
 
-=======
-# 5. Tuple
-
-* Tuple : 순서대로 나열된 값.
-* 리스트와 거의 동일하지만 튜플은 값들을 추가하거나 변경할 수 없다.
-* 대괄호 대신 소괄호를 사용한다. 
-
->>>>>>> 276c399d28c49a3ff8b14a65852fe665a3d466da
 ```python
 grade_tuple = (96,98,94)
 not_a_tuple = (4.3) # 리스트와 달리 튜플에 하나의 값만 존재하게 된다면 컴퓨터는 튜플이 아닌 실수로 인식한다. 
@@ -140,22 +106,14 @@ good_tuple = (4.3,) # 이럴 때는 값 뒤에 comma를 붙여주게 된다.
 type(good_tuple)
 ```
 
-<<<<<<< HEAD
 
     tuple
 
 
-=======
-    tuple
->>>>>>> 276c399d28c49a3ff8b14a65852fe665a3d466da
 
 # 6. Unpacking a List & Tuple
 
-<<<<<<< HEAD
 
-=======
-# 6. Unpacking a List & Tuple
->>>>>>> 276c399d28c49a3ff8b14a65852fe665a3d466da
 
 
 ```python

@@ -153,7 +153,7 @@ indexed_mean
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -311,7 +311,7 @@ df1.describe() # describe() 함수는 데이터의 갯수, 평균, 표준편차,
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -641,7 +641,7 @@ df_new
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -982,7 +982,7 @@ df1[5:12] # List의 슬라이싱 기법과 동일하다
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1203,7 +1203,7 @@ df1
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1452,7 +1452,7 @@ df1[(df1["age"] >= 60 ) | (df1["sex"]==1)] # 차이가 뭐지?
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1692,7 +1692,7 @@ df_mean.replace([56.786,45.575],"bad") # 두개의 데이터를 다른 한가지
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1829,7 +1829,7 @@ df.dropna() # 결측값이 포함된 행을 삭제
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1890,7 +1890,7 @@ df.fillna(method="ffill").fillna(method="bfill") # 0번 행의 값이 결측값�
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -2027,7 +2027,7 @@ df1.groupby("age", as_index=False).count()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -2174,7 +2174,7 @@ df2.groupby("math score",as_index=False).count()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -2270,7 +2270,7 @@ df4
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -2318,7 +2318,7 @@ pd.get_dummies(df4) # pandas의 get_dummies 함수를 사용하면 one-hot encod
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -2376,7 +2376,7 @@ df2
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -2521,5 +2521,4 @@ df2
 </table>
 <p>1000 rows × 8 columns</p>
 </div>
-
 

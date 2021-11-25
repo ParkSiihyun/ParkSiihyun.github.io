@@ -9,17 +9,18 @@ title:  "데이터 과학을 위한 파이썬 기초 2"
 
 # 1. List
 
+* 정의 : 순서대로 나열된 값들
 
+* data type은 무관
+
+* []속 값들을 Comma로 구분
+
+* 각각의 값에는 index(0,1,2,...)가 부여되고 이를 이용해 읽고 쓸 수 있음
 
 
 ```python
 grade_list = ["A+", 97, 2] 
 word_list = ["apple"]
-
-# 정의 : 순서대로 나열된 값들
-# data type은 무관
-# []속 값들을 Comma로 구분
-# 각각의 값에는 index(0,1,2,...)가 부여되고 이를 이용해 읽고 쓸 수 있음
 
 print(grade_list[0])
 print(grade_list[1])
@@ -35,7 +36,11 @@ A+
 
 # 2. List 갱신하기 & 추가하기
 
+* 갱신할 때는 인덱스를 활용할 수 있다. index 1번의 값인 "chicken"이 "juice"로 갱신된 것을 확인할 수 있다.
 
+* list.append() 함수를 이용하면 리스트에 새로운 값을 추가할 수 있다.
+
+* 이 때 food_list = food_list.append["truffle"]와 같이 변수를 설정하지 않도록 주의하자.
 
 
 ```python
@@ -47,12 +52,6 @@ food_list.append("truffle")
 print(food_list)
 ```
 ['apple', 'juice', 'pizza', 'truffle']
-
-**갱신할 때는 인덱스를 활용할 수 있다. index 1번의 값인 "chicken"이 "juice"로 갱신된 것을 확인할 수 있다.**
-
-**list.append() 함수를 이용하면 리스트에 새로운 값을 추가할 수 있다.** 
-
-**이 때 food_list = food_list.append["truffle"]와 같이 변수를 설정하지 않도록 주의하자.**
 
 
 
@@ -93,13 +92,13 @@ print(table_list[1][1])
 
 # 5. Tuple
 
+* Tuple : 순서대로 나열된 값. 
 
+* 리스트와 거의 동일하지만 튜플은 값들을 추가하거나 변경할 수 없다.
+
+* 대괄호 대신 소괄호를 사용한다. 
 
 ```python
-# Tuple : 순서대로 나열된 값. 
-# 리스트와 거의 동일하지만 튜플은 값들을 추가하거나 변경할 수 없다.
-# 대괄호 대신 소괄호를 사용한다. 
-
 grade_tuple = (96,98,94)
 not_a_tuple = (4.3) # 리스트와 달리 튜플에 하나의 값만 존재하게 된다면 컴퓨터는 튜플이 아닌 실수로 인식한다. 
 good_tuple = (4.3,) # 이럴 때는 값 뒤에 comma를 붙여주게 된다.
@@ -122,12 +121,12 @@ a, b, c = (10, 20, 30) # 튜플의 각각의 값을 변수 a,b,c에 저장하는
 d, e, f = 40, 50, 60 # 언팩킹의 경우 튜플의 소괄호는 생략 가능하다.
 h, i, j = ["A+", "B-", "C0"] # 리스트의 각각의 값이 변수 h,i,j에 지정된다.
 
-#중요한 점은 변수의 개수와 list & tuple의 개수가 같아야 Unpacking이 가능하다. 
-
 print(a,b,c,d,e,f,g,h,i,j)
 ```
 
     10 20 30 40 50 60 3 A+ B- C0
+
+**중요한 점은 변수의 개수와 list & tuple의 개수가 같아야 Unpacking이 가능하다. **
 
 
 
@@ -139,16 +138,17 @@ print(a,b,c,d,e,f,g,h,i,j)
 ```python
 original_list = ["I", "love", "you", "3000", "4000", "5000"]
 new_list = original_list[2:4] 
-# original_list[a:b]는 a 이상 b 미만까지만 뽑는다는 뜻. 나중에 나올 loc문법과 혼동하지 않도록 주의하자. 
-# new_list의 값의 갯수는 |b-a|
-# original_list에는 변동이 없다.
 
 print(new_list)
 ```
 
     ['you', '3000']
 
+* original_list[a:b]는 a 이상 b 미만까지만 뽑는다는 뜻. 나중에 나올 loc문법과 혼동하지 않도록 주의하자. 
 
+* new_list의 값의 갯수는 |b-a|
+
+* original_list에는 변동이 없다.
 
 ```python
 # 대괄호 안의 숫자들은 각각 생략이 가능하고 생략 시 시퀀스의 각각 처음과 끝을 의미

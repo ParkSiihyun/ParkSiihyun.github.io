@@ -3,9 +3,13 @@ layout: post
 title:  "데이터 과학을 위한 파이썬 기초 2"
 ---
 
-리스트, 튜플, 딕셔너리, 반복문, 그리고 파이썬 모듈에 대한 문법 정리
+*리스트, 튜플, 딕셔너리, 반복문, 그리고 파이썬 모듈에 대한 문법 정리*
+
+
 
 # 1. List
+
+
 
 
 ```python
@@ -28,7 +32,10 @@ A+
 ['A+', 97, 2]
 
 
+
 # 2. List 갱신하기 & 추가하기
+
+
 
 
 ```python
@@ -48,7 +55,10 @@ print(food_list)
 **이 때 food_list = food_list.append["truffle"]와 같이 변수를 설정하지 않도록 주의하자.**
 
 
+
 # 3. split(문자열로부터 리스트 생성하기)
+
+
 
 
 ```python
@@ -61,7 +71,10 @@ print(university_list)
     ['yonsei', 'seoul', 'korea']
 
 
-17. Two-Dimensional list(Table)
+
+# 4. Two-Dimensional list(Table)
+
+
 
 
 ```python
@@ -77,7 +90,8 @@ print(table_list[1][1])
     87
 
 
-18. Tuple
+
+# 5. Tuple
 
 
 
@@ -94,13 +108,13 @@ type(good_tuple)
 ```
 
 
-
-
     tuple
 
 
 
-19. Unpacking a List & Tuple
+# 6. Unpacking a List & Tuple
+
+
 
 
 ```python
@@ -116,7 +130,10 @@ print(a,b,c,d,e,f,g,h,i,j)
     10 20 30 40 50 60 3 A+ B- C0
 
 
-20. Slicing List
+
+# 7. Slicing List
+
+
 
 
 ```python
@@ -148,7 +165,10 @@ print(original_list[:-3])
     ['I', 'love', 'you']
 
 
-21-1. Dictionary
+
+# 7. Dictionary
+
+
 
 
 ```python
@@ -167,7 +187,10 @@ print(korea_dict["population"])
     5000
 
 
-21-2. 갱신하기 추가히기
+
+# 8. Dictionary(갱신하기 & 추가하기)
+
+
 
 
 ```python
@@ -180,14 +203,13 @@ korea_dict
 ```
 
 
-
-
     {'builder': '단군', 'food': 'bulgogi', 'population': 5000, 'war': 1950}
 
 
 
-22. Column name을 가진 표을 Dictionary로 표현하기
-(17.과 비교)
+# 9. Column name을 가진 표을 Dictionary로 표현하기(4번과 비교)
+
+
 
 실제로는 표를 이러한 방법으로 작성하는 것은 아니고 데이터과학에서 주로 사용하는 DataFrame이라는 구조를 만들기 위한 초기 데이터로 활용된다.
 
@@ -203,13 +225,13 @@ num_dict
 ```
 
 
-
-
     {'korean': [12, 67, 45], 'math': [87, 56, 97], 'science': [67, 45, 98]}
 
 
 
-23. For loop(반복문)
+# 10. For loop(반복문)
+
+
 
 
 ```python

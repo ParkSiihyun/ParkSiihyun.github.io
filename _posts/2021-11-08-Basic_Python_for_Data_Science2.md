@@ -219,7 +219,7 @@ num_dict = {"science" : [67,45,98],
             "math" : [87,56,97],
             "korean" : [12,67,45]}
 # num_dict의 column name은 각각 "science", "math", "korean"이 된다.
-# 또한 list안의 값들은 17번과 달리 행의 값이 아닌 열의 값이 된다.
+# 또한 list안의 값들은 4번과 달리 행의 값이 아닌 열의 값이 된다.
 
 num_dict              
 ```
@@ -233,14 +233,16 @@ num_dict
 
 
 
+* for in range(start, stop, step) start : 처음, stop : 끝, step : 증감 간격
+* 반복문 뒤에 오는 반복되는 구문은 4칸 들여쓰기!
+* Error 1 - SyntaxError: invalid syntax: for 반복문의 형식을 지키지 않았을 때 발생하는 구문. for 반복문의 형식에 맞는지 확인하기. 특히 for 끝에 :(콜론)을 빠뜨리지 않았는지 확인.
+* Error 2 - SyntaxError: expected an indented block: for 다음 줄에 오는 반복할 코드의 들여쓰기가 맞지 않아서 발생하는 구문 에러. 반복할 코드에서 들여쓰기 4칸을 했는지 확인.
+
 
 ```python
-for r in range(0, 7, 2): # for in range(start, stop, step) start : 처음, stop : 끝, step : 증감 간격
+for r in range(0, 7, 2):
 
     print(r) 
-# 반복문 뒤에 오는 반복되는 구문은 4칸 들여쓰기!
-# Error 1 - SyntaxError: invalid syntax: for 반복문의 형식을 지키지 않았을 때 발생하는 구문. for 반복문의 형식에 맞는지 확인하기. 특히 for 끝에 :(콜론)을 빠뜨리지 않았는지 확인.
-# Error 2 - SyntaxError: expected an indented block: for 다음 줄에 오는 반복할 코드의 들여쓰기가 맞지 않아서 발생하는 구문 에러. 반복할 코드에서 들여쓰기 4칸을 했는지 확인.
 ```
 
     0
@@ -248,13 +250,11 @@ for r in range(0, 7, 2): # for in range(start, stop, step) start : 처음, stop 
     4
     6
 
-
-
 ```python
 area_list = []
 
 for r in range(1, 33, 3): # 콜론 주의
-    area = 3.14 * r ** 2 # 들여쓰기 주의
+    area = 3.14 * r ** 2 # 4칸 들여쓰기 주의
     area_list.append(area)
 
 print(area_list)    
@@ -263,7 +263,10 @@ print(area_list)
     [3.14, 50.24, 153.86, 314.0, 530.66, 803.84, 1133.54, 1519.76, 1962.5, 2461.76, 3017.54]
 
 
-24. For loop(반복문) + List & Tuple & Dict
+
+# 11. For loop(반복문) + List & Tuple & Dict
+
+
 
 
 ```python
@@ -281,6 +284,7 @@ for C in Company:
 
     car
     cloth
+
 
 
 **lab01**
@@ -314,8 +318,6 @@ for data in data_dict["response"]["body"]["items"]:
 
 pm10Value_list
 ```
-
-
 
 
     [20, 32, 45]
@@ -357,21 +359,31 @@ table_dict = {"coValue" : coValue_list, "pm25Value" : pm25Value_list}
 print(table_dict)
 ```
 
-    {'coValue': [0.5, 0.9, 1.2, 1.3, 1.1], 'pm25Value': [10, 12, 15, 21, 19]}
+```
+{'coValue': [0.5, 0.9, 1.2, 1.3, 1.1], 'pm25Value': [10, 12, 15, 21, 19]}
+```
 
 
-25. Python Module
+
+# 12. Python Module
+
+
+
+* 파이썬 모듈은 변수와 함수 등을 모아 놓은 파일
+
+* 다른 파이썬 파일을 import해 작성된 변수 값과 함수의 기능을 재사용할 수 있음. 
 
 
 ```python
-# 파이썬 모듈은 변수와 함수 등을 모아 놓은 파일
-# 다른 파이썬 파일을 import해 작성된 변수 값과 함수의 기능을 재사용할 수 있음. 
-
 import random # 모듈을 가져오는 방법
 from random import randint # 모듈이 가지고 있는 특정 기능만 가져오기
 ```
 
-25-1. Random Module
+
+
+# 13. Random Module
+
+
 
 
 ```python
@@ -388,44 +400,55 @@ print(dice, color, num)
     3 green 123
 
 
-25-2. Datetime Module 
+
+# 14. Datetime Module 
+
+* 날짜 & 시간과 관련된 연산을 제공하는 모듈
+* 연월일, 날짜, 시간 등의 정보를 추출할 수 있다.
+* weekday() 함수는 월요일부터 0 인덱스 값을 부여한다. 소괄호 주의
 
 
 ```python
-# 날짜 & 시간과 관련된 연산을 제공하는 모듈
-
 import datetime
 
 dt = datetime.datetime.now()
 
 print(dt.month, dt.year, dt.day, dt.weekday(), dt.hour) 
-# 연월일, 날짜, 시간 등의 정보를 추출할 수 있다.
-# weekday() 함수는 월요일부터 0 인덱스 값을 부여한다. 소괄호 주의
 ```
 
     10 2021 7 3 8
 
 
-26. About Function
+
+# 15. About Function
 
 
-```python
-# 함수는 어떤 특정한 작업을 실행하는 코드를 묶어놓은 단위
-# 함수는 결과값을 반환하는 경우(abs(), round(), float())와 함수 호출 자체가 실행 결과인 경우(append(), print())가 있다.
-# Default argument란 함수에 넘겨주는 인수를 생략할 때(for in range(1,10,생략)) 기본적으로 함수에 넘겨지는 값이다
-# Keyword argument란 함수에 인수를 key = value 형식으로 넘겨줄 수 있는 것이다. 
-# 예를 들어 round()는 round(number, ndigits)로 key값이 설정되어있다. 따라서 round(number=1/3, ndigits=3)이라고 표현할 경우
-# 인수들의 순서를 바꾸어도 무방하며 더욱 직관적으로 이해할 수 있게 된다.
-```
 
-27. 연속적인 함수 호출
+* 함수는 어떤 특정한 작업을 실행하는 코드를 묶어놓은 단위
+
+* 함수는 결과값을 반환하는 경우(abs(), round(), float())와 함수 호출 자체가 실행 결과인 경우(append(), print())가 있다.
+
+* Default argument란 함수에 넘겨주는 인수를 생략할 때(for in range(1,10,생략)) 기본적으로 함수에 넘겨지는 값이다
+
+* Keyword argument란 함수에 인수를 key = value 형식으로 넘겨줄 수 있는 것이다. 
+
+* 예를 들어 round()는 round(number, ndigits)로 key값이 설정되어있다. 따라서 round(number=1/3, ndigits=3)이라고 표현할 경우
+
+* 인수들의 순서를 바꾸어도 무방하며 더욱 직관적으로 이해할 수 있게 된다.
+
+
+
+# 16. 연속적인 함수 호출
+
+
+
+* 이렇게 다양한 함수들을 "."을 활용해 연속적으로 호출할 수 있다. 
 
 
 ```python
 txt = "<Jan,Feb,Mar,Apr>"
 
 modified = text.upper().replace("<","").replace(">","").split(",") # upper() 함수는 모두 대분자로 바꾸는 기능. 
-# 이렇게 다양한 함수들을 "."을 활용해 연속적으로 호출할 수 있다. 
 
 print(modified)
 ```

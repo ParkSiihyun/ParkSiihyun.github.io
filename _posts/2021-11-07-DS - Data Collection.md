@@ -68,6 +68,10 @@ html = urllib.request.urlopen(url).read().decode()
 
 ```python
 from bs4 import BeautifulSoup # BeautifulSoup Module을 불러오는 방법
+import urllib.request
+url = "http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=1141058500"
+
+html = urllib.request.urlopen(url).read().decode()
 soup = BeautifulSoup(html, "html.parser") 
 
 print(soup)
@@ -164,13 +168,7 @@ print(soup)
 <wd>7</wd>
 ```
 
-
-
 * soup 객체는 html과 차이가 없어보이지만 html 데이터가 soup 객체가 되면 보이지는 않지만 계층화 된 자료가 된다.
-
-
-
-## 5. BeautifulSoup의 기능
 
 
 ```python
@@ -208,7 +206,7 @@ print(p_list)
 
 
 
-## 6. Open API(Open Application Programming Interface)
+## 5. Open API(Open Application Programming Interface)
 
 * Open API란 어플리케이션의 기능을 누구나 사용할 수 있도록 공개한 프로그래밍 인터페이스
 * ex) 카카오톡 메세지 보내기 API, 파파고 번역 API
@@ -221,33 +219,24 @@ print(p_list)
 
 
 
-## 7. XML
+## 6. XML
 
 * 형식은 HTML과 동일하고 .get_text()나 .find_all()과 같은 함수도 사용가능하다.
 * 하지만 XML의 tag는 웹브라우저에 나타내기 위해 사용된 것이 아니기 때문에 사용자가 임의로 지정할 수 있고 이 태그는 웹브라우저에 그대로 나타난다. 
 * 주로 실제로 tag안의 값이 갖는 의미를 tag로 쓰는 경우가 많다.
 * ex) <my_weight>67</my_weight>
 
-**lab01**
-
 
 ```python
 url = 'http://swclass.yonsei.ac.kr:2020/dev/gen/shinchon_dust.xml'
-print(url)
 ```
-
-    http://swclass.yonsei.ac.kr:2020/dev/gen/shinchon_dust.xml
-
-
 
 ```python
 html = urllib.request.urlopen(url)
 soup = BeautifulSoup(html, "xml")
 
-soup
+print(soup)
 ```
-
-
 
 
     <?xml version="1.0" encoding="utf-8"?>
@@ -381,8 +370,6 @@ soup
     </response>
 
 
-
-
 ```python
 pm10Value_list = []
 data1 = soup.find_all("pm10Value")
@@ -391,8 +378,6 @@ for data2 in data1:
 
 pm10Value_list
 ```
-
-
 
 
     ['3', '4', '3', '5', '3']

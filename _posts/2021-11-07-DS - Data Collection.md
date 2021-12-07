@@ -168,31 +168,31 @@ p_list = soup.find_all("hour")
 
 for tag in p_list:
     print(tag.get_text())
-    print(p_list)
+print(p_list)
 ```
 
 * soup.find_all("tag_name") 함수는 "tag_name"에 대당되는 모든 tag들을 list로 반환해준다.
 * get_text() 함수는 tag객체에서 tag를 제외한 text만을 추출한다.
 
+    21
+    24
+    3
+    6
+    9
+    12
+    15
+    18
+    21
+    24
+    3
+    6
+    9
+    12
+    15
+    18
+    21
+    24
     [<hour>21</hour>, <hour>24</hour>, <hour>3</hour>, <hour>6</hour>, <hour>9</hour>, <hour>12</hour>, <hour>15</hour>, <hour>18</hour>, <hour>21</hour>, <hour>24</hour>, <hour>3</hour>, <hour>6</hour>, <hour>9</hour>, <hour>12</hour>, <hour>15</hour>, <hour>18</hour>, <hour>21</hour>, <hour>24</hour>]
-    21
-    24
-    3
-    6
-    9
-    12
-    15
-    18
-    21
-    24
-    3
-    6
-    9
-    12
-    15
-    18
-    21
-    24
 
 
 

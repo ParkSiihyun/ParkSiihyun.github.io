@@ -76,85 +76,95 @@ print(soup)
 * html이라는 재료와 "html.parser"라는 도구(파이썬 기본 모듈)를 이용해 BeautifulSoup 요리!
 * parse - 분석하다
 
-    <?xml version="1.0" encoding="UTF-8" ?>
-    <rss version="2.0">
-    <channel>
-    <title>기상청 동네예보 웹서비스 - 서울특별시 서대문구 신촌동 도표예보</title>
-    <link/>http://www.kma.go.kr/weather/main.jsp
-    <description>동네예보 웹서비스</description>
-    <language>ko</language>
-    <generator>동네예보</generator>
-    <pubdate>2021년 10월 15일 (금)요일 17:00</pubdate>
-    <item>
-    <author>기상청</author>
-    <category>서울특별시 서대문구 신촌동</category>
-    <title>동네예보(도표) : 서울특별시 서대문구 신촌동 [X=59,Y=126]</title><link/>http://www.kma.go.kr/weather/forecast/timeseries.jsp?searchType=INTEREST&amp;dongCode=1141058500
-    <guid>http://www.kma.go.kr/weather/forecast/timeseries.jsp?searchType=INTEREST&amp;dongCode=1141058500</guid>
-    <description>
-    <header>
-    <tm>202110151700</tm>
-    <ts>5</ts>
-    <x>59</x>
-    <y>126</y>
-    </header>
-    <body>
-    <data seq="0">
-    <hour>21</hour>
-    <day>0</day>
-    <temp>19.0</temp>
-    <tmx>-999.0</tmx>
-    <tmn>-999.0</tmn>
-    <sky>4</sky>
-    <pty>0</pty>
-    <wfkor>흐림</wfkor>
-    <wfen>Cloudy</wfen>
-    <pop>30</pop>
-    <r12>0.0</r12>
-    <s12>0.0</s12>
-    <ws>1.4000000000000001</ws>
-    <wd>1</wd>
-    <wdkor>북동</wdkor>
-    <wden>NE</wden>
-    <reh>75</reh>
-    <r06>0.0</r06>
-    <s06>0.0</s06>
-    </data>
-    <data seq="1">
-    <hour>24</hour>
-    <day>0</day>
-    <temp>18.0</temp>
-    <tmx>-999.0</tmx>
-    <tmn>-999.0</tmn>
-    <sky>4</sky>
-    <pty>0</pty>
-    <wfkor>흐림</wfkor>
-    <wfen>Cloudy</wfen>
-    <pop>30</pop>
-    <r12>0.0</r12>
-    <s12>0.0</s12>
-    <ws>0.5</ws>
-    <wd>2</wd>
-    <wdkor>동</wdkor>
-    <wden>E</wden>
-    <reh>80</reh>
-    <r06>0.0</r06>
-    <s06>0.0</s06>
-    </data>
-    <data seq="2">
-    <hour>3</hour>
-    <day>1</day>
-    <temp>17.0</temp>
-    <tmx>12.0</tmx>
-    <tmn>12.0</tmn>
-    <sky>4</sky>
-    <pty>0</pty>
-    <wfkor>흐림</wfkor>
-    <wfen>Cloudy</wfen>
-    <pop>30</pop>
-    <r12>0.0</r12>
-    <s12>0.0</s12>
-    <ws>0.9</ws>
-    <wd>7</wd>
+```
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+
+<title>기상청 동네예보 웹서비스 - 서울특별시 서대문구 신촌동 도표예보</title>
+
+<link/>http://www.kma.go.kr/weather/main.jsp
+<description>동네예보 웹서비스</description>
+<language>ko</language>
+<generator>동네예보</generator>
+<pubdate>2021년 10월 15일 (금)요일 17:00</pubdate>
+<item>
+<author>기상청</author>
+<category>서울특별시 서대문구 신촌동</category>
+
+<title>동네예보(도표) : 서울특별시 서대문구 신촌동 [X=59,Y=126]</title><link/>http://www.kma.go.kr/weather/forecast/timeseries.jsp?searchType=INTEREST&amp;dongCode=1141058500
+
+<guid>http://www.kma.go.kr/weather/forecast/timeseries.jsp?searchType=INTEREST&amp;dongCode=1141058500</guid>
+<description>
+
+<header>
+<tm>202110151700</tm>
+<ts>5</ts>
+<x>59</x>
+<y>126</y>
+</header>
+
+<body>
+<data seq="0">
+<hour>21</hour>
+<day>0</day>
+<temp>19.0</temp>
+<tmx>-999.0</tmx>
+<tmn>-999.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfkor>흐림</wfkor>
+<wfen>Cloudy</wfen>
+<pop>30</pop>
+<r12>0.0</r12>
+<s12>0.0</s12>
+<ws>1.4000000000000001</ws>
+<wd>1</wd>
+<wdkor>북동</wdkor>
+<wden>NE</wden>
+<reh>75</reh>
+<r06>0.0</r06>
+<s06>0.0</s06>
+</data>
+<data seq="1">
+<hour>24</hour>
+<day>0</day>
+<temp>18.0</temp>
+<tmx>-999.0</tmx>
+<tmn>-999.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfkor>흐림</wfkor>
+<wfen>Cloudy</wfen>
+<pop>30</pop>
+<r12>0.0</r12>
+<s12>0.0</s12>
+<ws>0.5</ws>
+<wd>2</wd>
+<wdkor>동</wdkor>
+<wden>E</wden>
+<reh>80</reh>
+<r06>0.0</r06>
+<s06>0.0</s06>
+</data>
+<data seq="2">
+<hour>3</hour>
+<day>1</day>
+<temp>17.0</temp>
+<tmx>12.0</tmx>
+<tmn>12.0</tmn>
+<sky>4</sky>
+<pty>0</pty>
+<wfkor>흐림</wfkor>
+<wfen>Cloudy</wfen>
+<pop>30</pop>
+<r12>0.0</r12>
+<s12>0.0</s12>
+<ws>0.9</ws>
+<wd>7</wd>
+```
+
+
 
 * soup 객체는 html과 차이가 없어보이지만 html 데이터가 soup 객체가 되면 보이지는 않지만 계층화 된 자료가 된다.
 
@@ -174,25 +184,27 @@ print(p_list)
 * soup.find_all("tag_name") 함수는 "tag_name"에 대당되는 모든 tag들을 list로 반환해준다.
 * get_text() 함수는 tag객체에서 tag를 제외한 text만을 추출한다.
 
-    21
-    24
-    3
-    6
-    9
-    12
-    15
-    18
-    21
-    24
-    3
-    6
-    9
-    12
-    15
-    18
-    21
-    24
-    [<hour>21</hour>, <hour>24</hour>, <hour>3</hour>, <hour>6</hour>, <hour>9</hour>, <hour>12</hour>, <hour>15</hour>, <hour>18</hour>, <hour>21</hour>, <hour>24</hour>, <hour>3</hour>, <hour>6</hour>, <hour>9</hour>, <hour>12</hour>, <hour>15</hour>, <hour>18</hour>, <hour>21</hour>, <hour>24</hour>]
+```
+21
+24
+3
+6
+9
+12
+15
+18
+21
+24
+3
+6
+9
+12
+15
+18
+21
+24
+[<hour>21</hour>, <hour>24</hour>, <hour>3</hour>, <hour>6</hour>, <hour>9</hour>, <hour>12</hour>, <hour>15</hour>, <hour>18</hour>, <hour>21</hour>, <hour>24</hour>, <hour>3</hour>, <hour>6</hour>, <hour>9</hour>, <hour>12</hour>, <hour>15</hour>, <hour>18</hour>, <hour>21</hour>, <hour>24</hour>]
+```
 
 
 

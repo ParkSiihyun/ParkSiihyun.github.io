@@ -384,24 +384,18 @@ pm10Value_list
 
 
 
-1-7. JSON(JavaScript Object Notation)
+## 7.  JSON(JavaScript Object Notation)
 
 * key와 value 쌍으로 데이터를 표기하는 방법 { "name" : "gildong", "age": 21 }
 * 형식은 딕셔너리와 똑같지만 일정한 형식을을 가진 단순한 텍스트일 뿐이다.
 
-**lab01**
-
 
 ```python
 import json
+import urllib.request
 
 url = 'http://swclass.yonsei.ac.kr:2020/dev/gen/shinchon_dust.json'
-print(url)
 ```
-
-    http://swclass.yonsei.ac.kr:2020/dev/gen/shinchon_dust.json
-
-
 
 ```python
 html = urllib.request.urlopen(url).read().decode()
@@ -409,8 +403,6 @@ raw_dict = json.loads(html)
 
 raw_dict
 ```
-
-
 
 
     {'response': {'body': {'items': [{'coFlag': None,
@@ -524,11 +516,9 @@ raw_dict
       'header': {'resultCode': '00', 'resultMsg': 'NORMAL_CODE'}}}
 
 
-
-
 ```python
 o3_list = []
-data1 = raw_dict["response"]["body"]["items"]
+data1 = raw_dict["response"]["body"]["items"] # 하위 데이터에 접근하는 방법(타고 들어가는 방법)
 for data2 in data1:
     o3_list.append(data2["o3Value"])
 
@@ -536,23 +526,4 @@ o3_list
 ```
 
 
-
-
     ['0.028', '0.029', '0.030', '0.031', '0.031']
-
-
-
-
-```python
-numbers = ['one', 'two', 'three', 'four', 'five']
-    
-for n in numbers:
-    print(n)
-```
-
-    one
-    two
-    three
-    four
-    five
-

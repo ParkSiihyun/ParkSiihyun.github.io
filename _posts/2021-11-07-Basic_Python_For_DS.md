@@ -1,8 +1,3 @@
----
-layout: post
-title:  "데이터 과학을 위한 파이썬 기초 1"
----
-
 print, type, find, replace, f"string" 등 정말 기초적인 파이썬 기본 문법 정리
 
 # 1. Print()

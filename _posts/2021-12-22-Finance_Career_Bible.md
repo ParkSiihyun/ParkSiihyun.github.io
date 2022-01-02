@@ -145,7 +145,13 @@
 
 ## 주요 업무
 
-ECM(Equity Capital Markets) 부서의 주요 업무 3가지는 기업공개(IPO ; Initial Public Offering), 교환사채(EB ; Exchangeable Bond) 및 전환사채(CB ; Convertible Bond) 발행, 팔로우 온(Follow-on) 진행으로 나뉜다. 
+ECM(Equity Capital Markets) 부서의 주요 업무 3가지는 
+
+* 기업공개(IPO ; Initial Public Offering)
+* 교환사채(EB ; Exchangeable Bond) 및 전환사채(CB ; Convertible Bond) 발행
+* 팔로우 온(Follow-on) 진행
+
+으로 나뉜다. 
 
 
 

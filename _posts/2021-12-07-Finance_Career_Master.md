@@ -1,4 +1,4 @@
-# 금융 커리어 마스터를 읽고 나서
+# 금융 분야 첫번째 도서 : Finance Career Master
 
 
 

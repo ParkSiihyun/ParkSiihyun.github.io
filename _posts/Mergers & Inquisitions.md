@@ -8,7 +8,7 @@ IB는 금융 서비스의 한 부분으로서 기업과 기관 그리고 정부�
 
 Investment banks may also provide related services such as market-making and securities trading for both [equities](https://mergersandinquisitions.com/equity-trading/) (i.e., stocks and their derivatives, such as options) and [fixed income](https://mergersandinquisitions.com/fixed-income-trading/), also known as FICC (fixed income, currencies, and commodities).
 
-투자은행은 시장 조성이나 증권(주식이나 옵션과 같은 파생상품)이나 흔히 FICC로 불리는 채권, 통화, 상품 거래를 수행하는 역할을 하기도 한다. 
+투자은행은 시장 조성이나 증권(주식이나 옵션과 같은 파생상품)이나 흔히 FICC로 불리는 채권, 통화, 상품 거래를 수행하는 역할을 하기도 한다.  
 
 
 

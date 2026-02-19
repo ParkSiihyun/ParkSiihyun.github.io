@@ -4,16 +4,16 @@ main:
     url: /
 
   - title: "CFA"
-    url: /categories/#cfa
+    url: /categories/
 
   - title: "BIWS"
-    url: /categories/#biws
+    url: /categories/
 
   - title: "Case Studies"
-    url: /categories/#case-studies
+    url: /categories/
 
   - title: "Notes"
-    url: /categories/#notes
+    url: /categories/
 
   - title: "About"
     url: /about/

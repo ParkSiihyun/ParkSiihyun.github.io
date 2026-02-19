@@ -1,12 +1,14 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "S ample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Home"
+    url: /
+  - title: "CFA"
+    url: /categories/cfa/
+  - title: "BIWS"
+    url: /categories/biws/
+  - title: "Case Studies"
+    url: /categories/case-studies/
+  - title: "Notes"
+    url: /categories/notes/
+  - title: "About"
+    url: /about/

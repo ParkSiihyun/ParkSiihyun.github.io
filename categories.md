@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Research Archive"
+title: ""
 permalink: /categories/
 author_profile: false
 ---

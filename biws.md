@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "BIWS"
+title: ""
 permalink: /biws/
 author_profile: false
 ---

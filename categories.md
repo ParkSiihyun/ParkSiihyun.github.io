@@ -1,11 +1,9 @@
 ---
 layout: single
-title: ""
+title: "Categories"
 permalink: /categories/
 author_profile: false
 ---
-
-<h1 style="margin-bottom:60px;">RESEARCH ARCHIVE</h1>
 
 {% assign sorted_categories = site.categories | sort %}
 
@@ -13,9 +11,11 @@ author_profile: false
   {% assign category_name = category[0] %}
   {% assign posts = category[1] %}
 
-  <section style="margin-bottom:80px;">
+  <section style="margin-top:80px;">
 
-    <h2 style="font-size:24px; letter-spacing:1px; font-weight:700; border-bottom:1px solid #111; padding-bottom:12px;">
+    <!-- 중요: id 추가 -->
+    <h2 id="{{ category_name | slugify }}" 
+        style="font-size:26px; font-weight:700; border-bottom:1px solid #111; padding-bottom:10px;">
       {{ category_name | upcase }}
     </h2>
 

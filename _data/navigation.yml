@@ -1,19 +1,18 @@
-# main links
 main:
   - title: "Home"
     url: /
 
   - title: "CFA"
-    url: /categories/
+    url: /categories/#cfa
 
   - title: "BIWS"
-    url: /categories/
+    url: /categories/#biws
 
   - title: "Case Studies"
-    url: /categories/
+    url: /categories/#case-studies
 
   - title: "Notes"
-    url: /categories/
+    url: /categories/#notes
 
   - title: "About"
-    url: /about/
+    url: /about/#about

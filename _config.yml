@@ -12,18 +12,18 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "ParkSiihyun's Blog"
+title                    : "Sihyun Park | Finance & Valuation Notes"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Sihyun Park"
-description              : "An amazing website."
+description              : "CFA & BIWS Study Archive | Valuation, M&A, Case Studies"
 url                      : "https://ParkSiihyun.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "ParkSiihyun/ParkSiihyun.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -104,9 +104,9 @@ analytics:
 author:
   name             : "ParkSihyun"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Seoul"
-  email            : "mm3762571@yonsei.ac.kr"
+  bio              : "Finance-focused student documenting CFA, BIWS, and weekly valuation case studies."
+  location         : "Irvine, CA"
+  email            : "sihyup2@uci.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -288,3 +288,18 @@ defaults:
       comments: # true
       share: true
       related: true
+
+header:
+  nav:
+    - title: "Home"
+      url: "/"
+    - title: "CFA"
+      url: "/categories/cfa/"
+    - title: "BIWS"
+      url: "/categories/biws/"
+    - title: "Case Studies"
+      url: "/categories/case-studies/"
+    - title: "Notes"
+      url: "/categories/notes/"
+    - title: "About"
+      url: "/about/"

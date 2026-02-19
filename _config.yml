@@ -17,21 +17,6 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 # Site Settings
 locale                   : "en-US"
 title                    : "Sihyun Park | Finance & Valuation Notes"
-header:
-  nav:
-    - title: "Home"
-      url: "/"
-    - title: "CFA"
-      url: "/categories/cfa/"
-    - title: "BIWS"
-      url: "/categories/biws/"
-    - title: "Case Studies"
-      url: "/categories/case-studies/"
-    - title: "Notes"
-      url: "/categories/notes/"
-    - title: "About"
-      url: "/about/"
-
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Sihyun Park"

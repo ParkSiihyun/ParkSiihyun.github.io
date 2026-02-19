@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Case Studies"
+title: ""
 permalink: /case-studies/
 author_profile: false
 ---

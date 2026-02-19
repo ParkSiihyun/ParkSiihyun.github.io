@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "CFA"
+title: ""
 permalink: /cfa/
 author_profile: false
 ---

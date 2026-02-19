@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "ParkSihyun"
-  avatar           : "/assets/images/profile.jpg"
+  avatar           : "/images/profile.jpg"
   bio              : "Finance-focused student documenting CFA, BIWS, and weekly valuation case studies."
   location         : "Irvine, CA"
   email            : "sihyup2@uci.edu"

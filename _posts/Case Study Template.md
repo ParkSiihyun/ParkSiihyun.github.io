@@ -1,5 +1,5 @@
 ---
-title: "Instacart IPO – Full ECM Analysis"
+title: "Instacart IPO – Full ECM Analysis Example"
 date: 2026-02-20
 categories: case-studies
 ---

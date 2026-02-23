@@ -1,3 +1,10 @@
+---
+title: "Introduction to IB Case Studies"
+date: 2026-02-23
+categories: case-studies
+
+---
+
 ## what are Investment Banking Case Studies
 
 * Candidates will normally encouter investment banking case studies at the final stage of the application process, likely during an assessment or final-stage interview.

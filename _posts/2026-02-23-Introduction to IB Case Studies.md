@@ -16,29 +16,29 @@
 
 
 
-## Types of IB Case Studies
+## Types of Investment Banking Case Studies
 
 In general, there are two types of case studies during an investment banking assessment, the decision-making case, and the financial modeling case.
 
-### Decision Making IB Case Studies
+### Decision Making Investment Banking Case Studies
 
 * Decision-making case studies appear more frequently than modeling case studies. In this type of case study, the candidate must make decisions for their client and provide advice. The client case studies could be based on finding funding sources, or whether a proposed merger should proceed and why or why not.
 * You should expect these questions to be given to you at the interview. Therefore, you must analyze and present the case within a given time frame. Throughout, you will have 45-60 minutes of preparation time and a 10-minute presentation, followed by a round of Q&A.
 * These case studies do not involve in-depth analysis of the case, given the short amount of time available.
 
-### Decision Making IB Case Study Example
+### Decision Making Investment Banking Case Study Example
 
 One of your clients is a global corporation that manufactures and distributes a wide range of perfumes. They are contemplating ways to expand their business. They may either introduce a new range of fragrances with their current distribution channels or start a completely new company with different stores.
 
 You need to determine which solution is better for the business. To do so, you need to compare the return on investment and decide on a solution. Be ready to support your reasoning.
 
-### Modeling IB Case Studies
+### Modeling Investment Banking Case Studies
 
 * Modeling case studies are usually take-home assignments where you must do financial modeling and a simple valuation. Thus, it is more of a modeling test than a case study. The [Investment Banker provides an introduction to building models, developing multiple techniques for a comprehensive and practical understanding of the topic.
 * The modeling case study will either employ a free cash flow to the firm (FCFF) valuation on a company or require a simple merger or leveraged buyout model. You would be expected to analyze the corporations’ valuation multiples to determine whether they are undervalued or overvalued.
 * Generally, you will be given a few days to complete your analysis. Then, you need to spend 30-45 minutes on the day of the interview presenting your case to the bankers. The analysis will go much deeper than a client case study because you will have more time to work on it.
 
-### Modeling IB Case Study Example
+### Modeling Investment Banking Case Study Example
 
 A pharmaceutical company wishes to make an acquisition. It has identified the target company and approached you to determine how much they should pay. You will be provided with the necessary financial information, metrics, and multiples, as well as the buyer and seller company profiles.
 

@@ -145,6 +145,8 @@ Investment banking case studies are an important element in the interview proces
 
 
 
+출처 : https://www.fe.training/free-resources/careers-in-finance/investment-banking-case-studies/
+
 
 
 

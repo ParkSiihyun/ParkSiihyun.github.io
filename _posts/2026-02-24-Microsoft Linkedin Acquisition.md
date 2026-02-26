@@ -30,6 +30,9 @@ categories: case-studies
   - Standard reps/warranties and covenants  
 
 - **Deal Protections**  
+  
+  
+  
   | Item            | Details                                                 |
   | --------------- | ------------------------------------------------------- |
   | No-Shop         | Customary restrictions on soliciting alternatives       |

@@ -1,5 +1,5 @@
 ---
-title: "Deal Name – Investment Banking Case Study"
+title: "M&A Analysis Example"
 date: 2026-01-01
 categories: case-studies
 ---

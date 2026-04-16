@@ -2,16 +2,12 @@
 
 ---
 
-
-
 ### A Company: current stock price is $150 per share
 
 * Argument with Your Friend: Friend thinks the company is worth $100 per share, but you think it’s worth $200 per share
 * You: Recommend investing, but your friend recommends “shorting” (betting against the company)
 * How can you tell who’s correct?
 * Answer: Create a “financial model” to quantify your views
-
-
 
 
 
@@ -24,16 +20,12 @@
 
 
 
-
-
 ### “Financial modeling” lets you quantify your views of a company
 
 * Use Cases: Stock market investing, advising on mergers and acquisitions, acquiring companies in leveraged buyouts, or raising capital
 * Example 1: A pharmaceutical company’s stock price just fell by 50% – should you invest? Or will the price keep falling?
 * Example 2: A retailer wants to acquire a smaller retailer – should it?
 * Role: Similar to DNA evidence or witnesses in a courtroom trial – it’s part of the process, but it doesn’t dictate the entire outcome
-
-
 
 
 
@@ -45,13 +37,9 @@ So, if you're having an argument about what a company is really worth, you can c
 
 
 
-
-
 # The Steps in the Financial Modeling Process
 
 ---
-
-
 
 ### Step 1: Pick Your Purpose
 
@@ -64,8 +52,6 @@ So, if you're having an argument about what a company is really worth, you can c
 
 
 
-
-
 ### Step 2: Do Some Background Research
 
 * Start With: Company’s interim and annual reports
@@ -74,8 +60,6 @@ So, if you're having an argument about what a company is really worth, you can c
 * Bonus Points: Interview management or do “channel checks”
 * Private Co’s: Need to get info directly from them
 * **Time Spent: Might be 1 hour, or might be days/weeks+**
-
-
 
 
 
@@ -92,8 +76,6 @@ So, if you're having an argument about what a company is really worth, you can c
 
 
 
-
-
 ### Step 4: Gather Data on Other Companies(if it's required)
 
 * **Tricky: Varies A LOT based on the analysis and required precision**
@@ -106,8 +88,6 @@ So, if you're having an argument about what a company is really worth, you can c
 
 
 
-
-
 ### Step 5: Build the Analysis
 
 * Always: Revenue and expenses for your company
@@ -116,8 +96,6 @@ So, if you're having an argument about what a company is really worth, you can c
 * Sometimes: Acquisitions – more about scenarios with your data
 * Rarely: Extreme precision down to individual employees
 * **Time Spent: 30 minutes up to… 3 months? Yes, sometimes!**
-
-
 
 
 

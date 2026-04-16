@@ -5,9 +5,3 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
-
-/* 👇👇👇 여기 아래에 추가 👇👇👇 */
-
-.page__content {
-  max-width: 720px;
-}

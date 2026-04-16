@@ -1,10 +1,3 @@
----
-title: "What is Financial Modeling?"
-date: 2026-04-16
-categories: BIWS
-
----
-
 # What is financial Modeling?
 
 ---

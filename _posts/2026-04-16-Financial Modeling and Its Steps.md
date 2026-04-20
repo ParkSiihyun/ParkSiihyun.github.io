@@ -1,3 +1,10 @@
+---
+title: "Financial Modeling and Its Steps"
+date: 2026-04-16
+categories: biws
+tags: [Financial Modeling, Valuation]
+---
+
 # What is Financial Modeling?
 
 ---

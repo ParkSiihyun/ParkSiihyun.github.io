@@ -1,5 +1,8 @@
-# Reading 29 — Analyzing Balance Sheets
-
+---
+title: "CFA FSA Reading 29 — Analyzing Balance Sheets"
+date: 2026-04-03
+categories: cfa
+tags: [FSA, CFA Level I]
 ---
 
 ## 1. Balance Sheet 개요

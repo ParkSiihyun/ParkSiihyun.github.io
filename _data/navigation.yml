@@ -14,5 +14,8 @@ main:
   - title: "Notes"
     url: /notes/
 
+  - title: "Categories"
+    url: /categories/
+
   - title: "About"
     url: /about/

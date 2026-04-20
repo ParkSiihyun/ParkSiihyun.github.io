@@ -1,5 +1,8 @@
-# Reading 27 — Introduction to Financial Statement Analysis
-
+---
+title: "CFA FSA Reading 27 — Introduction to Financial Statement Analysis"
+date: 2026-04-01
+categories: cfa
+tags: [FSA, CFA Level I]
 ---
 
 ## 1. Standard Setting Bodies (기준 제정 기관)

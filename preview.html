@@ -3,33 +3,136 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sihyun Park · Design Preview</title>
+<title>Sihyun Park · Full Redesign Preview</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>
+(function() {
+  try {
+    var saved = localStorage.getItem('sh-theme');
+    var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  } catch (e) {}
+})();
+</script>
 <style>
 :root {
-  --navy: #0f2847;
-  --navy-dark: #0b1c33;
-  --gold: #b08d57;
-  --cream: #fbfaf7;
-  --slate: #5b6478;
-  --border: rgba(15,40,71,0.12);
+  --c-bg: #fbfaf7;
+  --c-surface: #ffffff;
+  --c-surface-2: #f3efe5;
+  --c-text: #1a2233;
+  --c-text-soft: #3a455b;
+  --c-muted: #5b6478;
+  --c-navy: #0f2847;
+  --c-navy-dark: #0b1c33;
+  --c-gold: #b08d57;
+  --c-gold-soft: rgba(176, 141, 87, 0.12);
+  --c-border: rgba(15, 40, 71, 0.12);
+  --c-border-soft: rgba(15, 40, 71, 0.06);
+  --c-hero-a: #fdfcf9;
+  --c-hero-b: #f3efe5;
+  --c-chip-bg: rgba(255,255,255,0.75);
+  --c-code-bg: rgba(15, 40, 71, 0.06);
+  --c-shadow: rgba(15, 40, 71, 0.08);
+  --c-quote-bg: rgba(176, 141, 87, 0.08);
 }
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
-body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  background: var(--cream);
-  color: #1a2233;
-  line-height: 1.65;
-  letter-spacing: 0.005em;
+[data-theme="dark"] {
+  --c-bg: #0c1220;
+  --c-surface: #131b2e;
+  --c-surface-2: #1a2338;
+  --c-text: #e7e9ef;
+  --c-text-soft: #c4c9d6;
+  --c-muted: #8892a8;
+  --c-navy: #e7e9ef;
+  --c-navy-dark: #060a14;
+  --c-gold: #d6b275;
+  --c-gold-soft: rgba(214, 178, 117, 0.15);
+  --c-border: rgba(231, 233, 239, 0.12);
+  --c-border-soft: rgba(231, 233, 239, 0.06);
+  --c-hero-a: #131b2e;
+  --c-hero-b: #0c1220;
+  --c-chip-bg: rgba(231, 233, 239, 0.06);
+  --c-code-bg: rgba(231, 233, 239, 0.08);
+  --c-shadow: rgba(0, 0, 0, 0.35);
+  --c-quote-bg: rgba(214, 178, 117, 0.1);
 }
 
-/* ---------- Masthead ---------- */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; scroll-behavior: smooth; }
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--c-bg);
+  color: var(--c-text);
+  line-height: 1.65;
+  letter-spacing: 0.005em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Preview banner */
+.preview-banner {
+  background: #fff8e8;
+  border-bottom: 1px solid #f0e3bc;
+  padding: 0.7em 1em;
+  text-align: center;
+  font-size: 0.85em;
+  color: #7a5f0a;
+}
+[data-theme="dark"] .preview-banner {
+  background: #1f1a08;
+  border-bottom-color: #3b3010;
+  color: #d6b275;
+}
+.preview-banner strong { color: #5a4500; }
+[data-theme="dark"] .preview-banner strong { color: #e4c98b; }
+
+/* Reading progress bar */
+.sh-reading-progress {
+  position: fixed; top: 0; left: 0; right: 0;
+  height: 3px; background: transparent; z-index: 9999; pointer-events: none;
+}
+.sh-reading-progress__bar {
+  height: 100%; width: 0%;
+  background: linear-gradient(90deg, var(--c-gold) 0%, #e4c98b 100%);
+  transition: width 0.15s ease-out;
+  box-shadow: 0 0 10px rgba(176, 141, 87, 0.4);
+}
+
+/* Ticker strip */
+.sh-ticker {
+  background: var(--c-navy-dark);
+  border-bottom: 1px solid var(--c-border);
+  padding: 0.6em 0;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+[data-theme="dark"] .sh-ticker { background: #06080f; }
+.sh-ticker__inner {
+  display: inline-flex;
+  gap: 2.5em;
+  color: #e7e9ef;
+  font-size: 0.82em;
+  font-family: "JetBrains Mono", monospace;
+  padding-left: 100%;
+  animation: tickerScroll 45s linear infinite;
+}
+.sh-ticker__item { display: inline-flex; gap: 0.6em; align-items: center; }
+.sh-ticker__symbol { color: #e7e9ef; font-weight: 600; }
+.sh-ticker__value { color: #c4c9d6; }
+.sh-ticker__change { font-size: 0.92em; }
+.sh-ticker__change.up { color: #4ade80; }
+.sh-ticker__change.down { color: #f87171; }
+@keyframes tickerScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
+
+/* Masthead */
 .masthead {
-  background: var(--cream);
-  border-bottom: 1px solid var(--border);
+  background: var(--c-bg);
+  border-bottom: 1px solid var(--c-border);
   padding: 1.1em 1.5em;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 .masthead__inner {
   max-width: 1200px;
@@ -42,344 +145,436 @@ body {
 }
 .site-title {
   font-family: "Playfair Display", Georgia, serif;
-  font-size: 1.4em;
+  font-size: 1.35em;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--c-navy);
   text-decoration: none;
   letter-spacing: -0.01em;
 }
 .masthead-nav {
   display: flex;
-  gap: 1.4em;
+  gap: 1.2em;
+  align-items: center;
   flex-wrap: wrap;
 }
 .masthead-nav a {
-  color: var(--navy);
+  color: var(--c-navy);
   text-decoration: none;
-  font-size: 0.92em;
+  font-size: 0.9em;
   font-weight: 500;
   letter-spacing: 0.02em;
   transition: color 0.2s ease;
   position: relative;
 }
 .masthead-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0; right: 0;
-  bottom: -4px;
-  height: 2px;
-  background: var(--gold);
-  transform: scaleX(0);
-  transform-origin: left;
+  content: ""; position: absolute; left: 0; right: 0; bottom: -4px;
+  height: 2px; background: var(--c-gold);
+  transform: scaleX(0); transform-origin: left;
   transition: transform 0.25s ease;
 }
-.masthead-nav a:hover { color: var(--gold); }
+.masthead-nav a:hover { color: var(--c-gold); }
 .masthead-nav a:hover::after { transform: scaleX(1); }
 
-/* ---------- Hero ---------- */
+/* Dark mode toggle */
+.sh-theme-toggle {
+  background: transparent;
+  border: 1px solid var(--c-border);
+  color: var(--c-navy);
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  margin-left: 0.6em;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+.sh-theme-toggle:hover {
+  border-color: var(--c-gold);
+  color: var(--c-gold);
+  transform: rotate(12deg);
+}
+.sh-theme-toggle svg { width: 16px; height: 16px; }
+.sh-icon-sun { display: none; }
+.sh-icon-moon { display: inline-block; }
+[data-theme="dark"] .sh-icon-sun { display: inline-block; }
+[data-theme="dark"] .sh-icon-moon { display: none; }
+
+/* Hero */
 .sihyun-hero {
   padding: 5rem 1.5rem 4rem;
   text-align: center;
-  background: linear-gradient(135deg, #fdfcf9 0%, #f3efe5 100%);
-  border-bottom: 1px solid rgba(15,40,71,0.08);
+  background: linear-gradient(135deg, var(--c-hero-a) 0%, var(--c-hero-b) 100%);
+  border-bottom: 1px solid var(--c-border-soft);
   overflow: hidden;
   position: relative;
+  transition: background 0.3s ease;
 }
 .sihyun-hero::before {
-  content: "";
-  position: absolute;
-  top: -40%;
-  right: -10%;
-  width: 520px;
-  height: 520px;
-  background: radial-gradient(circle at center, rgba(176,141,87,0.22) 0%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
+  content: ""; position: absolute; top: -40%; right: -10%;
+  width: 520px; height: 520px;
+  background: radial-gradient(circle at center, var(--c-gold-soft) 0%, transparent 70%);
+  border-radius: 50%; pointer-events: none;
 }
 .sihyun-hero::after {
-  content: "";
-  position: absolute;
-  bottom: -50%;
-  left: -10%;
-  width: 420px;
-  height: 420px;
+  content: ""; position: absolute; bottom: -50%; left: -10%;
+  width: 420px; height: 420px;
   background: radial-gradient(circle at center, rgba(15,40,71,0.1) 0%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
+  border-radius: 50%; pointer-events: none;
 }
-.sihyun-hero__inner {
-  position: relative;
-  z-index: 2;
-  max-width: 760px;
-  margin: 0 auto;
+[data-theme="dark"] .sihyun-hero::after {
+  background: radial-gradient(circle at center, rgba(231,233,239,0.04) 0%, transparent 70%);
 }
+.sihyun-hero__inner { position: relative; z-index: 2; max-width: 760px; margin: 0 auto; }
 .sihyun-hero__eyebrow {
   display: inline-block;
-  font-size: 0.78em;
-  font-weight: 600;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--gold);
+  font-size: 0.78em; font-weight: 600; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--c-gold);
   margin-bottom: 1rem;
-  opacity: 0;
-  animation: sh-fade-up 0.8s 0.1s ease forwards;
+  opacity: 0; animation: sh-fade-up 0.8s 0.1s ease forwards;
 }
 .sihyun-hero__title {
   font-family: "Playfair Display", Georgia, serif;
   font-size: clamp(2.25rem, 5vw, 3.5rem);
-  font-weight: 700;
-  color: var(--navy);
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  font-weight: 700; color: var(--c-navy);
+  line-height: 1.15; letter-spacing: -0.02em;
   margin: 0 0 0.75rem;
-  opacity: 0;
-  animation: sh-fade-up 0.9s 0.25s ease forwards;
+  opacity: 0; animation: sh-fade-up 0.9s 0.25s ease forwards;
 }
-.sihyun-hero__title-accent { color: var(--gold); font-style: italic; }
+.sihyun-hero__title-accent { color: var(--c-gold); font-style: italic; }
 .sihyun-hero__typed {
   font-size: clamp(1rem, 2vw, 1.2rem);
-  color: var(--slate);
-  min-height: 1.6em;
+  color: var(--c-muted); min-height: 1.6em;
   margin: 0 0 1.75rem;
-  opacity: 0;
-  animation: sh-fade-up 0.9s 0.45s ease forwards;
+  opacity: 0; animation: sh-fade-up 0.9s 0.45s ease forwards;
 }
 .sihyun-cursor {
-  display: inline-block;
-  width: 2px;
-  height: 1.1em;
-  background: var(--navy);
-  margin-left: 2px;
-  vertical-align: -2px;
+  display: inline-block; width: 2px; height: 1.1em;
+  background: var(--c-navy); margin-left: 2px; vertical-align: -2px;
   animation: sh-blink 1s step-end infinite;
 }
 .sihyun-hero__meta {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.8rem 1.2rem;
-  margin-top: 1.5rem;
-  opacity: 0;
-  animation: sh-fade-up 0.9s 0.65s ease forwards;
+  display: flex; justify-content: center; flex-wrap: wrap;
+  gap: 0.8rem 1.2rem; margin-top: 1.5rem;
+  opacity: 0; animation: sh-fade-up 0.9s 0.65s ease forwards;
 }
 .sihyun-hero__chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
+  display: inline-flex; align-items: center; gap: 0.45rem;
   padding: 0.4rem 1rem;
-  background: rgba(255,255,255,0.75);
-  border: 1px solid rgba(15,40,71,0.12);
+  background: var(--c-chip-bg);
+  border: 1px solid var(--c-border);
   border-radius: 999px;
-  font-size: 0.82em;
-  font-weight: 500;
-  color: var(--navy);
+  font-size: 0.82em; font-weight: 500;
+  color: var(--c-navy);
   backdrop-filter: blur(4px);
 }
-.chip-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--gold);
-}
+.chip-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--c-gold); }
 .sihyun-hero__divider {
-  width: 48px;
-  height: 3px;
-  background: var(--gold);
-  margin: 1.75rem auto 0;
-  border-radius: 2px;
-  opacity: 0;
-  animation: sh-expand 0.9s 0.85s ease forwards;
+  width: 48px; height: 3px; background: var(--c-gold);
+  margin: 1.75rem auto 0; border-radius: 2px;
+  opacity: 0; animation: sh-expand 0.9s 0.85s ease forwards;
 }
 
 @keyframes sh-fade-up {
   from { opacity: 0; transform: translateY(16px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-@keyframes sh-blink {
-  0%, 100% { opacity: 1; }
-  50%      { opacity: 0; }
-}
+@keyframes sh-blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
 @keyframes sh-expand {
   from { opacity: 0; transform: scaleX(0); }
   to   { opacity: 1; transform: scaleX(1); }
 }
 
-/* ---------- Content ---------- */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2.5em 1.5em 4em;
+main { max-width: 900px; margin: 0 auto; padding: 2em 1.5em 4em; }
+
+/* Home widgets */
+.sh-widgets {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.2rem; margin: 0 0 2.5rem;
 }
+.sh-widget {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: 10px;
+  padding: 1.4em 1.5em;
+  position: relative; overflow: hidden;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.sh-widget:hover {
+  border-color: rgba(176, 141, 87, 0.5);
+  box-shadow: 0 8px 24px var(--c-shadow);
+}
+.sh-widget::before {
+  content: ""; position: absolute; top: 0; left: 0;
+  width: 4px; height: 100%; background: var(--c-gold);
+}
+.sh-widget__label {
+  font-size: 0.72em; font-weight: 600; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--c-gold);
+  margin-bottom: 0.6em;
+}
+.sh-widget__title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.15em; font-weight: 700;
+  color: var(--c-navy); margin: 0 0 0.35em;
+}
+.sh-widget__meta {
+  font-size: 0.85em; color: var(--c-muted); margin: 0 0 0.6em;
+}
+.sh-widget__body {
+  font-size: 0.92em; color: var(--c-text-soft);
+  line-height: 1.55; margin: 0;
+}
+.sh-widget__progress { margin-top: 0.8em; }
+.sh-widget__progress-track {
+  background: var(--c-border-soft);
+  height: 6px; border-radius: 3px; overflow: hidden;
+}
+.sh-widget__progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--c-gold) 0%, #e4c98b 100%);
+  border-radius: 3px; transition: width 0.6s ease;
+}
+.sh-widget__progress-label {
+  font-size: 0.75em; color: var(--c-muted);
+  margin-top: 0.35em; display: flex; justify-content: space-between;
+}
+
+/* Section heading */
 h2.section-h {
   font-family: "Playfair Display", serif;
-  font-weight: 700;
-  color: var(--navy);
+  font-weight: 700; color: var(--c-navy);
   font-size: 1.75em;
-  border-bottom: 2px solid var(--navy);
+  border-bottom: 2px solid var(--c-navy);
   padding-bottom: 0.4em;
   margin: 2em 0 1em;
   letter-spacing: -0.01em;
 }
+
+/* Post list */
 .post-list { list-style: none; padding: 0; margin: 0; }
 .post-list li {
   padding: 1.15em 0;
-  border-bottom: 1px solid rgba(15,40,71,0.08);
+  border-bottom: 1px solid var(--c-border-soft);
   transition: padding 0.2s ease;
 }
 .post-list li:hover { padding-left: 0.5em; }
 .post-list a {
   font-family: "Playfair Display", serif;
-  font-size: 1.2em;
-  font-weight: 600;
-  color: var(--navy);
-  text-decoration: none;
+  font-size: 1.2em; font-weight: 600;
+  color: var(--c-navy); text-decoration: none;
   transition: color 0.2s ease;
 }
-.post-list a:hover { color: var(--gold); }
+.post-list a:hover { color: var(--c-gold); }
 .post-date {
-  font-size: 0.78em;
-  color: var(--slate);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-size: 0.78em; color: var(--c-muted);
+  text-transform: uppercase; letter-spacing: 0.05em;
   margin-top: 0.3em;
 }
 
-/* Card grid */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.2em;
-  margin: 1.5em 0 2.5em;
+/* Bookshelf */
+.sh-books {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.4em; margin: 1em 0 2em;
 }
-.card {
-  background: #fff;
-  border: 1px solid rgba(15,40,71,0.12);
-  border-radius: 8px;
-  padding: 1.5em;
-  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+.sh-book {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: 8px; padding: 1.2em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 28px rgba(15,40,71,0.08);
-  border-color: rgba(176,141,87,0.6);
+.sh-book:hover { transform: translateY(-2px); box-shadow: 0 8px 22px var(--c-shadow); }
+.sh-book__status {
+  display: inline-block;
+  font-size: 0.7em; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; padding: 0.2em 0.6em;
+  border-radius: 4px; margin-bottom: 0.8em;
 }
-.card__icon { font-size: 1.5em; color: var(--gold); margin-bottom: 0.6em; }
-.card__title {
+.sh-book__status.is-done { background: var(--c-gold-soft); color: var(--c-gold); }
+.sh-book__status.is-reading { background: rgba(15, 40, 71, 0.1); color: var(--c-navy); }
+.sh-book__status.is-planned { background: rgba(91, 100, 120, 0.12); color: var(--c-muted); }
+[data-theme="dark"] .sh-book__status.is-reading { background: rgba(231, 233, 239, 0.08); }
+.sh-book__title {
   font-family: "Playfair Display", serif;
-  font-weight: 700;
-  color: var(--navy);
-  margin: 0 0 0.4em;
-  font-size: 1.15em;
+  font-size: 1.05em; font-weight: 700;
+  color: var(--c-navy); margin: 0 0 0.2em; line-height: 1.3;
 }
-.card__body { font-size: 0.9em; color: var(--slate); margin: 0; line-height: 1.55; }
+.sh-book__author { font-size: 0.85em; color: var(--c-muted); margin: 0 0 0.7em; }
+.sh-book__rating { color: var(--c-gold); font-size: 0.9em; margin-bottom: 0.5em; letter-spacing: 0.1em; }
+.sh-book__note { font-size: 0.85em; color: var(--c-text-soft); line-height: 1.5; margin: 0; }
 
-blockquote {
-  border-left: 4px solid var(--gold);
-  background: rgba(176,141,87,0.08);
-  padding: 1em 1.2em;
-  margin: 1.5em 0;
+/* Glossary */
+.sh-glossary__item {
+  padding: 1em 0; border-bottom: 1px solid var(--c-border-soft);
+}
+.sh-glossary__term {
   font-family: "Playfair Display", serif;
-  font-style: italic;
-  color: var(--navy);
-  border-radius: 0 4px 4px 0;
+  font-weight: 700; color: var(--c-navy);
+  font-size: 1.05em; margin: 0 0 0.2em;
+}
+.sh-glossary__abbr {
+  color: var(--c-gold); font-size: 0.8em;
+  margin-left: 0.5em; font-weight: 500; letter-spacing: 0.05em;
+}
+.sh-glossary__def {
+  color: var(--c-text-soft); margin: 0;
+  font-size: 0.95em; line-height: 1.55;
 }
 
-table {
-  width: 100%;
-  font-size: 0.9em;
-  border: 1px solid rgba(15,40,71,0.15);
-  border-collapse: collapse;
+/* Formula */
+.sh-formula {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: 8px; padding: 1.3em 1.5em;
   margin: 1em 0;
 }
-table thead { background: var(--navy); color: #fff; }
-table th { border-bottom: 2px solid var(--gold); padding: 0.7em 1em; text-align: left; font-weight: 600; }
-table td { padding: 0.6em 1em; border-bottom: 1px solid rgba(15,40,71,0.08); }
-table tbody tr:nth-child(even) { background: rgba(15,40,71,0.03); }
-table tbody tr:hover { background: rgba(176,141,87,0.08); }
-
-pre {
-  background: #0b1c33;
-  color: #e4e1d8;
-  padding: 1em 1.2em;
-  border-radius: 6px;
-  font-family: "JetBrains Mono", Menlo, monospace;
-  font-size: 0.88em;
-  overflow-x: auto;
+.sh-formula__name {
+  font-family: "Playfair Display", serif;
+  font-weight: 700; color: var(--c-navy);
+  font-size: 1.1em; margin: 0 0 0.4em;
+}
+.sh-formula__eq {
+  font-family: "JetBrains Mono", monospace;
+  background: var(--c-code-bg);
+  color: var(--c-navy);
+  padding: 0.7em 1em; border-radius: 4px;
+  margin: 0.5em 0; display: block; overflow-x: auto;
+  font-size: 0.95em;
+}
+.sh-formula__note {
+  font-size: 0.88em; color: var(--c-muted);
+  line-height: 1.55; margin: 0.3em 0 0;
 }
 
-.palette {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  margin: 1em 0 2em;
+/* 404 */
+.sh-404 {
+  min-height: 60vh; display: flex; align-items: center; justify-content: center;
+  padding: 3em 1.5em; text-align: center;
+  background: linear-gradient(135deg, var(--c-hero-a) 0%, var(--c-hero-b) 100%);
+  border-radius: 12px;
+  border: 1px solid var(--c-border);
 }
-.swatch {
-  min-width: 140px;
-  flex: 1;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid var(--border);
+.sh-404__inner { max-width: 560px; }
+.sh-404__chart {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9em; color: var(--c-gold);
+  margin-bottom: 1.5em; white-space: pre;
+  line-height: 1.1; display: inline-block; text-align: left;
 }
-.swatch__color { height: 80px; }
-.swatch__info {
-  padding: 0.7em 0.9em;
-  font-size: 0.82em;
-  background: #fff;
+.sh-404__code {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(4rem, 12vw, 7rem);
+  font-weight: 800; color: var(--c-navy);
+  margin: 0; letter-spacing: -0.03em; line-height: 1;
 }
-.swatch__name { font-weight: 600; color: var(--navy); }
-.swatch__hex { color: var(--slate); font-family: "JetBrains Mono", monospace; }
+.sh-404__title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6em; font-weight: 700;
+  color: var(--c-navy); margin: 0.4em 0 0.6em;
+}
+.sh-404__sub {
+  color: var(--c-muted); font-size: 1em;
+  margin-bottom: 2em; line-height: 1.6;
+}
+.sh-404__cta {
+  display: inline-block; padding: 0.7em 1.8em;
+  background: var(--c-navy); color: #fff !important;
+  font-weight: 600; letter-spacing: 0.05em;
+  border-radius: 4px; text-decoration: none;
+  transition: background 0.2s ease;
+}
+[data-theme="dark"] .sh-404__cta { background: var(--c-gold); color: #0c1220 !important; }
+.sh-404__cta:hover { background: var(--c-gold); color: #fff !important; }
+[data-theme="dark"] .sh-404__cta:hover { background: #e4c98b; }
+
+/* Post content sample */
+blockquote {
+  border-left: 4px solid var(--c-gold);
+  background: var(--c-quote-bg);
+  padding: 1em 1.2em; margin: 1.5em 0;
+  font-family: "Playfair Display", serif;
+  font-style: italic; color: var(--c-navy);
+  border-radius: 0 4px 4px 0;
+}
+table {
+  width: 100%; font-size: 0.9em;
+  border: 1px solid var(--c-border); border-collapse: collapse;
+  margin: 1em 0;
+}
+thead { background: var(--c-navy); color: #fff; }
+[data-theme="dark"] thead { background: var(--c-surface-2); color: var(--c-text); }
+th { border-bottom: 2px solid var(--c-gold); padding: 0.7em 1em; text-align: left; font-weight: 600; }
+td { padding: 0.6em 1em; border-bottom: 1px solid var(--c-border-soft); }
+tbody tr:nth-child(even) { background: var(--c-border-soft); }
+tbody tr:hover { background: var(--c-gold-soft); }
 
 /* Footer */
-footer {
-  background: var(--navy-dark);
+footer.page-footer {
+  background: var(--c-navy-dark);
   color: #fff;
   padding: 2.5em 1.5em 1.5em;
   text-align: center;
+  margin-top: 3em;
 }
-footer .social {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  margin-bottom: 1em;
-  font-size: 1.3em;
+footer.page-footer .social {
+  display: flex; justify-content: center;
+  gap: 1em; margin-bottom: 1em; font-size: 1.3em;
 }
-footer a { color: #fff; transition: color 0.2s ease; }
-footer a:hover { color: var(--gold); }
-footer .copy { font-size: 0.82em; opacity: 0.8; }
+footer.page-footer a { color: #fff; transition: color 0.2s ease; text-decoration: none; }
+footer.page-footer a:hover { color: var(--c-gold); }
+footer.page-footer .copy { font-size: 0.82em; opacity: 0.8; }
 
-.preview-banner {
-  background: #fff8e8;
-  border-bottom: 1px solid #f0e3bc;
-  padding: 0.7em 1em;
-  text-align: center;
-  font-size: 0.85em;
-  color: #7a5f0a;
+/* Anchor label */
+.anchor-label {
+  font-size: 0.72em; font-weight: 600;
+  letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--c-gold); margin-top: 2em;
+  display: block;
 }
-.preview-banner strong { color: #5a4500; }
 </style>
 </head>
 <body>
 
+<div class="sh-reading-progress"><div class="sh-reading-progress__bar" id="reading-bar"></div></div>
+
 <div class="preview-banner">
-  <strong>Design Preview</strong> — this is a local preview of how your blog will look after the redesign. The actual site will render the same way after you push to GitHub.
+  <strong>Design Preview</strong> — scroll to see every new feature. Click the moon/sun icon in the top right to toggle dark mode.
 </div>
 
 <header class="masthead">
   <div class="masthead__inner">
-    <a href="/" class="site-title">Sihyun Park | Finance &amp; Valuation Notes</a>
+    <a href="#" class="site-title">Sihyun Park | Finance &amp; Valuation Notes</a>
     <nav class="masthead-nav">
-      <a href="#">Home</a>
+      <a href="#home">Home</a>
       <a href="#">CFA</a>
       <a href="#">BIWS</a>
-      <a href="#">Case Studies</a>
-      <a href="#">Notes</a>
-      <a href="#">Categories</a>
+      <a href="#">Cases</a>
+      <a href="#formulas">Formulas</a>
+      <a href="#glossary">Glossary</a>
+      <a href="#bookshelf">Bookshelf</a>
       <a href="#">About</a>
+      <button class="sh-theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+        <svg class="sh-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="sh-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
     </nav>
   </div>
 </header>
 
-<section class="sihyun-hero">
+<!-- Market Ticker (simulated; live on real site via TradingView) -->
+<div class="sh-ticker">
+  <div class="sh-ticker__inner">
+    <span class="sh-ticker__item"><span class="sh-ticker__symbol">S&amp;P 500</span><span class="sh-ticker__value">5,847.31</span><span class="sh-ticker__change up">+0.72%</span></span>
+    <span class="sh-ticker__item"><span class="sh-ticker__symbol">NASDAQ</span><span class="sh-ticker__value">19,214.55</span><span class="sh-ticker__change up">+1.15%</span></span>
+    <span class="sh-ticker__item"><span class="sh-ticker__symbol">DOW</span><span class="sh-ticker__value">42,087.03</span><span class="sh-ticker__change down">−0.21%</span></span>
+    <span class="sh-ticker__item"><span class="sh-ticker__symbol">UST 10Y</span><span class="sh-ticker__value">4.28%</span><span class="sh-ticker__change up">+0.03</span></span>
+    <span class="sh-ticker__item"><span class="sh-ticker__symbol">VIX</span><span class="sh-ticker__value">13.82</span><span class="sh-ticker__change down">−2.14%</span></span>
+    <span class="sh-ticker__item"><span class="sh-ticker__symbol">USD/KRW</span><span class="sh-ticker__value">1,386.50</span><span class="sh-ticker__change up">+0.08%</span></span>
+    <span class="sh-ticker__item"><span class="sh-ticker__symbol">GOLD</span><span class="sh-ticker__value">$2,634</span><span class="sh-ticker__change up">+0.44%</span></span>
+    <span class="sh-ticker__item"><span class="sh-ticker__symbol">BTC</span><span class="sh-ticker__value">$94,217</span><span class="sh-ticker__change up">+2.31%</span></span>
+  </div>
+</div>
+
+<section class="sihyun-hero" id="home">
   <div class="sihyun-hero__inner">
     <div class="sihyun-hero__eyebrow">Finance · Valuation · Case Studies</div>
     <h1 class="sihyun-hero__title">
@@ -399,105 +594,151 @@ footer .copy { font-size: 0.82em; opacity: 0.8; }
 </section>
 
 <main>
-  <h2 class="section-h">Color Palette</h2>
-  <div class="palette">
-    <div class="swatch">
-      <div class="swatch__color" style="background:#0f2847"></div>
-      <div class="swatch__info"><div class="swatch__name">Navy</div><div class="swatch__hex">#0f2847</div></div>
+
+  <span class="anchor-label">Home Widgets</span>
+  <div class="sh-widgets">
+    <div class="sh-widget">
+      <div class="sh-widget__label">Now Reading</div>
+      <h3 class="sh-widget__title">CFA Level I · FSA</h3>
+      <p class="sh-widget__meta">Reading 29 — Analyzing Balance Sheets</p>
+      <p class="sh-widget__body">Working through asset/liability recognition and common-size balance sheet analysis. Targeting Level I in February 2027.</p>
+      <div class="sh-widget__progress">
+        <div class="sh-widget__progress-track"><div class="sh-widget__progress-bar" style="width: 45%;"></div></div>
+        <div class="sh-widget__progress-label"><span>Level I</span><span>45%</span></div>
+      </div>
     </div>
-    <div class="swatch">
-      <div class="swatch__color" style="background:#b08d57"></div>
-      <div class="swatch__info"><div class="swatch__name">Gold</div><div class="swatch__hex">#b08d57</div></div>
-    </div>
-    <div class="swatch">
-      <div class="swatch__color" style="background:#fbfaf7;border:1px solid var(--border)"></div>
-      <div class="swatch__info"><div class="swatch__name">Cream</div><div class="swatch__hex">#fbfaf7</div></div>
-    </div>
-    <div class="swatch">
-      <div class="swatch__color" style="background:#5b6478"></div>
-      <div class="swatch__info"><div class="swatch__name">Slate</div><div class="swatch__hex">#5b6478</div></div>
-    </div>
-    <div class="swatch">
-      <div class="swatch__color" style="background:#0b1c33"></div>
-      <div class="swatch__info"><div class="swatch__name">Dark Navy</div><div class="swatch__hex">#0b1c33</div></div>
+    <div class="sh-widget">
+      <div class="sh-widget__label">Deal of the Week</div>
+      <h3 class="sh-widget__title">Microsoft → LinkedIn · $26.2B</h3>
+      <p class="sh-widget__meta">All-cash acquisition · 2016</p>
+      <p class="sh-widget__body">Revisiting the strategic and financial rationale behind Microsoft's largest acquisition at the time — and what made the premium defensible.</p>
+      <p style="margin-top: 0.8em;"><a href="#" style="font-weight: 600; color: var(--c-gold); text-decoration: none;">Read the case study →</a></p>
     </div>
   </div>
 
-  <h2 class="section-h">Recent Posts</h2>
+  <h2 class="section-h">Latest Posts</h2>
   <ul class="post-list">
-    <li>
-      <a href="#">Financial Modeling and Its Steps</a>
-      <div class="post-date">April 16, 2026</div>
-    </li>
-    <li>
-      <a href="#">CFA FSA Reading 29 — Analyzing Balance Sheets</a>
-      <div class="post-date">April 03, 2026</div>
-    </li>
-    <li>
-      <a href="#">CFA FSA Reading 27 — Introduction to Financial Statement Analysis</a>
-      <div class="post-date">April 01, 2026</div>
-    </li>
-    <li>
-      <a href="#">Microsoft-LinkedIn Acquisition – Full M&amp;A Case Study Analysis</a>
-      <div class="post-date">February 24, 2026</div>
-    </li>
-    <li>
-      <a href="#">Introduction to IB Case Studies</a>
-      <div class="post-date">February 23, 2026</div>
-    </li>
+    <li><a href="#">Financial Modeling and Its Steps</a><div class="post-date">April 16, 2026</div></li>
+    <li><a href="#">CFA FSA Reading 29 — Analyzing Balance Sheets</a><div class="post-date">April 03, 2026</div></li>
+    <li><a href="#">CFA FSA Reading 27 — Introduction to Financial Statement Analysis</a><div class="post-date">April 01, 2026</div></li>
+    <li><a href="#">Microsoft-LinkedIn Acquisition — Full M&amp;A Case Study</a><div class="post-date">February 24, 2026</div></li>
+    <li><a href="#">Introduction to IB Case Studies</a><div class="post-date">February 23, 2026</div></li>
   </ul>
 
-  <h2 class="section-h">About Card Grid</h2>
-  <div class="card-grid">
-    <div class="card">
-      <div class="card__icon"><i class="fas fa-chart-line"></i></div>
-      <h3 class="card__title">CFA Program</h3>
-      <p class="card__body">Structured notes on FSA, Equity, Fixed Income, and Portfolio Management.</p>
+  <h2 class="section-h" id="bookshelf">📚 Bookshelf Page</h2>
+  <p style="color: var(--c-muted);">A sample of the /bookshelf page — books grouped by status.</p>
+
+  <h3 style="font-family:'Playfair Display',serif; color:var(--c-navy); margin-top:1.5em;">Currently reading</h3>
+  <div class="sh-books">
+    <div class="sh-book">
+      <span class="sh-book__status is-reading">Reading</span>
+      <h4 class="sh-book__title">Investment Valuation</h4>
+      <p class="sh-book__author">Aswath Damodaran</p>
+      <p class="sh-book__note">The bible of valuation. Working through DCF applications in chapters 11–14.</p>
     </div>
-    <div class="card">
-      <div class="card__icon"><i class="fas fa-calculator"></i></div>
-      <h3 class="card__title">BIWS Training</h3>
-      <p class="card__body">Financial modeling from first principles: three-statement, DCF, LBO, M&amp;A.</p>
-    </div>
-    <div class="card">
-      <div class="card__icon"><i class="fas fa-briefcase"></i></div>
-      <h3 class="card__title">Case Studies</h3>
-      <p class="card__body">Weekly breakdowns of real transactions — the "why" behind every deal.</p>
-    </div>
-    <div class="card">
-      <div class="card__icon"><i class="fas fa-book"></i></div>
-      <h3 class="card__title">Research Notes</h3>
-      <p class="card__body">Shorter-form thoughts, reading notes, and working ideas.</p>
+    <div class="sh-book">
+      <span class="sh-book__status is-reading">Reading</span>
+      <h4 class="sh-book__title">CFA Curriculum · Level I</h4>
+      <p class="sh-book__author">CFA Institute</p>
+      <p class="sh-book__note">Volume 3: Financial Statement Analysis. On Reading 29.</p>
     </div>
   </div>
 
-  <h2 class="section-h">Post Typography Sample</h2>
-  <p style="color:var(--slate)">A look at how quotes, tables, and code blocks will render in your posts.</p>
+  <h3 style="font-family:'Playfair Display',serif; color:var(--c-navy); margin-top:1.5em;">Finished</h3>
+  <div class="sh-books">
+    <div class="sh-book">
+      <span class="sh-book__status is-done">Done</span>
+      <h4 class="sh-book__title">The Intelligent Investor</h4>
+      <p class="sh-book__author">Benjamin Graham</p>
+      <div class="sh-book__rating">★★★★★</div>
+      <p class="sh-book__note">Changed how I think about margin of safety.</p>
+    </div>
+    <div class="sh-book">
+      <span class="sh-book__status is-done">Done</span>
+      <h4 class="sh-book__title">Barbarians at the Gate</h4>
+      <p class="sh-book__author">Bryan Burrough &amp; John Helyar</p>
+      <div class="sh-book__rating">★★★★★</div>
+      <p class="sh-book__note">RJR Nabisco LBO narrative. Pure storytelling.</p>
+    </div>
+    <div class="sh-book">
+      <span class="sh-book__status is-done">Done</span>
+      <h4 class="sh-book__title">The Outsiders</h4>
+      <p class="sh-book__author">William Thorndike</p>
+      <div class="sh-book__rating">★★★★★</div>
+      <p class="sh-book__note">Capital allocation as the CEO's real job.</p>
+    </div>
+  </div>
 
-  <blockquote>
-    "Price is what you pay. Value is what you get." — Benjamin Graham
-  </blockquote>
+  <h2 class="section-h" id="glossary">📖 Glossary Page</h2>
+  <p style="color: var(--c-muted);">A sample of the /glossary page — plain-language finance terms.</p>
 
+  <div class="sh-glossary__item">
+    <h3 class="sh-glossary__term">CAPM <span class="sh-glossary__abbr">Capital Asset Pricing Model</span></h3>
+    <p class="sh-glossary__def">A model for the required return on equity: R<sub>e</sub> = R<sub>f</sub> + β(R<sub>m</sub> − R<sub>f</sub>). The most common way to estimate cost of equity in a DCF.</p>
+  </div>
+  <div class="sh-glossary__item">
+    <h3 class="sh-glossary__term">DCF <span class="sh-glossary__abbr">Discounted Cash Flow</span></h3>
+    <p class="sh-glossary__def">Intrinsic valuation method. Forecast unlevered free cash flows, discount by WACC, add a terminal value. The gold standard — and also the method most sensitive to inputs.</p>
+  </div>
+  <div class="sh-glossary__item">
+    <h3 class="sh-glossary__term">EBITDA</h3>
+    <p class="sh-glossary__def">Earnings Before Interest, Taxes, Depreciation &amp; Amortization. A proxy for operating cash flow that's independent of capital structure.</p>
+  </div>
+  <div class="sh-glossary__item">
+    <h3 class="sh-glossary__term">Enterprise Value <span class="sh-glossary__abbr">EV</span></h3>
+    <p class="sh-glossary__def">Market cap + debt + preferred + minority interest − cash. Total value to all capital providers.</p>
+  </div>
+
+  <h2 class="section-h" id="formulas">🧮 Formula Cheatsheet</h2>
+  <p style="color: var(--c-muted);">A sample of the /formulas page — core valuation math.</p>
+
+  <div class="sh-formula">
+    <h3 class="sh-formula__name">WACC</h3>
+    <code class="sh-formula__eq">WACC = (E/V) × Rₑ + (D/V) × Rd × (1 − T)</code>
+    <p class="sh-formula__note">Blended after-tax cost of capital. Weights use <em>market</em> values, not book.</p>
+  </div>
+  <div class="sh-formula">
+    <h3 class="sh-formula__name">Unlevered Free Cash Flow</h3>
+    <code class="sh-formula__eq">FCFF = EBIT × (1 − T) + D&amp;A − CapEx − Δ Working Capital</code>
+    <p class="sh-formula__note">Cash flow to all investors before financing. Numerator in an unlevered DCF.</p>
+  </div>
+  <div class="sh-formula">
+    <h3 class="sh-formula__name">Terminal Value (Gordon Growth)</h3>
+    <code class="sh-formula__eq">TV = FCF(n+1) / (WACC − g)</code>
+    <p class="sh-formula__note">Keep g at or below long-run GDP growth (~2–3%).</p>
+  </div>
+
+  <h2 class="section-h">Post Content Sample</h2>
+  <blockquote>"Price is what you pay. Value is what you get." — Benjamin Graham</blockquote>
   <table>
-    <thead>
-      <tr><th>Metric</th><th>Formula</th><th>Use</th></tr>
-    </thead>
+    <thead><tr><th>Metric</th><th>Formula</th><th>Use</th></tr></thead>
     <tbody>
       <tr><td>EV / EBITDA</td><td>Enterprise Value / EBITDA</td><td>Cross-capital-structure comparables</td></tr>
-      <tr><td>P/E</td><td>Price / Earnings per Share</td><td>Equity multiple, peer comparison</td></tr>
-      <tr><td>WACC</td><td>E/V · Re + D/V · Rd · (1-T)</td><td>Discount rate for DCF</td></tr>
-      <tr><td>FCF</td><td>EBIT(1-T) + D&amp;A − CapEx − ΔWC</td><td>DCF input</td></tr>
+      <tr><td>P/E</td><td>Price / EPS</td><td>Equity multiple, peer comparison</td></tr>
+      <tr><td>WACC</td><td>E/V · Rₑ + D/V · Rd · (1-T)</td><td>DCF discount rate</td></tr>
     </tbody>
   </table>
 
-  <pre><code>// Sample DCF assumption block
-const wacc = 0.092;
-const terminalGrowth = 0.025;
-const fcf = [120, 135, 148, 160, 174];
-const pv = fcf.map((f, i) =&gt; f / Math.pow(1 + wacc, i + 1));</code></pre>
+  <h2 class="section-h">404 Page</h2>
+  <div class="sh-404">
+    <div class="sh-404__inner">
+      <div class="sh-404__chart">  ▲
+ ▲█
+▲██  ▼
+███▼██▼
+▼█████▼▼
+   ▼██▼ ▼
+      ▼  ▼▼</div>
+      <p class="sh-404__code">404</p>
+      <h1 class="sh-404__title">This valuation doesn't exist yet.</h1>
+      <p class="sh-404__sub">The page you're looking for has been delisted, acquired, or never IPO'd.<br>Let's head back to the terminal.</p>
+      <a class="sh-404__cta" href="#home">← Return home</a>
+    </div>
+  </div>
+
 </main>
 
-<footer>
+<footer class="page-footer">
   <div class="social">
     <a href="#"><i class="fab fa-linkedin"></i></a>
     <a href="#"><i class="fab fa-github"></i></a>
@@ -508,6 +749,7 @@ const pv = fcf.map((f, i) =&gt; f / Math.pow(1 + wacc, i + 1));</code></pre>
 </footer>
 
 <script>
+// Typing animation
 (function() {
   var el = document.getElementById('typed');
   if (!el) return;
@@ -539,6 +781,35 @@ const pv = fcf.map((f, i) =&gt; f / Math.pow(1 + wacc, i + 1));</code></pre>
   }
   setTimeout(tick, 1000);
 })();
+
+// Dark mode toggle
+(function() {
+  var btn = document.getElementById('theme-toggle');
+  if (!btn) return;
+  btn.addEventListener('click', function() {
+    var cur = document.documentElement.getAttribute('data-theme') || 'light';
+    var next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('sh-theme', next); } catch (e) {}
+  });
+})();
+
+// Reading progress bar
+(function() {
+  var bar = document.getElementById('reading-bar');
+  if (!bar) return;
+  var update = function() {
+    var h = document.documentElement;
+    var scrolled = h.scrollTop;
+    var total = h.scrollHeight - h.clientHeight;
+    var progress = total > 0 ? (scrolled / total) : 0;
+    bar.style.width = (progress * 100) + '%';
+  };
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+})();
 </script>
+
 </body>
 </html>

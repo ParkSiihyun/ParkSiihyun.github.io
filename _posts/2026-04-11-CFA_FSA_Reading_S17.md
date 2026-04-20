@@ -1,5 +1,8 @@
-# Reading S17 — Financial Analysis Techniques
-
+---
+title: "CFA FSA Reading S17 — Financial Analysis Techniques"
+date: 2026-04-11
+categories: cfa
+tags: [FSA, CFA Level I, Ratios, Analysis]
 ---
 
 ## 1. Activity Ratios (활동성 지표)

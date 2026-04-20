@@ -1107,6 +1107,78 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
+/* --- MathJax rendering polish --- */
+mjx-container[display="true"] {
+  display: block !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.9em 1em;
+  margin: 1.2em 0 !important;
+  background: var(--c-bg-alt);
+  border-left: 3px solid var(--c-gold);
+  border-radius: 3px;
+  font-size: 1.02em;
+  max-width: 100%;
+
+  &::-webkit-scrollbar {
+    height: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--c-border);
+    border-radius: 3px;
+  }
+}
+
+mjx-container {
+  color: var(--c-text);
+}
+
+[data-theme="dark"] mjx-container[display="true"] {
+  background: rgba(176, 141, 87, 0.06);
+}
+
+/* --- Post body consistency --- */
+.layout--single {
+  .page__content {
+    /* Let tables breathe and scroll horizontally on narrow screens */
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+      max-width: 100%;
+
+      @media (min-width: 768px) {
+        display: table;
+        white-space: normal;
+      }
+    }
+
+    /* Soften the many horizontal rules (---) in posts */
+    hr {
+      border: 0;
+      height: 1px;
+      background: var(--c-border);
+      margin: 2.2em 0;
+      opacity: 0.6;
+    }
+
+    /* Tighten inline code in prose */
+    p code, li code, td code {
+      background: var(--c-bg-alt);
+      color: var(--c-navy);
+      padding: 0.08em 0.35em;
+      border-radius: 3px;
+      font-size: 0.92em;
+    }
+
+    [data-theme="dark"] & p code,
+    [data-theme="dark"] & li code,
+    [data-theme="dark"] & td code {
+      color: var(--c-gold);
+    }
+  }
+}
+
 /* --- Mobile refinements --- */
 @media (max-width: 600px) {
   .sihyun-hero {
@@ -1120,5 +1192,10 @@ h1, h2, h3, h4, h5, h6,
   .sh-theme-toggle {
     width: 32px;
     height: 32px;
+  }
+
+  mjx-container[display="true"] {
+    font-size: 0.92em;
+    padding: 0.7em 0.8em;
   }
 }

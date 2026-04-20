@@ -1,5 +1,8 @@
-# Reading 38 — Introduction to Financial Statement Modeling
-
+---
+title: "CFA FSA Reading 38 — Introduction to Financial Statement Modeling"
+date: 2026-04-12
+categories: cfa
+tags: [FSA, CFA Level I, Modeling, Forecasting]
 ---
 
 ## 1. Behavioral Biases in Analyst Forecasts

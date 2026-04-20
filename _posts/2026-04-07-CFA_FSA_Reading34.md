@@ -1,5 +1,8 @@
-# Reading 34 — Topics in Long-Term Liabilities and Equity
-
+---
+title: "CFA FSA Reading 34 — Topics in Long-Term Liabilities and Equity"
+date: 2026-04-07
+categories: cfa
+tags: [FSA, CFA Level I, Liabilities, Leases]
 ---
 
 ## 1. Leases 개요

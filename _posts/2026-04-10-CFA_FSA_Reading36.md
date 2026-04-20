@@ -1,5 +1,8 @@
-# Reading 36 — Financial Reporting Quality
-
+---
+title: "CFA FSA Reading 36 — Financial Reporting Quality"
+date: 2026-04-10
+categories: cfa
+tags: [FSA, CFA Level I, Reporting Quality]
 ---
 
 ## 1. Quality of Earnings

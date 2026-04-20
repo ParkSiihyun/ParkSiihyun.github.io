@@ -1,5 +1,8 @@
-# Reading 35 — Analyzing Income Statements
-
+---
+title: "CFA FSA Reading 35 — Analyzing Income Statements"
+date: 2026-04-08
+categories: cfa
+tags: [FSA, CFA Level I, Income Statement, Revenue Recognition]
 ---
 
 ## 1. Revenue Recognition 기본 개념

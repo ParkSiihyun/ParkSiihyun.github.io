@@ -1,5 +1,8 @@
-# Reading 30 — Analyzing Statements of Cash Flow
-
+---
+title: "CFA FSA Reading 30 — Analyzing Statements of Cash Flow"
+date: 2026-04-04
+categories: cfa
+tags: [FSA, CFA Level I, Cash Flow]
 ---
 
 ## 1. Cash Flow Statement 개요

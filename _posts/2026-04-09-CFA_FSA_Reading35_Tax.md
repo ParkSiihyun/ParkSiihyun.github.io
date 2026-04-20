@@ -1,5 +1,8 @@
-# Reading 35 — Analysis of Income Taxes
-
+---
+title: "CFA FSA Reading 35 — Analysis of Income Taxes"
+date: 2026-04-09
+categories: cfa
+tags: [FSA, CFA Level I, Taxes, DTA, DTL]
 ---
 
 ## 1. 핵심 용어 정리

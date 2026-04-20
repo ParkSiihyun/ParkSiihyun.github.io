@@ -1,5 +1,8 @@
-# Reading 32 — Analysis of Inventories
-
+---
+title: "CFA FSA Reading 32 — Analysis of Inventories"
+date: 2026-04-05
+categories: cfa
+tags: [FSA, CFA Level I, Inventory]
 ---
 
 ## 1. Inventory 회계 방법

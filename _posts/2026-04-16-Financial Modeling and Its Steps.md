@@ -5,9 +5,7 @@ categories: biws
 tags: [Financial Modeling, Valuation]
 ---
 
-# What is Financial Modeling?
-
----
+## What is Financial Modeling?
 
 ### A Company: current stock price is $150 per share
 

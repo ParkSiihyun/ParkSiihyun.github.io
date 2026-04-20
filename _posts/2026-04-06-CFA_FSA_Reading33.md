@@ -1,5 +1,8 @@
-# Reading 33 — Analysis of Long-Term Assets
-
+---
+title: "CFA FSA Reading 33 — Analysis of Long-Term Assets"
+date: 2026-04-06
+categories: cfa
+tags: [FSA, CFA Level I, Long-Term Assets]
 ---
 
 ## 1. Intangible Assets (무형자산)

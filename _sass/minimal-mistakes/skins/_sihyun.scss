@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Sihyun skin — Navy + Gold (Finance / IB)
+   ========================================================================== */
+
+/* Colors */
+$background-color        : #fbfaf7 !default;   // warm off-white
+$text-color              : #1a2233 !default;   // near-black navy
+$muted-text-color        : #5b6478 !default;   // muted slate
+$primary-color           : #0f2847 !default;   // deep navy
+$accent-color            : #b08d57 !default;   // muted gold
+$border-color            : #e4e1d8 !default;   // warm light border
+$footer-background-color : #0b1c33 !default;   // darker navy
+$link-color              : #0f2847 !default;
+$link-color-hover        : $accent-color !default;
+$link-color-visited      : mix(#000, $primary-color, 15%) !default;
+$masthead-link-color     : $text-color !default;
+$masthead-link-color-hover : $accent-color !default;
+$navicon-link-color-hover : mix(#fff, $text-color, 80%) !default;
+
+/* Syntax highlighting tweaks to read better on the warm background */
+$base00: #fbfaf7 !default;
+$base01: #eeeae0 !default;
+$base02: #d7d2c4 !default;
+$base03: #9c978b !default;
+$base04: #5b6478 !default;
+$base05: #1a2233 !default;
+$base06: #0f2847 !default;
+$base07: #b08d57 !default;
+
+/* Footer in navy with white text */
+.page__footer {
+  color: #fff !important;
+  background-color: $footer-background-color !important;
+}
+
+.page__footer a {
+  color: #fff !important;
+}
+
+.page__footer a:hover {
+  color: $accent-color !important;
+}
+
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}
+
+/* Author profile styling */
+.author__avatar img {
+  border: 3px solid $accent-color;
+}
+
+.author__name {
+  color: $primary-color !important;
+  font-weight: 700;
+}
+
+.author__bio {
+  color: $muted-text-color;
+}

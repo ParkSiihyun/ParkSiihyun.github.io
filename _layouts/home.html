@@ -2,9 +2,82 @@
 layout: archive
 ---
 
+<section class="sihyun-hero" aria-label="Site intro">
+  <div class="sihyun-hero__inner">
+    <div class="sihyun-hero__eyebrow">Finance · Valuation · Case Studies</div>
+
+    <h1 class="sihyun-hero__title">
+      Notes on <span class="sihyun-hero__title-accent">value</span>,<br>
+      markets &amp; the making of deals.
+    </h1>
+
+    <p class="sihyun-hero__typed" aria-label="Intro tagline">
+      <span id="sihyun-typed"></span><span class="sihyun-cursor">&nbsp;</span>
+    </p>
+
+    <div class="sihyun-hero__meta">
+      <span class="sihyun-hero__chip"><span class="chip-dot"></span>CFA Program</span>
+      <span class="sihyun-hero__chip"><span class="chip-dot"></span>BIWS Modeling</span>
+      <span class="sihyun-hero__chip"><span class="chip-dot"></span>M&amp;A · IPO</span>
+      <span class="sihyun-hero__chip"><span class="chip-dot"></span>Case Studies</span>
+    </div>
+
+    <div class="sihyun-hero__divider" aria-hidden="true"></div>
+  </div>
+</section>
+
+<script>
+(function() {
+  var el = document.getElementById('sihyun-typed');
+  if (!el) return;
+
+  var phrases = [
+    "Studying valuation, one deal at a time.",
+    "CFA & BIWS study archive — from first principles.",
+    "Weekly case studies on M&A, IPOs, and markets.",
+    "Sihyun Park · Irvine, CA."
+  ];
+
+  var phraseIdx = 0;
+  var charIdx = 0;
+  var deleting = false;
+  var typingSpeed = 55;
+  var deletingSpeed = 30;
+  var holdTime = 1800;
+
+  function tick() {
+    var full = phrases[phraseIdx];
+
+    if (!deleting) {
+      charIdx++;
+      el.textContent = full.slice(0, charIdx);
+      if (charIdx === full.length) {
+        deleting = true;
+        setTimeout(tick, holdTime);
+        return;
+      }
+      setTimeout(tick, typingSpeed);
+    } else {
+      charIdx--;
+      el.textContent = full.slice(0, charIdx);
+      if (charIdx === 0) {
+        deleting = false;
+        phraseIdx = (phraseIdx + 1) % phrases.length;
+        setTimeout(tick, 400);
+        return;
+      }
+      setTimeout(tick, deletingSpeed);
+    }
+  }
+
+  // Start after the hero fades in
+  setTimeout(tick, 1000);
+})();
+</script>
+
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Latest Posts" }}</h3>
 
 {% if paginator %}
   {% assign posts = paginator.posts %}

@@ -2,10 +2,10 @@
 title: "Introduction to IB Case Studies"
 date: 2026-02-23
 categories: case-studies
-
+tags: [Case Study, Interview, Primer]
 ---
 
-## what are Investment Banking Case Studies
+## What Are Investment Banking Case Studies?
 
 * Candidates will normally encouter investment banking case studies at the final stage of the application process, likely during an assessment or final-stage interview.
 * Investment banking case studies are commonly used to assess how a job candidate would perform in a real situation by presenting them with a theoretical scenario similar to those encountered on the job. 
@@ -145,11 +145,9 @@ Investment banking case studies are an important element in the interview proces
 
 
 
-출처 : https://www.fe.training/free-resources/careers-in-finance/investment-banking-case-studies/
+---
 
-
-
-
+*Source: [fe.training — Investment Banking Case Studies](https://www.fe.training/free-resources/careers-in-finance/investment-banking-case-studies/)*
 
 
 

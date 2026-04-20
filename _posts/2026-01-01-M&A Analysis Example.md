@@ -25,17 +25,17 @@ tags: [M&A, Case Study, Template]
 
 ## III. Strategic Rationale (Common)
 
-## Acquirer Perspective
+### Acquirer Perspective
 - Strategic logic (market entry, scale, scope, capabilities)
 - Product / platform synergies
 - Competitive positioning vs peers
 
-## Target / Seller Perspective
+### Target / Seller Perspective
 - Business situation (growth, profitability, strategic challenges)
 - Rationale for selling / going public / recapitalizing
 - Alternatives considered (stay independent, other buyers, status quo)
 
-# IV. Valuation & Pricing (Common)
+## IV. Valuation & Pricing (Common)
 
 - Standalone valuation methods used (DCF, trading comps, transaction comps)
 - Implied valuation multiples (EV/Revenue, EV/EBITDA, P/E, etc.)
@@ -45,7 +45,7 @@ tags: [M&A, Case Study, Template]
 - Control premium vs peers and precedent transactions
 - Brief commentary: Is the price aggressive, fair, or cheap?
 
-# V. Synergies & Financial Impact (Common for Strategic M&A)
+## V. Synergies & Financial Impact (Common for Strategic M&A)
 
 - Revenue synergies (cross-sell, up-sell, geographic/product expansion)
 - Cost synergies (overhead, operations, procurement, tech)
@@ -55,35 +55,35 @@ tags: [M&A, Case Study, Template]
   - Margin profile
   - Return on invested capital (ROIC)
 
-# VI. Market & Competitive Context (Common)
+## VI. Market & Competitive Context (Common)
 
 - Industry trends and growth drivers
 - Competitive landscape at announcement
 - Recent comparable deals or capital markets activity
 - Macro backdrop (rates, risk sentiment, regulation)
 
-# VII. Key Risks & Execution Challenges (Common)
+## VII. Key Risks & Execution Challenges (Common)
 
 - Integration risks (systems, culture, customers)
 - Regulatory / antitrust risks
 - Financial risks (leverage, refinancing, covenants)
 - Deal-specific risks (key-person, technology, concentration)
 
-# VIII. Process & Timeline (Common)
+## VIII. Process & Timeline (Common)
 
 - Deal timeline (initial contact → LOI → signing → closing)
 - Auction vs bilateral negotiation
 - Role of advisors (banks, lawyers, other)
 - Any notable process dynamics (competing bidders, leaks, activism)
 
-# IX. Post-Deal Performance & Outcomes (Common)
+## IX. Post-Deal Performance & Outcomes (Common)
 
 - Short-term market reaction (acquirer and target stock on announcement)
 - 6–12 month performance vs index / sector
 - Whether stated strategic goals were achieved
 - Any major post-deal news (impairments, divestitures, litigation)
 
-# X. Analyst Take (Your View – Common)
+## X. Analyst Take (Your View – Common)
 
 - Was this a good deal for the acquirer? Why / why not?
 - Was the price justified by synergies and strategic benefits?
@@ -92,7 +92,7 @@ tags: [M&A, Case Study, Template]
 
 ---
 
-## Optional Module A – LBO / Private Equity Add-On
+## Optional Module A — LBO / Private Equity Add-On
 
 ### A1. Transaction Financing Structure
 
@@ -114,7 +114,7 @@ tags: [M&A, Case Study, Template]
 
 ---
 
-## Optional Module B – ECM (IPO / Follow-On) Add-On
+## Optional Module B — ECM (IPO / Follow-On) Add-On
 
 ### B1. Offering Details
 

@@ -42,7 +42,7 @@ So, if you're having an argument about what a company is really worth, you can c
 
 
 
-# The Steps in the Financial Modeling Process
+## The Steps in the Financial Modeling Process
 
 ---
 

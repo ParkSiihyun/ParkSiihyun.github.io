@@ -1,10 +1,11 @@
 ---
-title: "IPO/ECM Analysis Example"
+title: "IPO / ECM Analysis Template"
 date: 2026-02-20
 categories: case-studies
+tags: [IPO, ECM, Case Study, Template]
 ---
 
-# I. Transaction Overview
+## I. Transaction Overview
 
 - Company
 - Offering Type (Primary / Secondary / Mixed)
@@ -14,7 +15,7 @@ categories: case-studies
 - Lead Underwriters
 - Greenshoe Option
 
-# II. Sources & Uses of Funds
+## II. Sources & Uses of Funds
 
 - Primary Proceeds
 - Secondary Proceeds
@@ -22,7 +23,7 @@ categories: case-studies
 - Net Cash to Company
 - Use of Proceeds
 
-# III. Pro Forma Capitalization
+## III. Pro Forma Capitalization
 
 | Item        | Pre-Deal | Post-Deal |
 | ----------- | -------- | --------- |
@@ -32,14 +33,14 @@ categories: case-studies
 | Net Debt    |          |           |
 | Debt/EBITDA |          |           |
 
-# IV. Dilution Analysis (ECM Only)
+## IV. Dilution Analysis (ECM Only)
 
 - Shares Outstanding Before
 - New Shares Issued
 - % Dilution
 - Ownership Changes
 
-# V. Valuation & Pricing
+## V. Valuation & Pricing
 
 - EV / Revenue
 - EV / EBITDA
@@ -47,34 +48,34 @@ categories: case-studies
 - Comparison to peers
 - Discount / Premium to comps
 
-# VI. Market Context
+## VI. Market Context
 
 - Treasury Yield (if DCM)
 - VIX Level (if ECM)
 - Sector Performance
 - IPO Market Conditions
 
-# VII. Strategic Rationale
+## VII. Strategic Rationale
 
 - Why now?
 - Why equity vs debt?
 - Balance sheet impact
 - Growth strategy impact
 
-# VIII. Risks & Execution Factors
+## VIII. Risks & Execution Factors
 
 - Market risk
 - Pricing risk
 - Overhang risk
 - Credit risk (DCM)
 
-# IX. Post-Deal Performance
+## IX. Post-Deal Performance
 
 - First-day return (IPO)
 - Spread movement (Bond)
 - Stock performance 1m later
 
-# X. Analyst Take (Your View)
+## X. Analyst Take (Your View)
 
 - Was it well priced?
 - Would you have subscribed?

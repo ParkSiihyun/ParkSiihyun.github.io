@@ -3,5 +3,570 @@
 
 @charset "utf-8";
 
+/* Google Fonts — Playfair Display (serif headings) + Inter (clean body) + JetBrains Mono (code) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* Override theme font stacks BEFORE importing the theme */
+$serif       : "Playfair Display", Georgia, "Times New Roman", serif;
+$sans-serif  : "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$monospace   : "JetBrains Mono", Menlo, Consolas, Monaco, monospace;
+
+$global-font-family    : $sans-serif;
+$header-font-family    : $serif;
+$caption-font-family   : $serif;
+$type-size-1           : 2.441em;
+$type-size-2           : 1.953em;
+$type-size-3           : 1.563em;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
+
+/* ==========================================================================
+   Custom overrides — Sihyun blog
+   ========================================================================== */
+
+$navy   : #0f2847;
+$gold   : #b08d57;
+$cream  : #fbfaf7;
+$slate  : #5b6478;
+
+/* --- Base typography refinements --- */
+body {
+  font-family: $sans-serif;
+  letter-spacing: 0.005em;
+}
+
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.archive__item-title,
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4 {
+  font-family: $serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: $navy;
+}
+
+.page__content h2 {
+  border-bottom: 2px solid $navy;
+  padding-bottom: 0.35em;
+  margin-top: 2em;
+}
+
+.page__content h3 {
+  color: $navy;
+  position: relative;
+  padding-left: 0.75em;
+  margin-top: 1.6em;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    bottom: 0.25em;
+    width: 4px;
+    background: $gold;
+    border-radius: 2px;
+  }
+}
+
+/* --- Masthead (top navigation bar) --- */
+.masthead {
+  border-bottom: 1px solid rgba($navy, 0.12);
+  background: $cream;
+}
+
+.masthead__inner-wrap {
+  padding: 1em 1.5em;
+}
+
+.site-title {
+  font-family: $serif !important;
+  font-weight: 700 !important;
+  color: $navy !important;
+  letter-spacing: -0.01em;
+}
+
+.greedy-nav {
+  background: transparent;
+
+  a {
+    font-family: $sans-serif;
+    font-weight: 500;
+    font-size: 0.92em;
+    letter-spacing: 0.02em;
+    color: $navy;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $gold;
+    }
+  }
+
+  .visible-links a::before {
+    background: $gold;
+    height: 2px;
+  }
+}
+
+/* --- Hero section on home page --- */
+.sihyun-hero {
+  padding: 4.5rem 1.5rem 3rem;
+  margin: -1em -1em 2em -1em;
+  text-align: center;
+  background: linear-gradient(135deg, #fdfcf9 0%, #f3efe5 100%);
+  border-bottom: 1px solid rgba($navy, 0.08);
+  overflow: hidden;
+  position: relative;
+}
+
+.sihyun-hero::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle at center, rgba($gold, 0.18) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.sihyun-hero::after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: -10%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle at center, rgba($navy, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.sihyun-hero__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.sihyun-hero__eyebrow {
+  display: inline-block;
+  font-family: $sans-serif;
+  font-size: 0.78em;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: $gold;
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: sh-fade-up 0.8s 0.1s ease forwards;
+}
+
+.sihyun-hero__title {
+  font-family: $serif;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: $navy;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.75rem;
+  opacity: 0;
+  animation: sh-fade-up 0.9s 0.25s ease forwards;
+
+  .sihyun-hero__title-accent {
+    color: $gold;
+    font-style: italic;
+  }
+}
+
+.sihyun-hero__typed {
+  font-family: $sans-serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 400;
+  color: $slate;
+  min-height: 1.6em;
+  margin: 0 0 1.75rem;
+  opacity: 0;
+  animation: sh-fade-up 0.9s 0.45s ease forwards;
+
+  .sihyun-cursor {
+    display: inline-block;
+    width: 2px;
+    background: $navy;
+    margin-left: 2px;
+    animation: sh-blink 1s step-end infinite;
+  }
+}
+
+.sihyun-hero__meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.4rem;
+  margin-top: 1.5rem;
+  opacity: 0;
+  animation: sh-fade-up 0.9s 0.65s ease forwards;
+}
+
+.sihyun-hero__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.9rem;
+  background: rgba(#fff, 0.7);
+  border: 1px solid rgba($navy, 0.12);
+  border-radius: 999px;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: $navy;
+  backdrop-filter: blur(4px);
+
+  .chip-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: $gold;
+  }
+}
+
+.sihyun-hero__divider {
+  width: 48px;
+  height: 3px;
+  background: $gold;
+  margin: 1.75rem auto 0;
+  border-radius: 2px;
+  opacity: 0;
+  animation: sh-expand 0.9s 0.85s ease forwards;
+}
+
+@keyframes sh-fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes sh-blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+
+@keyframes sh-expand {
+  from { opacity: 0; transform: scaleX(0); }
+  to   { opacity: 1; transform: scaleX(1); }
+}
+
+/* --- Archive list refinements --- */
+.archive__subtitle {
+  font-family: $serif;
+  color: $navy;
+  border-bottom: 2px solid $navy;
+  padding-bottom: 0.4em;
+  font-size: 1.4em;
+  letter-spacing: -0.01em;
+}
+
+.archive__item-title {
+  font-family: $serif;
+  font-weight: 600;
+
+  a {
+    color: $navy;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $gold;
+      text-decoration: none;
+    }
+  }
+}
+
+.archive__item-excerpt {
+  color: $slate;
+  font-size: 0.92em;
+}
+
+.list__item {
+  padding: 1.1em 0;
+  border-bottom: 1px solid rgba($navy, 0.08);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+/* --- Tables (crucial for finance content) --- */
+.page__content {
+  table {
+    font-family: $sans-serif;
+    font-size: 0.9em;
+    border: 1px solid rgba($navy, 0.15);
+    border-collapse: collapse;
+
+    thead {
+      background: $navy;
+      color: #fff;
+    }
+
+    th {
+      border-bottom: 2px solid $gold;
+      padding: 0.7em 1em;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    td {
+      padding: 0.6em 1em;
+      border-bottom: 1px solid rgba($navy, 0.08);
+    }
+
+    tbody tr:nth-child(even) {
+      background: rgba($navy, 0.03);
+    }
+
+    tbody tr:hover {
+      background: rgba($gold, 0.08);
+    }
+  }
+}
+
+/* --- Blockquotes --- */
+.page__content {
+  blockquote {
+    border-left: 4px solid $gold;
+    background: rgba($gold, 0.06);
+    padding: 1em 1.2em;
+    margin: 1.5em 0;
+    font-family: $serif;
+    font-style: italic;
+    color: $navy;
+
+    p {
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+/* --- Code blocks --- */
+.page__content {
+  code {
+    font-family: $monospace;
+    background: rgba($navy, 0.06);
+    color: $navy;
+    padding: 0.12em 0.4em;
+    border-radius: 3px;
+    font-size: 0.88em;
+  }
+
+  pre code {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+  }
+
+  pre {
+    font-family: $monospace;
+    border-radius: 6px;
+    border: 1px solid rgba($navy, 0.1);
+  }
+}
+
+/* --- Buttons & tags --- */
+.page__taxonomy .page__taxonomy-item {
+  background: rgba($navy, 0.06);
+  color: $navy;
+  border: 1px solid rgba($navy, 0.12);
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: $navy;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+/* --- Category grid on landing card pages --- */
+.sh-section {
+  margin: 3em 0;
+}
+
+.sh-section__title {
+  font-family: $serif;
+  font-size: 2em;
+  font-weight: 700;
+  color: $navy;
+  border-bottom: 2px solid $navy;
+  padding-bottom: 0.3em;
+  margin-bottom: 1.5em;
+  letter-spacing: -0.01em;
+}
+
+.sh-post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sh-post-list__item {
+  padding: 1.1em 0;
+  border-bottom: 1px solid rgba($navy, 0.08);
+  transition: padding 0.2s ease;
+
+  &:hover {
+    padding-left: 0.5em;
+  }
+
+  a {
+    font-family: $serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: $navy;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $gold;
+      text-decoration: none;
+    }
+  }
+
+  .sh-post-date {
+    font-family: $sans-serif;
+    font-size: 0.8em;
+    color: $slate;
+    margin-top: 0.3em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}
+
+/* --- About page / card grid --- */
+.sh-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2em;
+  margin: 2em 0;
+}
+
+.sh-card {
+  background: #fff;
+  border: 1px solid rgba($navy, 0.12);
+  border-radius: 8px;
+  padding: 1.5em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba($navy, 0.08);
+    border-color: rgba($gold, 0.6);
+  }
+
+  .sh-card__icon {
+    font-size: 1.5em;
+    color: $gold;
+    margin-bottom: 0.6em;
+  }
+
+  .sh-card__title {
+    font-family: $serif;
+    font-size: 1.15em;
+    font-weight: 700;
+    color: $navy;
+    margin: 0 0 0.4em;
+  }
+
+  .sh-card__body {
+    font-size: 0.9em;
+    color: $slate;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+
+/* --- Page hero block for About and category landing pages --- */
+.sh-page-hero {
+  padding: 2.5em 0 1.5em;
+  border-bottom: 1px solid rgba($navy, 0.08);
+  margin-bottom: 2em;
+
+  .sh-page-hero__eyebrow {
+    font-size: 0.78em;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: $gold;
+    margin-bottom: 0.5em;
+  }
+
+  .sh-page-hero__title {
+    font-family: $serif;
+    font-size: clamp(2rem, 4vw, 2.8em);
+    font-weight: 700;
+    color: $navy;
+    margin: 0 0 0.3em;
+    letter-spacing: -0.01em;
+  }
+
+  .sh-page-hero__lede {
+    font-size: 1.05em;
+    color: $slate;
+    max-width: 620px;
+    margin: 0;
+    line-height: 1.6;
+  }
+}
+
+/* --- Read time / meta small text --- */
+.page__meta {
+  font-family: $sans-serif;
+  color: $slate;
+  font-size: 0.82em;
+  letter-spacing: 0.03em;
+}
+
+/* --- Footer polish --- */
+.page__footer {
+  padding: 2.5em 1em 1.5em;
+  font-family: $sans-serif;
+}
+
+.page__footer-copyright {
+  font-size: 0.85em;
+  opacity: 0.85;
+}
+
+/* --- Links inside page content --- */
+.page__content a:not(.btn) {
+  color: $navy;
+  text-decoration: none;
+  border-bottom: 1px solid rgba($gold, 0.5);
+  transition: border-color 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    color: $gold;
+    border-bottom-color: $gold;
+  }
+}
+
+/* --- Search --- */
+.search-content {
+  background: $cream;
+}
+
+.search-input {
+  font-family: $serif;
+  color: $navy;
+}
+
+/* --- Mobile refinements --- */
+@media (max-width: 600px) {
+  .sihyun-hero {
+    padding: 3rem 1rem 2rem;
+  }
+
+  .sh-page-hero {
+    padding: 1.8em 0 1.2em;
+  }
+}

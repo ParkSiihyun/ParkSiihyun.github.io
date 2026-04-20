@@ -8,14 +8,17 @@ main:
   - title: "BIWS"
     url: /biws/
 
-  - title: "Case Studies"
+  - title: "Cases"
     url: /case-studies/
 
-  - title: "Notes"
-    url: /notes/
+  - title: "Formulas"
+    url: /formulas/
 
-  - title: "Categories"
-    url: /categories/
+  - title: "Glossary"
+    url: /glossary/
+
+  - title: "Bookshelf"
+    url: /bookshelf/
 
   - title: "About"
     url: /about/

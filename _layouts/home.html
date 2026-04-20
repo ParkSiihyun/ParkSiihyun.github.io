@@ -18,13 +18,53 @@ layout: archive
     <div class="sihyun-hero__meta">
       <span class="sihyun-hero__chip"><span class="chip-dot"></span>CFA Program</span>
       <span class="sihyun-hero__chip"><span class="chip-dot"></span>BIWS Modeling</span>
-      <span class="sihyun-hero__chip"><span class="chip-dot"></span>M&amp;A · IPO</span>
       <span class="sihyun-hero__chip"><span class="chip-dot"></span>Case Studies</span>
     </div>
 
     <div class="sihyun-hero__divider" aria-hidden="true"></div>
   </div>
 </section>
+
+{% assign home = site.data.home %}
+{% if home %}
+<section class="sh-widgets" aria-label="Home widgets">
+  {% if home.currently_studying %}
+    {% assign cs = home.currently_studying %}
+    <div class="sh-widget">
+      <div class="sh-widget__label">{{ cs.label | default: "Now Reading" }}</div>
+      <h3 class="sh-widget__title">{{ cs.title }}</h3>
+      {% if cs.meta %}<p class="sh-widget__meta">{{ cs.meta }}</p>{% endif %}
+      {% if cs.body %}<p class="sh-widget__body">{{ cs.body }}</p>{% endif %}
+      {% if cs.progress %}
+      <div class="sh-widget__progress">
+        <div class="sh-widget__progress-track">
+          <div class="sh-widget__progress-bar" style="width: {{ cs.progress }}%;"></div>
+        </div>
+        <div class="sh-widget__progress-label">
+          <span>{{ cs.progress_label | default: "Progress" }}</span>
+          <span>{{ cs.progress }}%</span>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if home.deal_of_the_week %}
+    {% assign dw = home.deal_of_the_week %}
+    <div class="sh-widget">
+      <div class="sh-widget__label">{{ dw.label | default: "Deal of the Week" }}</div>
+      <h3 class="sh-widget__title">{{ dw.title }}</h3>
+      {% if dw.meta %}<p class="sh-widget__meta">{{ dw.meta }}</p>{% endif %}
+      {% if dw.body %}<p class="sh-widget__body">{{ dw.body }}</p>{% endif %}
+      {% if dw.link %}
+        <p style="margin-top:0.8em;">
+          <a href="{{ dw.link | relative_url }}" style="font-weight:600; color: var(--c-gold); border-bottom:none;">{{ dw.link_label | default: "Read more →" }}</a>
+        </p>
+      {% endif %}
+    </div>
+  {% endif %}
+</section>
+{% endif %}
 
 <script>
 (function() {
@@ -70,7 +110,6 @@ layout: archive
     }
   }
 
-  // Start after the hero fades in
   setTimeout(tick, 1000);
 })();
 </script>

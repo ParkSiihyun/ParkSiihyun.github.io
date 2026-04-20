@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sihyun Park · Design Preview</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0f2847;
+  --navy-dark: #0b1c33;
+  --gold: #b08d57;
+  --cream: #fbfaf7;
+  --slate: #5b6478;
+  --border: rgba(15,40,71,0.12);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--cream);
+  color: #1a2233;
+  line-height: 1.65;
+  letter-spacing: 0.005em;
+}
+
+/* ---------- Masthead ---------- */
+.masthead {
+  background: var(--cream);
+  border-bottom: 1px solid var(--border);
+  padding: 1.1em 1.5em;
+}
+.masthead__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.site-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: var(--navy);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+.masthead-nav {
+  display: flex;
+  gap: 1.4em;
+  flex-wrap: wrap;
+}
+.masthead-nav a {
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 0.92em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: color 0.2s ease;
+  position: relative;
+}
+.masthead-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  bottom: -4px;
+  height: 2px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+.masthead-nav a:hover { color: var(--gold); }
+.masthead-nav a:hover::after { transform: scaleX(1); }
+
+/* ---------- Hero ---------- */
+.sihyun-hero {
+  padding: 5rem 1.5rem 4rem;
+  text-align: center;
+  background: linear-gradient(135deg, #fdfcf9 0%, #f3efe5 100%);
+  border-bottom: 1px solid rgba(15,40,71,0.08);
+  overflow: hidden;
+  position: relative;
+}
+.sihyun-hero::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle at center, rgba(176,141,87,0.22) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.sihyun-hero::after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: -10%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle at center, rgba(15,40,71,0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.sihyun-hero__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.sihyun-hero__eyebrow {
+  display: inline-block;
+  font-size: 0.78em;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: sh-fade-up 0.8s 0.1s ease forwards;
+}
+.sihyun-hero__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.75rem;
+  opacity: 0;
+  animation: sh-fade-up 0.9s 0.25s ease forwards;
+}
+.sihyun-hero__title-accent { color: var(--gold); font-style: italic; }
+.sihyun-hero__typed {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--slate);
+  min-height: 1.6em;
+  margin: 0 0 1.75rem;
+  opacity: 0;
+  animation: sh-fade-up 0.9s 0.45s ease forwards;
+}
+.sihyun-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background: var(--navy);
+  margin-left: 2px;
+  vertical-align: -2px;
+  animation: sh-blink 1s step-end infinite;
+}
+.sihyun-hero__meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.2rem;
+  margin-top: 1.5rem;
+  opacity: 0;
+  animation: sh-fade-up 0.9s 0.65s ease forwards;
+}
+.sihyun-hero__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 1rem;
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(15,40,71,0.12);
+  border-radius: 999px;
+  font-size: 0.82em;
+  font-weight: 500;
+  color: var(--navy);
+  backdrop-filter: blur(4px);
+}
+.chip-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+.sihyun-hero__divider {
+  width: 48px;
+  height: 3px;
+  background: var(--gold);
+  margin: 1.75rem auto 0;
+  border-radius: 2px;
+  opacity: 0;
+  animation: sh-expand 0.9s 0.85s ease forwards;
+}
+
+@keyframes sh-fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes sh-blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+@keyframes sh-expand {
+  from { opacity: 0; transform: scaleX(0); }
+  to   { opacity: 1; transform: scaleX(1); }
+}
+
+/* ---------- Content ---------- */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5em 1.5em 4em;
+}
+h2.section-h {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 1.75em;
+  border-bottom: 2px solid var(--navy);
+  padding-bottom: 0.4em;
+  margin: 2em 0 1em;
+  letter-spacing: -0.01em;
+}
+.post-list { list-style: none; padding: 0; margin: 0; }
+.post-list li {
+  padding: 1.15em 0;
+  border-bottom: 1px solid rgba(15,40,71,0.08);
+  transition: padding 0.2s ease;
+}
+.post-list li:hover { padding-left: 0.5em; }
+.post-list a {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: var(--navy);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.post-list a:hover { color: var(--gold); }
+.post-date {
+  font-size: 0.78em;
+  color: var(--slate);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.3em;
+}
+
+/* Card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2em;
+  margin: 1.5em 0 2.5em;
+}
+.card {
+  background: #fff;
+  border: 1px solid rgba(15,40,71,0.12);
+  border-radius: 8px;
+  padding: 1.5em;
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(15,40,71,0.08);
+  border-color: rgba(176,141,87,0.6);
+}
+.card__icon { font-size: 1.5em; color: var(--gold); margin-bottom: 0.6em; }
+.card__title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 0.4em;
+  font-size: 1.15em;
+}
+.card__body { font-size: 0.9em; color: var(--slate); margin: 0; line-height: 1.55; }
+
+blockquote {
+  border-left: 4px solid var(--gold);
+  background: rgba(176,141,87,0.08);
+  padding: 1em 1.2em;
+  margin: 1.5em 0;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: var(--navy);
+  border-radius: 0 4px 4px 0;
+}
+
+table {
+  width: 100%;
+  font-size: 0.9em;
+  border: 1px solid rgba(15,40,71,0.15);
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+table thead { background: var(--navy); color: #fff; }
+table th { border-bottom: 2px solid var(--gold); padding: 0.7em 1em; text-align: left; font-weight: 600; }
+table td { padding: 0.6em 1em; border-bottom: 1px solid rgba(15,40,71,0.08); }
+table tbody tr:nth-child(even) { background: rgba(15,40,71,0.03); }
+table tbody tr:hover { background: rgba(176,141,87,0.08); }
+
+pre {
+  background: #0b1c33;
+  color: #e4e1d8;
+  padding: 1em 1.2em;
+  border-radius: 6px;
+  font-family: "JetBrains Mono", Menlo, monospace;
+  font-size: 0.88em;
+  overflow-x: auto;
+}
+
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 1em 0 2em;
+}
+.swatch {
+  min-width: 140px;
+  flex: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.swatch__color { height: 80px; }
+.swatch__info {
+  padding: 0.7em 0.9em;
+  font-size: 0.82em;
+  background: #fff;
+}
+.swatch__name { font-weight: 600; color: var(--navy); }
+.swatch__hex { color: var(--slate); font-family: "JetBrains Mono", monospace; }
+
+/* Footer */
+footer {
+  background: var(--navy-dark);
+  color: #fff;
+  padding: 2.5em 1.5em 1.5em;
+  text-align: center;
+}
+footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 1em;
+  font-size: 1.3em;
+}
+footer a { color: #fff; transition: color 0.2s ease; }
+footer a:hover { color: var(--gold); }
+footer .copy { font-size: 0.82em; opacity: 0.8; }
+
+.preview-banner {
+  background: #fff8e8;
+  border-bottom: 1px solid #f0e3bc;
+  padding: 0.7em 1em;
+  text-align: center;
+  font-size: 0.85em;
+  color: #7a5f0a;
+}
+.preview-banner strong { color: #5a4500; }
+</style>
+</head>
+<body>
+
+<div class="preview-banner">
+  <strong>Design Preview</strong> — this is a local preview of how your blog will look after the redesign. The actual site will render the same way after you push to GitHub.
+</div>
+
+<header class="masthead">
+  <div class="masthead__inner">
+    <a href="/" class="site-title">Sihyun Park | Finance &amp; Valuation Notes</a>
+    <nav class="masthead-nav">
+      <a href="#">Home</a>
+      <a href="#">CFA</a>
+      <a href="#">BIWS</a>
+      <a href="#">Case Studies</a>
+      <a href="#">Notes</a>
+      <a href="#">Categories</a>
+      <a href="#">About</a>
+    </nav>
+  </div>
+</header>
+
+<section class="sihyun-hero">
+  <div class="sihyun-hero__inner">
+    <div class="sihyun-hero__eyebrow">Finance · Valuation · Case Studies</div>
+    <h1 class="sihyun-hero__title">
+      Notes on <span class="sihyun-hero__title-accent">value</span>,<br>
+      markets &amp; the making of deals.
+    </h1>
+    <p class="sihyun-hero__typed">
+      <span id="typed"></span><span class="sihyun-cursor">&nbsp;</span>
+    </p>
+    <div class="sihyun-hero__meta">
+      <span class="sihyun-hero__chip"><span class="chip-dot"></span>CFA Program</span>
+      <span class="sihyun-hero__chip"><span class="chip-dot"></span>BIWS Modeling</span>
+      <span class="sihyun-hero__chip"><span class="chip-dot"></span>Case Studies</span>
+    </div>
+    <div class="sihyun-hero__divider"></div>
+  </div>
+</section>
+
+<main>
+  <h2 class="section-h">Color Palette</h2>
+  <div class="palette">
+    <div class="swatch">
+      <div class="swatch__color" style="background:#0f2847"></div>
+      <div class="swatch__info"><div class="swatch__name">Navy</div><div class="swatch__hex">#0f2847</div></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__color" style="background:#b08d57"></div>
+      <div class="swatch__info"><div class="swatch__name">Gold</div><div class="swatch__hex">#b08d57</div></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__color" style="background:#fbfaf7;border:1px solid var(--border)"></div>
+      <div class="swatch__info"><div class="swatch__name">Cream</div><div class="swatch__hex">#fbfaf7</div></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__color" style="background:#5b6478"></div>
+      <div class="swatch__info"><div class="swatch__name">Slate</div><div class="swatch__hex">#5b6478</div></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__color" style="background:#0b1c33"></div>
+      <div class="swatch__info"><div class="swatch__name">Dark Navy</div><div class="swatch__hex">#0b1c33</div></div>
+    </div>
+  </div>
+
+  <h2 class="section-h">Recent Posts</h2>
+  <ul class="post-list">
+    <li>
+      <a href="#">Financial Modeling and Its Steps</a>
+      <div class="post-date">April 16, 2026</div>
+    </li>
+    <li>
+      <a href="#">CFA FSA Reading 29 — Analyzing Balance Sheets</a>
+      <div class="post-date">April 03, 2026</div>
+    </li>
+    <li>
+      <a href="#">CFA FSA Reading 27 — Introduction to Financial Statement Analysis</a>
+      <div class="post-date">April 01, 2026</div>
+    </li>
+    <li>
+      <a href="#">Microsoft-LinkedIn Acquisition – Full M&amp;A Case Study Analysis</a>
+      <div class="post-date">February 24, 2026</div>
+    </li>
+    <li>
+      <a href="#">Introduction to IB Case Studies</a>
+      <div class="post-date">February 23, 2026</div>
+    </li>
+  </ul>
+
+  <h2 class="section-h">About Card Grid</h2>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card__icon"><i class="fas fa-chart-line"></i></div>
+      <h3 class="card__title">CFA Program</h3>
+      <p class="card__body">Structured notes on FSA, Equity, Fixed Income, and Portfolio Management.</p>
+    </div>
+    <div class="card">
+      <div class="card__icon"><i class="fas fa-calculator"></i></div>
+      <h3 class="card__title">BIWS Training</h3>
+      <p class="card__body">Financial modeling from first principles: three-statement, DCF, LBO, M&amp;A.</p>
+    </div>
+    <div class="card">
+      <div class="card__icon"><i class="fas fa-briefcase"></i></div>
+      <h3 class="card__title">Case Studies</h3>
+      <p class="card__body">Weekly breakdowns of real transactions — the "why" behind every deal.</p>
+    </div>
+    <div class="card">
+      <div class="card__icon"><i class="fas fa-book"></i></div>
+      <h3 class="card__title">Research Notes</h3>
+      <p class="card__body">Shorter-form thoughts, reading notes, and working ideas.</p>
+    </div>
+  </div>
+
+  <h2 class="section-h">Post Typography Sample</h2>
+  <p style="color:var(--slate)">A look at how quotes, tables, and code blocks will render in your posts.</p>
+
+  <blockquote>
+    "Price is what you pay. Value is what you get." — Benjamin Graham
+  </blockquote>
+
+  <table>
+    <thead>
+      <tr><th>Metric</th><th>Formula</th><th>Use</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>EV / EBITDA</td><td>Enterprise Value / EBITDA</td><td>Cross-capital-structure comparables</td></tr>
+      <tr><td>P/E</td><td>Price / Earnings per Share</td><td>Equity multiple, peer comparison</td></tr>
+      <tr><td>WACC</td><td>E/V · Re + D/V · Rd · (1-T)</td><td>Discount rate for DCF</td></tr>
+      <tr><td>FCF</td><td>EBIT(1-T) + D&amp;A − CapEx − ΔWC</td><td>DCF input</td></tr>
+    </tbody>
+  </table>
+
+  <pre><code>// Sample DCF assumption block
+const wacc = 0.092;
+const terminalGrowth = 0.025;
+const fcf = [120, 135, 148, 160, 174];
+const pv = fcf.map((f, i) =&gt; f / Math.pow(1 + wacc, i + 1));</code></pre>
+</main>
+
+<footer>
+  <div class="social">
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fas fa-envelope"></i></a>
+  </div>
+  <div class="copy">© 2026 Sihyun Park · Finance &amp; Valuation Notes</div>
+</footer>
+
+<script>
+(function() {
+  var el = document.getElementById('typed');
+  if (!el) return;
+  var phrases = [
+    "Studying valuation, one deal at a time.",
+    "CFA & BIWS study archive — from first principles.",
+    "Weekly case studies on M&A, IPOs, and markets.",
+    "Sihyun Park · Irvine, CA."
+  ];
+  var phraseIdx = 0, charIdx = 0, deleting = false;
+  function tick() {
+    var full = phrases[phraseIdx];
+    if (!deleting) {
+      charIdx++;
+      el.textContent = full.slice(0, charIdx);
+      if (charIdx === full.length) { deleting = true; setTimeout(tick, 1800); return; }
+      setTimeout(tick, 55);
+    } else {
+      charIdx--;
+      el.textContent = full.slice(0, charIdx);
+      if (charIdx === 0) {
+        deleting = false;
+        phraseIdx = (phraseIdx + 1) % phrases.length;
+        setTimeout(tick, 400);
+        return;
+      }
+      setTimeout(tick, 30);
+    }
+  }
+  setTimeout(tick, 1000);
+})();
+</script>
+</body>
+</html>

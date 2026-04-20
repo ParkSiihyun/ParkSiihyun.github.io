@@ -24,6 +24,10 @@
           <i class="fas fa-search"></i>
         </button>
         {% endif %}
+        <button class="sh-theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+          <svg class="sh-theme-toggle__icon sh-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="sh-theme-toggle__icon sh-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
           <div class="navicon"></div>
@@ -32,4 +36,35 @@
       </nav>
     </div>
   </div>
+</div>
+
+<!-- Live market ticker tape (TradingView free widget) -->
+<div class="sh-ticker">
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+      "symbols": [
+        { "description": "S&P 500", "proName": "FOREXCOM:SPXUSD" },
+        { "description": "Nasdaq 100", "proName": "FOREXCOM:NSXUSD" },
+        { "description": "Dow Jones", "proName": "FOREXCOM:DJI" },
+        { "description": "US 10Y", "proName": "TVC:US10Y" },
+        { "description": "VIX", "proName": "TVC:VIX" },
+        { "description": "USD/KRW", "proName": "FX_IDC:USDKRW" },
+        { "description": "Gold", "proName": "TVC:GOLD" },
+        { "description": "Bitcoin", "proName": "BITSTAMP:BTCUSD" }
+      ],
+      "showSymbolLogo": true,
+      "colorTheme": "light",
+      "isTransparent": false,
+      "displayMode": "adaptive",
+      "locale": "en"
+    }
+    </script>
+  </div>
+</div>
+
+<!-- Reading progress bar (filled by JS on scroll) -->
+<div class="sh-reading-progress" aria-hidden="true">
+  <div class="sh-reading-progress__bar" id="sh-reading-progress-bar"></div>
 </div>

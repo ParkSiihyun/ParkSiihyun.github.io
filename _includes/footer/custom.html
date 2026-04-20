@@ -1,3 +1,66 @@
 <!-- start custom footer snippets -->
 
+<script>
+(function() {
+  // ---------- Dark mode toggle ----------
+  var btn = document.querySelector('.sh-theme-toggle');
+  if (btn) {
+    btn.addEventListener('click', function() {
+      var cur = document.documentElement.getAttribute('data-theme') || 'light';
+      var next = cur === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('sh-theme', next); } catch (e) {}
+    });
+  }
+
+  // ---------- Reading progress bar ----------
+  var bar = document.getElementById('sh-reading-progress-bar');
+  if (bar) {
+    var content = document.querySelector('.page__content');
+    var isPost = document.body.classList.contains('layout--single');
+
+    if (isPost && content) {
+      var update = function() {
+        var rect = content.getBoundingClientRect();
+        var contentTop = window.scrollY + rect.top;
+        var contentHeight = content.offsetHeight;
+        var viewport = window.innerHeight;
+        var scrolled = window.scrollY;
+        var total = Math.max(1, contentHeight - (viewport - 200));
+        var progress = (scrolled - contentTop + 200) / total;
+        progress = Math.max(0, Math.min(1, progress));
+        bar.style.width = (progress * 100) + '%';
+      };
+      window.addEventListener('scroll', update, { passive: true });
+      window.addEventListener('resize', update);
+      update();
+    } else {
+      bar.parentElement.style.display = 'none';
+    }
+  }
+
+  // ---------- Simple scrollspy for MM TOC highlighting ----------
+  var tocLinks = document.querySelectorAll('.toc__menu a');
+  if (tocLinks.length) {
+    var headings = [].map.call(tocLinks, function(a) {
+      var id = a.getAttribute('href');
+      if (!id || id.charAt(0) !== '#') return null;
+      return { link: a, el: document.getElementById(id.slice(1)) };
+    }).filter(function(x) { return x && x.el; });
+
+    var spy = function() {
+      var top = window.scrollY + 120;
+      var current = headings[0];
+      for (var i = 0; i < headings.length; i++) {
+        if (headings[i].el.offsetTop <= top) current = headings[i];
+      }
+      headings.forEach(function(h) { h.link.classList.remove('active'); });
+      if (current) current.link.classList.add('active');
+    };
+    window.addEventListener('scroll', spy, { passive: true });
+    spy();
+  }
+})();
+</script>
+
 <!-- end custom footer snippets -->

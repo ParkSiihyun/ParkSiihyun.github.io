@@ -1,5 +1,14 @@
 <!-- start custom head snippets -->
 
-<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<!-- Apply theme ASAP to avoid flash of wrong color scheme -->
+<script>
+(function() {
+  try {
+    var saved = localStorage.getItem('sh-theme');
+    var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  } catch (e) {}
+})();
+</script>
 
 <!-- end custom head snippets -->

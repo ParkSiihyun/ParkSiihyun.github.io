@@ -1,10 +1,11 @@
 ---
-title: "M&A Analysis Example"
+title: "M&A Analysis Template"
 date: 2026-01-01
 categories: case-studies
+tags: [M&A, Case Study, Template]
 ---
 
-# I. Transaction Overview (Common)
+## I. Transaction Overview (Common)
 
 - Acquirer:
 - Target:

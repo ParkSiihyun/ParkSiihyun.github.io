@@ -15,7 +15,7 @@ tags: [M&A, Case Study, Template]
 - Transaction Structure (Merger, Asset Purchase, Tender, LBO, IPO, etc.):
 - Status (Announced / Pending / Completed / Withdrawn):
 
-# II. Deal Structure & Key Terms (Common)
+## II. Deal Structure & Key Terms (Common)
 
 - Legal structure (e.g., forward triangular merger, reverse triangular merger)
 - Consideration mix (cash, stock, earn-out, other)
@@ -23,7 +23,7 @@ tags: [M&A, Case Study, Template]
 - Key covenants (no-shop, go-shop, ordinary course, non-compete)
 - Deal protections (termination fee, reverse termination fee, matching rights, tail provisions)
 
-# III. Strategic Rationale (Common)
+## III. Strategic Rationale (Common)
 
 ## Acquirer Perspective
 - Strategic logic (market entry, scale, scope, capabilities)

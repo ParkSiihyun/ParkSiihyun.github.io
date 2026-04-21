@@ -147,9 +147,10 @@ $$\text{투자자 수익률} = \frac{\$110{,}000 + \$2{,}000 - \$2{,}400 - \$60{
 
 > $40에 1주 매수, initial margin 50%, maintenance margin 25%일 때 margin call 가격은?
 
-- 초기 내 자본 $20 (50%)
-- 현재 주가 x로 가정 → Equity = x - 20, Maintenance margin = x × 25%
-- 방정식: x - 20 = 0.25x → 0.75x = 20 → **x = $26.67**
+- 초기 내 자본 \$20 (50%)
+- 현재 주가 $x$로 가정 → Equity $= x - 20$, Maintenance margin $= 0.25x$
+
+$$x - 20 = 0.25x \;\Rightarrow\; 0.75x = 20 \;\Rightarrow\; x = \$26.67$$
 
 ---
 

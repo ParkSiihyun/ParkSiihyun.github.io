@@ -34,7 +34,7 @@ tags: [Equity, CFA Level I, Company Analysis, Forecasting, Financial Modeling]
 2. **산업 성장률** 추정 (GDP 대비 배수 적용)
 3. **기업의 시장점유율(Market Share)** 적용
 
-**Revenue = Market size × Market share**
+$$\text{Revenue} = \text{Market Size} \times \text{Market Share}$$
 
 ### Bottom-Up Approach
 

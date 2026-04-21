@@ -139,8 +139,9 @@ The financial system allows entities to **save, borrow, issue equity capital, ma
 | Commission | $0.05/주 |
 | Stock price after 1 year | $110 |
 
-- Leverage ratio = $100,000 / $40,000 = **2.5**
-- 투자자 수익률 = ($110,000 + $2,000 배당 - $2,400 이자 - $60,000 원금) / ($40,000 + $50 수수료) = **약 23.7%**
+$$\text{Leverage Ratio} = \frac{\$100{,}000}{\$40{,}000} = 2.5$$
+
+$$\text{투자자 수익률} = \frac{\$110{,}000 + \$2{,}000 - \$2{,}400 - \$60{,}000}{\$40{,}000 + \$50} \approx 23.7\%$$
 
 #### Margin Call Price Example
 

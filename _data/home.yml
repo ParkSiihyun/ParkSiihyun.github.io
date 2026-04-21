@@ -2,12 +2,12 @@
 # and "Deal of the Week" cards on your landing page.
 
 currently_studying:
-  label: "Now Reading"
-  title: "CFA Level I · FSA"
-  meta: "Reading 29 — Analyzing Balance Sheets"
-  body: "Working through asset/liability recognition and common-size balance sheet analysis. Targeting Level I in February 2027."
-  progress: 45          # % complete — 0 to 100
-  progress_label: "Level I"
+  label: "In Progress"
+  title: "CFA Level I · Equity"
+  meta: "Readings 42–46 — Equity Securities, Company & Industry Analysis, Valuation"
+  body: "Wrapping up the Equity section — covering Porter's Five Forces, DDM, Gordon Growth, and relative valuation. CFA Level I exam: May 2026."
+  progress: 82
+  progress_label: "Exam · May 2026"
 
 deal_of_the_week:
   label: "Deal of the Week"

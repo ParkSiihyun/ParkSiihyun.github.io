@@ -1,5 +1,5 @@
 ---
-title: "CFA FSA Reading S17 — Financial Analysis Techniques"
+title: "CFA FSA Reading 37 — Financial Analysis Techniques"
 date: 2026-04-11
 categories: cfa
 tags: [FSA, CFA Level I, Ratios, Analysis]

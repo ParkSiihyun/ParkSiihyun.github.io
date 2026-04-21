@@ -9,27 +9,27 @@ tags: [Equity, CFA Level I, Valuation, DDM, DCF]
 
 배당금을 현재가치로 할인하여 주식의 내재가치를 산출하는 모델
 
-**V₀ = Σ [ Dₜ / (1 + Kₑ)ᵗ ]** (t = 1 → ∞)
+$$V_0 = \sum_{t=1}^{\infty} \frac{D_t}{(1+k_e)^t}$$
 
 > ※ **V ≠ P** : Intrinsic value ≠ Market price
 
 | 변수 | 의미 |
 |------|------|
-| **V₀** | Current stock value (현재 주식 내재가치) |
-| **Dₜ** | Dividend at time t (t 시점의 배당금) |
-| **Kₑ** | Required rate of return on common equity |
+| $V_0$ | Current stock value (현재 주식 내재가치) |
+| $D_t$ | Dividend at time t (t 시점의 배당금) |
+| $k_e$ | Required rate of return on common equity |
 
 ---
 
 ### One-Year Holding Period DDM
 
-**Value = P₁ / (1 + Kₑ) + D₁ / (1 + Kₑ)**
+$$V_0 = \frac{D_1}{(1+k_e)} + \frac{P_1}{(1+k_e)}$$
 
 ---
 
 ### Multiple-Year Holding Period DDM
 
-**Value = D₁ / (1 + Kₑ) + D₂ / (1 + Kₑ)² + Pₙ / (1 + Kₑ)ⁿ**
+$$V_0 = \frac{D_1}{(1+k_e)} + \frac{D_2}{(1+k_e)^2} + \cdots + \frac{P_n}{(1+k_e)^n}$$
 
 ---
 
@@ -38,10 +38,10 @@ tags: [Equity, CFA Level I, Valuation, DDM, DCF]
 > A stock recently paid a dividend of $1.50, expected to grow at 8% per year. Required rate of return = 12%.  
 > **3년 뒤 주식의 가격 = $51.00**
 
-- D₀ = $1.5
-- D₁ = 1.5 × (1.08)
-- D₂ = 1.5 × (1.08)²
-- D₃ = 1.5 × (1.08)³, P₃ = $51
+- $D_0 = \$1.50$
+- $D_1 = 1.50 \times 1.08$
+- $D_2 = 1.50 \times (1.08)^2$
+- $D_3 = 1.50 \times (1.08)^3$, $\quad P_3 = \$51$
 
 ---
 
@@ -53,22 +53,21 @@ FCFE = 보통주 주주에게 지급 가능한 현금흐름
 
 ### FCFE 계산식
 
-```
-FCFE = NI + Depreciation/Amortization - Net Working Capital - CAPEX + Net Borrowing
-     = CFO - CAPEX + Net Borrowing (borrowed - repaid)
-```
+$$\text{FCFE} = \text{NI} + \text{D\&A} - \Delta \text{NWC} - \text{CAPEX} + \text{Net Borrowing}$$
 
-**V₀ = Σ [ FCFEₜ / (1 + Kₑ)ᵗ ]** (t = 1 → ∞)
+$$= \text{CFO} - \text{CAPEX} + \text{Net Borrowing}$$
+
+$$V_0 = \sum_{t=1}^{\infty} \frac{FCFE_t}{(1+k_e)^t}$$
 
 ---
 
 ## 3. Estimating the Required Return for Equity
 
-요구수익률(Kₑ)의 추정 → **수익률의 변동성** 기반
+요구수익률 $k_e$ 추정 → **수익률의 변동성** 기반
 
 ### CAPM (Capital Asset Pricing Model)
 
-**Kᵢ = Rꜰ + βᵢ × [E(Rₘ) - Rꜰ]**
+$$k_i = R_f + \beta_i \times [E(R_m) - R_f]$$
 
 - 구성의 핵심: 위험 프리미엄을 얼마나 조정할지 결정
 
@@ -78,15 +77,15 @@ FCFE = NI + Depreciation/Amortization - Net Working Capital - CAPEX + Net Borrow
 
 우선주는 **고정 배당금** 지급 + **만기 없음 (indefinite maturity)**
 
-**Preferred Stock Value = Dₚ / Kₚ**
+$$V_p = \frac{D_p}{k_p}$$
 
 (무한등비급수의 합으로 도출)
 
 ### Example
 
-> $100 par preferred stock, $5.00 annual dividend, required return = 8%
+> \$100 par preferred stock, \$5.00 annual dividend, required return = 8%
 
-**Value = $5 / 0.08 = $62.5**
+$$V_p = \frac{\$5}{0.08} = \$62.50$$
 
 → 액면 $100인 주식이 요구수익률 8%이면, $5를 8%로 사면 $62.5에 매수
 
@@ -94,44 +93,35 @@ FCFE = NI + Depreciation/Amortization - Net Working Capital - CAPEX + Net Borrow
 
 ## 5. Gordon Growth Model (Constant Growth Model)
 
-배당이 **일정한 성장률(Gc)**로 영구히 성장한다고 가정
+배당이 **일정한 성장률 $g_c$** 로 영구히 성장한다고 가정
 
-**V₀ = D₀(1+Gc)/(1+Ke) + D₀(1+Gc)²/(1+Ke)² + ... + D₀(1+Gc)^∞/(1+Ke)^∞**
+무한등비급수: 첫째항 $= \dfrac{D_1}{1+k_e}$, 공비 $= \dfrac{1+g_c}{1+k_e}$
 
-- 첫째항: D₁ / (1 + Ke)
-- 공비: (1 + Gc) / (1 + Ke)
+$$\boxed{V_0 = \frac{D_1}{k_e - g_c}}$$
 
-> **수렴 조건: Ke > Gc 일 때만 성립** (Ke < Gc면 발산, 사용 불가)
-
-### 등비급수 공식 적용
-
-무한등비급수: S = a / (1 - 공비)
-
-→ D₁/(1+Ke) ÷ [1 - (1+Gc)/(1+Ke)] = D₁/(1+Ke) ÷ [(Ke-Gc)/(1+Ke)]
-
-**V₀ = D₁ / (Ke - Gc)**
+> **수렴 조건: $k_e > g_c$ 일 때만 성립** ($k_e < g_c$ 면 발산, 사용 불가)
 
 ### Gordon Growth Model Example
 
-> D₀ = $1.5, growth rate = 8%, Ke = 12%
+> $D_0 = \$1.50$, growth rate $= 8\%$, $k_e = 12\%$
 
-**V₀ = (1.5 × 1.08) / (0.12 - 0.08) = 1.62 / 0.04 = $40.50**
+$$V_0 = \frac{1.50 \times 1.08}{0.12 - 0.08} = \frac{1.62}{0.04} = \$40.50$$
 
 ---
 
-## 6. Key Insight: Ke vs Gc 관계
+## 6. Key Insight: $k_e$ vs $g_c$ 관계
 
-The stock's value is determined by the relationship between **Ke** and **Gc**
+The stock's value is determined by the relationship between $k_e$ and $g_c$
 
 | 상황 | 주가 영향 |
 |------|-----------|
-| Ke와 Gc의 차이 확대 | 주식 가치 하락 |
-| Ke와 Gc의 차이 축소 | 주식 가치 상승 |
-| Ke와 Gc의 작은 변화 | 주식 가치에 **큰 변화** 발생 가능 |
+| $k_e$와 $g_c$의 차이 확대 | 주식 가치 하락 |
+| $k_e$와 $g_c$의 차이 축소 | 주식 가치 상승 |
+| $k_e$와 $g_c$의 작은 변화 | 주식 가치에 **큰 변화** 발생 가능 |
 
-- **Ke가 크다는 것**: 주식이 시장위험 대비 변동성이 크다(위험하다)는 뜻 → 위험한 주식의 가치는 안정적인 주식보다 낮음
-- **Gc가 클수록**: 배당성장률이 큰 기업의 가치가 더 큼
-- 즉, Ke는 작을수록, Gc는 클수록 좋음. **그 격차가 줄어들면 주식 가치 상승**
+- **$k_e$가 크다는 것**: 주식이 시장위험 대비 변동성이 크다(위험하다)는 뜻 → 위험한 주식의 가치는 안정적인 주식보다 낮음
+- **$g_c$가 클수록**: 배당성장률이 큰 기업의 가치가 더 큼
+- 즉, $k_e$는 작을수록, $g_c$는 클수록 좋음. **그 격차가 줄어들면 주식 가치 상승**
 
 ---
 
@@ -150,18 +140,15 @@ The stock's value is determined by the relationship between **Ke** and **Gc**
 - Dividend payout ratio is constant
 - No new equity is sold
 
-**Sustainable Growth = (1 - Dividend Payout Ratio) × ROE = Retention Rate × ROE**
+$$g = (1 - \text{Payout Ratio}) \times ROE = b \times ROE$$
 
-### Example (EPS 기반 D₁ 계산)
+### Example
 
-- D₁ = E₀ (earnings) × payout ratio × (1 + Gc)
-- Gc = Retention rate × ROE
-- D₁ = E₁ × payout ratio
+> NI = 100, Payout = 30 (payout ratio 0.3), Retention rate $b$ = 0.7, ROE = 10%
 
-> NI = 100, Payout = 30 (payout ratio 0.3), Retention = 70 (retention rate 0.7), ROE = 10%
->
-> - Gc = 10% × 0.7 = **7%**
-> - D₁ = E₀ × 0.3 × (1 + 0.07) = 30 × 1.07 = **32.1**
+$$g_c = 0.7 \times 10\% = 7\%$$
+
+$$D_1 = E_0 \times \text{Payout Ratio} \times (1 + g_c) = 30 \times 1.07 = \$32.10$$
 
 ---
 
@@ -171,11 +158,11 @@ The stock's value is determined by the relationship between **Ke** and **Gc**
 
 ### Example
 
-> D₄ = E₄ × 0.5 = $0.82 (D₄를 알면 D₃를 알 수 있다)
->
-> V₃ = D₄ / (Ke - Gc) = 0.82 / (0.1 - 0.05) = **$16.4**
->
-> V₀ = 16.4 / (1.1)³ = **$12.32**
+> $D_4 = E_4 \times 0.5 = \$0.82$
+
+$$V_3 = \frac{D_4}{k_e - g_c} = \frac{0.82}{0.10 - 0.05} = \$16.40$$
+
+$$V_0 = \frac{V_3}{(1+k_e)^3} = \frac{16.40}{(1.10)^3} = \$12.32$$
 
 ---
 
@@ -183,24 +170,19 @@ The stock's value is determined by the relationship between **Ke** and **Gc**
 
 성장률이 단계별로 다른 기업에 적용
 
-**Vₙ = D(n+1) / (Ke - Gc)**
+$$V_n = \frac{D_{n+1}}{k_e - g_c}$$
 
 ### Example
 
-> D₀ = $1, 처음 2년: 15% 성장, 이후: 5% 성장, Ke = 11%
+> $D_0 = \$1$, 처음 2년: 15% 성장, 이후: 5% 성장, $k_e = 11\%$
 
-- D₁ = $1.15
-- D₂ = $1.32
-- D₃ = $1.386
+$$D_1 = \$1.15, \quad D_2 = \$1.3225, \quad D_3 = 1.3225 \times 1.05 = \$1.3886$$
 
-> V₂ = D₃ / (Ke - Gc) = 1.386 / (0.11 - 0.05) = **$23.1**
->
-> (2년 시점에서 바라본 3년 이후 시점의 배당들의 현가)
+$$V_2 = \frac{D_3}{k_e - g_c} = \frac{1.3886}{0.11 - 0.05} = \$23.14$$
 
-**V₀ = 1.15 / (1.11) + (1.32 + 23.1) / (1.11)²**
+$$V_0 = \frac{D_1}{1.11} + \frac{D_2 + V_2}{(1.11)^2}$$
 
-> Vₙ은 미래에 지급될 배당들의 현재가치인 거임. n 시점에서 바라본 것.  
-> 그래서 n=2 시점의 배당은 따로 더해줘서 할인해야 함.
+> $V_n$은 n 시점에서 바라본 그 이후 배당들의 현재가치. n=2 시점의 배당 $D_2$는 따로 더해줘서 할인해야 함.
 
 ---
 
@@ -218,10 +200,11 @@ The stock's value is determined by the relationship between **Ke** and **Gc**
 
 ### Price Multiples
 
-**Value = EPS × Multiples (Peer의 PER)**  
-또는 BPS × PBR, Sales per share × P/S, CF per share × P/CF
+$$\text{Value} = EPS \times \text{P/E (peer)}$$
 
-- EPS × P/E > Price → **저평가!**
+또는 $BPS \times \text{P/B}$, $\text{Sales per share} \times \text{P/S}$, $\text{CF per share} \times \text{P/CF}$
+
+- $EPS \times P/E > \text{Price}$ → **저평가!**
 
 ---
 
@@ -229,11 +212,13 @@ The stock's value is determined by the relationship between **Ke** and **Gc**
 
 Gordon Growth Model에서:
 
-- P₀ = D₁ / (K - g)
-- 양변을 E₁으로 나누면:
-- P₀/E₁ = (D₁/E₁) / (K - g) = **Payout ratio / (K - g)**
+$$P_0 = \frac{D_1}{k - g}$$
 
-**∴ Justified P/E = Payout ratio / (K - g)**
+양변을 $E_1$으로 나누면:
+
+$$\frac{P_0}{E_1} = \frac{D_1/E_1}{k - g} = \frac{\text{Payout Ratio}}{k - g}$$
+
+$$\therefore \text{Justified P/E} = \frac{\text{Payout Ratio}}{k - g}$$
 
 : A benchmark for the price at which the stock should trade
 
@@ -259,7 +244,7 @@ Gordon Growth Model에서:
 
 ## 12. Enterprise Value (EV) Multiples
 
-**Enterprise Value = Market Value of Equity (CS + PS) + Market Value of Debt - Cash and Investments**
+$$EV = \text{Market Value of Equity (CS + PS)} + \text{Market Value of Debt} - \text{Cash \& Investments}$$
 
 = Take-over value (인수 시 지불해야 하는 전체 가치)
 
@@ -275,17 +260,17 @@ Gordon Growth Model에서:
 
 ### EV 활용 방법 (흐름 정리)
 
-1. **EV / EBITDA**: 회사가 채권자와 주주의 돈으로 벌어들이는 돈에 비해 몇 배의 가치로 인정받고 있어?
-2. 그러면 우리 회사는 이만큼 버니깐 → 우리 회사 가치(EV target)는 이정도 되겠네
-3. **EV_target = EBITDA_target × (EV/EBITDA)_peer**
-4. **Equity Value = EV_target + Cash - Debt - PS**
-5. 우리 회사의 시가총액과 비교 → **고평가 / 저평가 판단**
+$$EV_{\text{target}} = EBITDA_{\text{target}} \times \left(\frac{EV}{EBITDA}\right)_{\text{peer}}$$
+
+$$\text{Equity Value} = EV_{\text{target}} + \text{Cash} - \text{Debt} - \text{PS}$$
+
+우리 회사의 시가총액과 비교 → **고평가 / 저평가 판단**
 
 ---
 
 ## 13. Asset-Based Valuation
 
-**Value = Market Value of Assets - Market Value of Liabilities**
+$$V = \text{MV of Assets} - \text{MV of Liabilities}$$
 
 **적합한 상황:**
 - 주로 유형자산을 보유한 기업
@@ -307,7 +292,7 @@ Gordon Growth Model에서:
 | 구분 | 내용 |
 |------|------|
 | **장점** | 이론적으로 우수 |
-| **단점** | Input(k, g)이 모두 추정치 → 불확실성 높음, 가치평가 시 input에 매우 민감 |
+| **단점** | Input($k$, $g$)이 모두 추정치 → 불확실성 높음, 가치평가 시 input에 매우 민감 |
 
 ### Multiplier Models (P/E, P/B, EV/EBITDA 등)
 

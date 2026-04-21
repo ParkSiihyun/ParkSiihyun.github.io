@@ -50,7 +50,9 @@ tags: [Equity, CFA Level I, Company Analysis, Business Model]
 
 ## 3. Revenue & Revenue Drivers
 
-**매출 = P × Q** → 가격 결정력(Pricing power) 분석이 핵심
+$$\text{Revenue} = P \times Q$$
+
+가격 결정력(Pricing power) 분석이 핵심
 
 ### Pricing Power에 따른 시장 구조
 
@@ -78,11 +80,11 @@ tags: [Equity, CFA Level I, Company Analysis, Business Model]
 
 ### Operating Profit 계산
 
-**Operating Profit = [Q × (P - VC)] - FC**
+$$\text{Operating Profit} = [Q \times (P - VC)] - FC$$
 
 - **VC**: Variable costs per unit (원재료, 직접인건비)
 - **FC**: Fixed costs in total (임대료, 경영진 급여)
-- **P - VC = Contribution Margin (CM) per unit**
+- $P - VC = \text{Contribution Margin (CM) per unit}$
 
 > 이익이 발생하려면: CM per unit > 0 이고 전체 CM > FC 이어야 함
 
@@ -90,7 +92,7 @@ tags: [Equity, CFA Level I, Company Analysis, Business Model]
 
 : 고정비 비중이 클수록 매출 변화에 따른 영업이익 변화폭이 큼
 
-**DOL (Degree of Operating Leverage) = 영업이익 변화율 / 매출 변화율**
+$$DOL = \frac{\%\Delta \text{EBIT}}{\%\Delta \text{Revenue}}$$
 
 - Fixed cost 비중 높을수록 DOL ↑
 - 매출 증가 시 이익 크게 증가 / 매출 감소 시 손실 크게 발생
@@ -106,7 +108,7 @@ tags: [Equity, CFA Level I, Company Analysis, Business Model]
 
 ## 5. Working Capital (운전자본)
 
-**Net Working Capital (NWC) = AR + Inventory - AP**
+$$NWC = AR + \text{Inventory} - AP$$
 
 | NWC | 의미 |
 |-----|------|
@@ -115,7 +117,7 @@ tags: [Equity, CFA Level I, Company Analysis, Business Model]
 
 ### Cash Conversion Cycle (CCC)
 
-**CCC = DOH + DSO - DPO**
+$$CCC = DOH + DSO - DPO$$
 
 - **DSO** (Days Sales Outstanding): AR 회수 기간
 - **DOH** (Days of Inventory on Hand): 재고 보유 기간
@@ -133,13 +135,13 @@ tags: [Equity, CFA Level I, Company Analysis, Business Model]
 
 - **Opportunity > Risk** → DFL로 평가
 
-**DFL (Degree of Financial Leverage) = NI 변화율 / 영업이익 변화율**
+$$DFL = \frac{\%\Delta NI}{\%\Delta \text{EBIT}}$$
 
 - 차입금 증가(고정 이자비용 추가) 시 DFL 상승
 
 ### 핵심 관계
 
-**DOL × DFL = Degree of Total Leverage = NI 변화율 / 매출액 변화율**
+$$DTL = DOL \times DFL = \frac{\%\Delta NI}{\%\Delta \text{Revenue}}$$
 
 > **ROIC vs ROE**:
 > - ROIC: 자본구조 무관, 채권자+주주에 대한 회사 전체 수익률

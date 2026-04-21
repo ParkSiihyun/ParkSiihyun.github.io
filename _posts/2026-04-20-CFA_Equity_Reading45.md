@@ -76,15 +76,15 @@ $$\text{Forecast COGS} = \frac{\text{Historical COGS}}{\text{Revenue}} \times \t
 
 ### 핵심 공식
 
-| 항목 | 예측 공식 | 비고 |
-|------|-----------|------|
-| **AR (매출채권)** | `DSO × (Sales / 365)` | DSO: Days Sales Outstanding |
-| **Inventory (재고)** | `DOH × (COGS / 365)` | DOH: Days of Inventory on Hand |
-| **AP (매입채무)** | `DPO × (Purchases / 365)` | DPO: Days Payable Outstanding |
+$$AR = DSO \times \frac{\text{Sales}}{365}$$
+
+$$\text{Inventory} = DOH \times \frac{\text{COGS}}{365}$$
+
+$$AP = DPO \times \frac{\text{Purchases}}{365}$$
 
 ### Cash Conversion Cycle (CCC)
 
-**CCC = DSO + DOH - DPO**
+$$CCC = DSO + DOH - DPO$$
 
 - CCC가 **낮을수록** 운전자본 효율적 → 현금흐름 창출 능력 우수
 - 소매업 등은 AP > AR → CCC 음수 가능 (현금을 먼저 받고 나중에 지급)
@@ -95,7 +95,7 @@ $$\text{Forecast COGS} = \frac{\text{Historical COGS}}{\text{Revenue}} \times \t
 
 ## 5. CAPEX Forecasting (자본적 지출 예측)
 
-**CAPEX = Maintenance CAPEX + Growth CAPEX**
+$$CAPEX = \text{Maintenance CAPEX} + \text{Growth CAPEX}$$
 
 | 구분 | 설명 | 예측 방법 |
 |------|------|-----------|

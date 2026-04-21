@@ -66,6 +66,8 @@ tags: [Equity, CFA Level I, Industry Analysis, Porter's Five Forces, PESTLE]
 
 ### Market Concentration: HHI (Herfindahl-Hirschman Index)
 
+$$HHI = \sum_{i=1}^{n} s_i^2$$
+
 : 모든 참여자의 시장점유율의 **제곱의 합**
 
 | HHI 범위 | 집중도 | 시사점 |
@@ -80,7 +82,7 @@ tags: [Equity, CFA Level I, Industry Analysis, Porter's Five Forces, PESTLE]
 
 : 산업의 **장기 수익성(Long-run profitability)**을 결정하는 5가지 요인
 
-**Economic profit = ROIC - Cost of Capital (WACC)** → 결국 **Pricing power**가 결정
+$$\text{Economic Profit} = ROIC - WACC \quad \Rightarrow \quad \text{결국 Pricing power가 결정}$$
 
 ### 1. Rivalry among Existing Competitors (기존 경쟁자 간 경쟁)
 

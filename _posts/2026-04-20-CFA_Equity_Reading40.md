@@ -19,8 +19,8 @@ tags: [Equity, CFA Level I, Index]
 
 | 지수 유형 | 계산 방식 |
 |-----------|-----------|
-| **Price index** | Price return = (V1 - V0) / V0 |
-| **Return index** | Total return = (V1 - V0 + Income(div or int)) / V0 |
+| **Price index** | $\text{Price Return} = \dfrac{V_1 - V_0}{V_0}$ |
+| **Return index** | $\text{Total Return} = \dfrac{V_1 - V_0 + \text{Income}}{V_0}$ |
 
 ---
 

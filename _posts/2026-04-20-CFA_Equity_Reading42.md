@@ -134,10 +134,10 @@ tags: [Equity, CFA Level I, Equity Securities]
 
 | 구분 | 설명 |
 |------|------|
-| **Book value** | 재무제표 상 자산 - 부채 (E = A - L) |
-| **Market value** | 시가총액 = 주가 × 발행 주식 수 |
+| **Book value** | 재무제표 상 자산 - 부채 ($E = A - L$) |
+| **Market value** | 시가총액 = 주가 $\times$ 발행 주식 수 |
 
-- BV ≠ MV: Book value는 투자자의 미래 성과 기대를 반영하지 않음
+- $BV \neq MV$: Book value는 투자자의 미래 성과 기대를 반영하지 않음
 
 ---
 
@@ -153,8 +153,8 @@ tags: [Equity, CFA Level I, Equity Securities]
 - **CAPM** 또는 **DDM**으로 추정
 - 리스크에 대한 보상으로 측정
 - 주식은 계약상 지불 의무가 없으므로 최소한 주주 요구수익률을 비용으로 간주
-- **자기자본조달비용 = 최소 주주요구수익률**
+$$k_e = \text{자기자본조달비용} = \text{최소 주주요구수익률}$$
 
-> **ROE < COE** 상황: 주주요구수익률 미달 → 주가 하락 가능성  
+> $ROE < k_e$ 상황: 주주요구수익률 미달 → 주가 하락 가능성  
 > 주주의 부 극대화를 위해 자본비용을 최소화해야 함  
-> 기업 신용도·안정성 ↑ → Risk ↓ → COE ↓
+> 기업 신용도·안정성 ↑ → Risk ↓ → $k_e$ ↓

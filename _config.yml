@@ -175,6 +175,7 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  - /typora # local Typora drafts and source notes
 keep_files:
   - .git
   - .svn
@@ -286,4 +287,3 @@ defaults:
       toc_sticky: true
       toc_label: "Contents"
       toc_icon: "list-ul"
-

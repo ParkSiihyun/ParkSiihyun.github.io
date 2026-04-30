@@ -7,10 +7,10 @@ author_profile: false
 
 <div class="sh-page-hero">
   <div class="sh-page-hero__eyebrow">Research Notes</div>
-  <h1 class="sh-page-hero__title">General Notes</h1>
+  <h1 class="sh-page-hero__title">Research Logs</h1>
   <p class="sh-page-hero__lede">
-    Shorter-form research notes, reading excerpts, and working ideas that
-    don't yet fit cleanly into a larger case study or course.
+    Short observations, source notes, and working ideas from the process of
+    studying valuation, markets, and deals in public.
   </p>
 </div>
 

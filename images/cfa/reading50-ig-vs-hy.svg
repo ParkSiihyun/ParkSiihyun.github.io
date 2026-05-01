@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Investment Grade vs High Yield Corporate Issuers</title>
+  <desc id="desc">A side-by-side comparison of long-term funding characteristics for investment grade and high yield issuers.</desc>
+  <rect width="960" height="520" rx="18" fill="#fbfaf7"/>
+  <text x="54" y="54" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#0f2847">Investment Grade vs High Yield</text>
+  <text x="54" y="84" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5b6478">Credit quality changes funding flexibility, spread, covenants, and rollover risk.</text>
+
+  <rect x="78" y="132" width="382" height="320" rx="16" fill="#eef5fb" stroke="#4c7899" stroke-width="2"/>
+  <text x="269" y="170" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#0f2847">Investment Grade</text>
+  <line x1="118" y1="194" x2="420" y2="194" stroke="#4c7899" stroke-width="2"/>
+  <text x="118" y="232" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f2847">Lower default risk</text>
+  <text x="118" y="262" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f2847">Lower credit spread</text>
+  <text x="118" y="292" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f2847">Fewer restrictive covenants</text>
+  <text x="118" y="322" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f2847">Multiple maturity access</text>
+  <text x="118" y="352" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f2847">Lower rollover pressure</text>
+  <rect x="118" y="382" width="302" height="44" rx="8" fill="#ffffff" stroke="#4c7899"/>
+  <text x="269" y="410" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">Funding advantage: flexibility</text>
+
+  <rect x="500" y="132" width="382" height="320" rx="16" fill="#fff0f0" stroke="#a94c4c" stroke-width="2"/>
+  <text x="691" y="170" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#0f2847">High Yield</text>
+  <line x1="540" y1="194" x2="842" y2="194" stroke="#a94c4c" stroke-width="2"/>
+  <text x="540" y="232" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f2847">Higher default risk</text>
+  <text x="540" y="262" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f2847">Higher credit spread</text>
+  <text x="540" y="292" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f2847">More restrictive covenants</text>
+  <text x="540" y="322" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f2847">Shorter maturity access</text>
+  <text x="540" y="352" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f2847">Higher rollover pressure</text>
+  <rect x="540" y="382" width="302" height="44" rx="8" fill="#ffffff" stroke="#a94c4c"/>
+  <text x="691" y="410" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">Investor focus: default and recovery</text>
+
+  <text x="480" y="488" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f2847">LGD = 1 - Recovery Rate</text>
+</svg>

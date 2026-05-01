@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Repo Opening and Closing Legs</title>
+  <desc id="desc">A two-stage repo diagram showing cash and collateral flows at initiation and maturity.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0f2847"/>
+    </marker>
+  </defs>
+  <rect width="960" height="560" rx="18" fill="#fbfaf7"/>
+  <text x="54" y="54" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#0f2847">Repurchase Agreement Flow</text>
+  <text x="54" y="84" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5b6478">A repo is economically a collateralized loan: cash moves one way, securities move the other way.</text>
+
+  <rect x="54" y="122" width="852" height="176" rx="16" fill="#ffffff" stroke="#b08d57" stroke-width="2"/>
+  <text x="82" y="156" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#b08d57">Opening Leg - Today</text>
+  <rect x="100" y="192" width="210" height="60" rx="10" fill="#fff8ea" stroke="#b08d57"/>
+  <text x="205" y="217" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f2847">Security Buyer</text>
+  <text x="205" y="238" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">cash lender</text>
+  <rect x="650" y="192" width="210" height="60" rx="10" fill="#fff8ea" stroke="#b08d57"/>
+  <text x="755" y="217" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f2847">Security Seller</text>
+  <text x="755" y="238" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">cash borrower</text>
+  <line x1="310" y1="207" x2="642" y2="207" stroke="#0f2847" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="476" y="191" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f2847">Cash / loan amount</text>
+  <line x1="650" y1="242" x2="318" y2="242" stroke="#0f2847" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="484" y="264" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f2847">Collateral securities</text>
+
+  <rect x="54" y="340" width="852" height="176" rx="16" fill="#ffffff" stroke="#4c7899" stroke-width="2"/>
+  <text x="82" y="374" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#4c7899">Closing Leg - Maturity</text>
+  <rect x="100" y="410" width="210" height="60" rx="10" fill="#eef5fb" stroke="#4c7899"/>
+  <text x="205" y="435" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f2847">Security Buyer</text>
+  <text x="205" y="456" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">returns collateral</text>
+  <rect x="650" y="410" width="210" height="60" rx="10" fill="#eef5fb" stroke="#4c7899"/>
+  <text x="755" y="435" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f2847">Security Seller</text>
+  <text x="755" y="456" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">repurchases securities</text>
+  <line x1="650" y1="425" x2="318" y2="425" stroke="#0f2847" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="484" y="409" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f2847">Repurchase price = loan + interest</text>
+  <line x1="310" y1="460" x2="642" y2="460" stroke="#0f2847" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="476" y="482" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#0f2847">Collateral securities returned</text>
+</svg>

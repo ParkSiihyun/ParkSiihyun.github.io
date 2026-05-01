@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Credit and Maturity Spectrum</title>
+  <desc id="desc">A two-axis diagram mapping fixed income instruments by maturity and credit risk.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#5b6478"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0f2847" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect width="960" height="560" rx="18" fill="#fbfaf7"/>
+  <text x="54" y="54" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#0f2847">Credit / Maturity Spectrum</text>
+  <text x="54" y="84" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5b6478">Instruments move right as maturity extends and upward as credit risk rises.</text>
+
+  <line x1="140" y1="455" x2="850" y2="455" stroke="#5b6478" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="140" y1="455" x2="140" y2="130" stroke="#5b6478" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="815" y="492" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#5b6478">Maturity</text>
+  <text x="54" y="142" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#5b6478" transform="rotate(-90 54 142)">Credit risk</text>
+
+  <line x1="345" y1="132" x2="345" y2="455" stroke="#0f2847" stroke-opacity="0.10" stroke-width="2"/>
+  <line x1="610" y1="132" x2="610" y2="455" stroke="#0f2847" stroke-opacity="0.10" stroke-width="2"/>
+  <line x1="140" y1="345" x2="850" y2="345" stroke="#0f2847" stroke-opacity="0.10" stroke-width="2"/>
+  <line x1="140" y1="238" x2="850" y2="238" stroke="#0f2847" stroke-opacity="0.10" stroke-width="2"/>
+
+  <text x="190" y="482" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">&lt; 1Y</text>
+  <text x="434" y="482" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">1Y - 10Y</text>
+  <text x="704" y="482" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">&gt; 10Y</text>
+  <text x="82" y="430" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">Low</text>
+  <text x="68" y="320" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">Medium</text>
+  <text x="80" y="210" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">High</text>
+
+  <g filter="url(#shadow)">
+    <rect x="170" y="386" width="138" height="54" rx="8" fill="#ffffff" stroke="#b08d57" stroke-width="2"/>
+    <text x="239" y="407" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f2847">Treasury Bills</text>
+    <text x="239" y="428" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">short / low risk</text>
+
+    <rect x="185" y="315" width="112" height="50" rx="8" fill="#ffffff" stroke="#b08d57" stroke-width="2"/>
+    <text x="241" y="337" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f2847">Repo</text>
+    <text x="241" y="357" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">secured</text>
+
+    <rect x="365" y="365" width="180" height="62" rx="8" fill="#ffffff" stroke="#0f2847" stroke-opacity="0.45" stroke-width="2"/>
+    <text x="455" y="389" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f2847">Treasury Notes</text>
+    <text x="455" y="410" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">intermediate / low risk</text>
+
+    <rect x="635" y="360" width="170" height="64" rx="8" fill="#ffffff" stroke="#0f2847" stroke-opacity="0.45" stroke-width="2"/>
+    <text x="720" y="384" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f2847">Treasury Bonds</text>
+    <text x="720" y="405" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">long / low risk</text>
+
+    <rect x="188" y="254" width="142" height="52" rx="8" fill="#fff8ea" stroke="#b08d57" stroke-width="2"/>
+    <text x="259" y="276" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f2847">CP / CDs</text>
+    <text x="259" y="296" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">short corporate</text>
+
+    <rect x="410" y="252" width="140" height="54" rx="8" fill="#eef5fb" stroke="#4c7899" stroke-width="2"/>
+    <text x="480" y="274" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f2847">ABS / MBS</text>
+    <text x="480" y="294" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">securitized</text>
+
+    <rect x="585" y="260" width="210" height="62" rx="8" fill="#eef5fb" stroke="#4c7899" stroke-width="2"/>
+    <text x="690" y="284" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f2847">IG Corporate Bonds</text>
+    <text x="690" y="305" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">longer / moderate risk</text>
+
+    <rect x="618" y="162" width="210" height="64" rx="8" fill="#fff0f0" stroke="#a94c4c" stroke-width="2"/>
+    <text x="723" y="186" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f2847">High Yield Bonds</text>
+    <text x="723" y="207" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">credit spread driven</text>
+
+    <rect x="398" y="158" width="180" height="58" rx="8" fill="#fff0f0" stroke="#a94c4c" stroke-width="2"/>
+    <text x="488" y="181" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f2847">Leveraged Loans</text>
+    <text x="488" y="202" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">floating-rate credit</text>
+  </g>
+</svg>

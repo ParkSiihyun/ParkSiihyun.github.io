@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Asset-Backed Commercial Paper Structure</title>
+  <desc id="desc">A simplified structure showing originator assets transferred to an SPE that issues ABCP to investors.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0f2847"/>
+    </marker>
+  </defs>
+  <rect width="960" height="520" rx="18" fill="#fbfaf7"/>
+  <text x="54" y="54" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#0f2847">ABCP Structure</text>
+  <text x="54" y="84" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5b6478">Short-term paper is issued by an SPE and backed by financial assets such as receivables.</text>
+
+  <rect x="72" y="165" width="205" height="120" rx="14" fill="#ffffff" stroke="#b08d57" stroke-width="2"/>
+  <text x="174" y="197" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f2847">Originator</text>
+  <text x="174" y="224" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">corporation / bank</text>
+  <text x="174" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">owns receivables</text>
+
+  <rect x="380" y="155" width="210" height="140" rx="16" fill="#fff8ea" stroke="#b08d57" stroke-width="2"/>
+  <text x="485" y="191" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f2847">SPE</text>
+  <text x="485" y="216" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">bankruptcy-remote</text>
+  <text x="485" y="240" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">holds collateral pool</text>
+  <text x="485" y="264" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">issues ABCP</text>
+
+  <rect x="706" y="165" width="205" height="120" rx="14" fill="#ffffff" stroke="#4c7899" stroke-width="2"/>
+  <text x="808" y="197" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f2847">Investors</text>
+  <text x="808" y="224" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">buy short-term paper</text>
+  <text x="808" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">take collateral risk</text>
+
+  <line x1="277" y1="205" x2="372" y2="205" stroke="#0f2847" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="324" y="190" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">receivables</text>
+  <line x1="380" y1="255" x2="285" y2="255" stroke="#0f2847" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="326" y="276" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">cash</text>
+
+  <line x1="590" y1="205" x2="698" y2="205" stroke="#0f2847" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="644" y="190" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">ABCP</text>
+  <line x1="706" y1="255" x2="598" y2="255" stroke="#0f2847" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="648" y="276" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">proceeds</text>
+
+  <rect x="214" y="360" width="532" height="72" rx="12" fill="#eef5fb" stroke="#4c7899" stroke-width="2"/>
+  <text x="480" y="388" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f2847">Core idea</text>
+  <text x="480" y="414" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">ABCP investors are repaid from the cash flows and credit quality of the asset pool.</text>
+</svg>

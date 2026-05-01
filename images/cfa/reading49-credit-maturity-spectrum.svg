@@ -15,8 +15,8 @@
 
   <line x1="140" y1="455" x2="850" y2="455" stroke="#5b6478" stroke-width="2" marker-end="url(#arrow)"/>
   <line x1="140" y1="455" x2="140" y2="130" stroke="#5b6478" stroke-width="2" marker-end="url(#arrow)"/>
-  <text x="815" y="492" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#5b6478">Maturity</text>
-  <text x="54" y="142" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#5b6478" transform="rotate(-90 54 142)">Credit risk</text>
+  <text x="148" y="120" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#5b6478">Higher credit risk</text>
+  <text x="736" y="522" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#5b6478">Longer maturity</text>
 
   <line x1="345" y1="132" x2="345" y2="455" stroke="#0f2847" stroke-opacity="0.10" stroke-width="2"/>
   <line x1="610" y1="132" x2="610" y2="455" stroke="#0f2847" stroke-opacity="0.10" stroke-width="2"/>

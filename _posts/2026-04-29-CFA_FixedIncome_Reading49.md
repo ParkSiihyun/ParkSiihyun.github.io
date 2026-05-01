@@ -58,11 +58,6 @@ tags: [Fixed Income, CFA Level I, Bond Market, Primary Market, Secondary Market]
 | Investment grade corporate | Unsecured investment grade corporate bonds |
 | High risk corporate | High yield corporate bonds, Leveraged loans |
 
-<figure class="sh-diagram">
-  <img src="/images/cfa/reading49-credit-maturity-spectrum.svg" alt="Credit and maturity spectrum for fixed income instruments">
-  <figcaption>Credit risk generally rises as issuers become weaker, while maturity risk rises as the time to principal repayment extends.</figcaption>
-</figure>
-
 ### Key Points
 
 - 영업현금흐름이 불안정한 회사는 debt 발행 시 투자자에게 **담보(security)**를 제공해야 할 가능성이 높다.
@@ -81,11 +76,6 @@ tags: [Fixed Income, CFA Level I, Bond Market, Primary Market, Secondary Market]
 | **Corporations** | 초과 유동성 운용을 위해 CP, repo, ABCP 등에 투자 |
 | **Central banks** | 통화정책 수행을 위해 Treasury notes 등 중기 국채 활용 |
 | **Hedge funds / Distressed debt funds** | High yield, distressed debt 등 고위험 자산에 투자 |
-
-<figure class="sh-diagram">
-  <img src="/images/cfa/reading49-investor-positioning.svg" alt="Investor positioning by maturity and credit risk">
-  <figcaption>Investor positioning is driven by liability matching, liquidity needs, policy goals, and risk appetite.</figcaption>
-</figure>
 
 ### Central Bank Open Market Operations
 
@@ -143,11 +133,6 @@ Bond fund의 benchmark는 fund의 실제 exposure와 맞아야 한다.
 | **Debut Issuer** | 최초로 채권을 발행하는 issuer |
 
 대부분의 primary market transaction은 investment bank 등 금융중개기관을 통해 이루어진다.
-
-<figure class="sh-diagram">
-  <img src="/images/cfa/reading49-primary-secondary-markets.svg" alt="Primary market and secondary market bond trading flow">
-  <figcaption>Primary market transactions raise new capital for issuers; secondary market transactions transfer existing bonds through dealers and investors.</figcaption>
-</figure>
 
 ### Underwritten vs Best Efforts Offering
 

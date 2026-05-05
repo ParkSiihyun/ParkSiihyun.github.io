@@ -28,6 +28,11 @@ The securities are backed by cash flows from the underlying collateral pool.
 | **Servicer** | Entity that collects payments from borrowers |
 | **ABS investor** | Investor who buys securities backed by collateral cash flows |
 
+<figure class="sh-diagram">
+  <img src="/images/cfa/reading63-securitization-flow.svg" alt="Securitization flow from borrowers and originator to SPE and ABS investors">
+  <figcaption>Securitization의 핵심은 loan pool을 SPE로 분리하고, 그 pool의 cash flow에 대한 claim을 ABS로 투자자에게 판매하는 것이다.</figcaption>
+</figure>
+
 ---
 
 ## 3. Role of the SPE
@@ -77,4 +82,3 @@ Investors can gain exposure to specific asset classes such as:
 - SPE structure separates collateral cash flows from originator credit.
 - The servicer collects payments and passes them through the structure.
 - ABS investors bear risk tied to the collateral pool and security structure.
-

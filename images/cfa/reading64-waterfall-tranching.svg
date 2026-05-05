@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">ABS Waterfall and Credit Tranching</title>
+  <desc id="desc">A waterfall diagram showing cash flow priority and credit loss absorption for senior, mezzanine, and equity tranches.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0f2847"/>
+    </marker>
+  </defs>
+  <rect width="960" height="560" rx="18" fill="#fbfaf7"/>
+  <text x="54" y="54" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#0f2847">ABS Waterfall and Tranching</text>
+  <text x="54" y="84" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5b6478">Cash is paid from senior to junior; credit losses are absorbed from junior to senior.</text>
+
+  <rect x="70" y="184" width="205" height="118" rx="14" fill="#fff8ea" stroke="#b08d57" stroke-width="2"/>
+  <text x="172" y="220" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#0f2847">Collateral Pool</text>
+  <text x="172" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">loans / receivables</text>
+  <text x="172" y="272" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">generate cash flows</text>
+
+  <line x1="275" y1="243" x2="380" y2="243" stroke="#0f2847" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="326" y="222" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">cash waterfall</text>
+
+  <rect x="390" y="135" width="270" height="70" rx="12" fill="#eef5fb" stroke="#4c7899" stroke-width="2"/>
+  <text x="525" y="163" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#0f2847">Senior Tranche</text>
+  <text x="525" y="188" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">paid first, losses last</text>
+
+  <rect x="390" y="230" width="270" height="70" rx="12" fill="#ffffff" stroke="#b08d57" stroke-width="2"/>
+  <text x="525" y="258" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#0f2847">Mezzanine Tranche</text>
+  <text x="525" y="283" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">middle priority</text>
+
+  <rect x="390" y="325" width="270" height="70" rx="12" fill="#fff0f0" stroke="#a94c4c" stroke-width="2"/>
+  <text x="525" y="353" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#0f2847">Equity Tranche</text>
+  <text x="525" y="378" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">paid last, losses first</text>
+
+  <path d="M685 360 L805 360 L805 170 L674 170" fill="none" stroke="#4c7899" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="802" y="263" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#4c7899" transform="rotate(-90 802 263)">cash priority</text>
+
+  <path d="M674 170 L745 170 L745 360 L685 360" fill="none" stroke="#a94c4c" stroke-width="3" stroke-dasharray="8 8" marker-end="url(#arrow)"/>
+  <text x="720" y="263" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#a94c4c" transform="rotate(-90 720 263)">loss absorption</text>
+
+  <rect x="170" y="455" width="620" height="58" rx="12" fill="#ffffff" stroke="#b08d57" stroke-width="2"/>
+  <text x="480" y="480" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f2847">Credit protection</text>
+  <text x="480" y="503" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">Junior tranches protect senior tranches by absorbing losses before them.</text>
+</svg>

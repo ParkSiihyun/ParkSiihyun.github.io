@@ -88,9 +88,13 @@ $$\text{Duration Gap} = \text{Macaulay Duration} - \text{Investment Horizon}$$
 | Positive duration gap | Price risk dominates |
 | Negative duration gap | Reinvestment risk dominates |
 
+<figure class="sh-diagram">
+  <img src="/images/cfa/reading56-duration-risk-tradeoff.svg" alt="Macaulay duration as the balance point between price risk and reinvestment risk">
+  <figcaption>Macaulay duration은 price risk와 reinvestment risk가 가장 잘 상쇄되는 투자기간을 잡는 데 쓰인다.</figcaption>
+</figure>
+
 ### Exam Points
 
 - HPR can differ from YTM when the bond is sold before maturity or coupons are reinvested at different rates.
 - Carrying value is the correct benchmark for measuring capital gain/loss.
 - Macaulay duration helps identify the horizon where price risk and reinvestment risk offset.
-

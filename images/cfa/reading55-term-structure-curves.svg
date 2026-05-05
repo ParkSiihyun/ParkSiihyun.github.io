@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Spot, Par, and Forward Curves</title>
+  <desc id="desc">A conceptual map comparing spot rates, par yields, and forward rates in fixed income term structure analysis.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0f2847"/>
+    </marker>
+  </defs>
+  <rect width="960" height="560" rx="18" fill="#fbfaf7"/>
+  <text x="54" y="54" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#0f2847">Spot, Par, and Forward Curves</text>
+  <text x="54" y="84" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5b6478">Each curve answers a different valuation question.</text>
+
+  <rect x="62" y="140" width="250" height="250" rx="14" fill="#ffffff" stroke="#4c7899" stroke-width="2"/>
+  <text x="187" y="176" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f2847">Spot Curve</text>
+  <text x="187" y="210" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">discount one cash flow</text>
+  <text x="187" y="234" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">at its own maturity</text>
+  <line x1="105" y1="300" x2="265" y2="300" stroke="#0f2847" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="108" y="328" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">today</text>
+  <circle cx="252" cy="300" r="20" fill="#eef5fb" stroke="#4c7899" stroke-width="2"/>
+  <text x="252" y="305" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f2847">CF</text>
+  <text x="187" y="362" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f2847">Use for no-arbitrage pricing</text>
+
+  <rect x="355" y="140" width="250" height="250" rx="14" fill="#fff8ea" stroke="#b08d57" stroke-width="2"/>
+  <text x="480" y="176" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f2847">Par Curve</text>
+  <text x="480" y="210" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">coupon rate that makes</text>
+  <text x="480" y="234" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">price equal to par</text>
+  <rect x="407" y="278" width="146" height="54" rx="9" fill="#ffffff" stroke="#b08d57" stroke-width="2"/>
+  <text x="480" y="300" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f2847">Price = 100</text>
+  <text x="480" y="320" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">solve for coupon</text>
+  <text x="480" y="362" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f2847">Use for new-issue comparison</text>
+
+  <rect x="648" y="140" width="250" height="250" rx="14" fill="#ffffff" stroke="#a94c4c" stroke-width="2"/>
+  <text x="773" y="176" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f2847">Forward Curve</text>
+  <text x="773" y="210" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">future rates implied</text>
+  <text x="773" y="234" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">by today's spot curve</text>
+  <line x1="696" y1="305" x2="840" y2="305" stroke="#0f2847" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="696" y1="329" x2="840" y2="329" stroke="#0f2847" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="696" y="286" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">year 1</text>
+  <text x="800" y="286" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">year 2</text>
+  <text x="773" y="362" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f2847">Use for implied future rates</text>
+
+  <rect x="160" y="445" width="640" height="58" rx="12" fill="#eef5fb" stroke="#4c7899" stroke-width="2"/>
+  <text x="480" y="470" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f2847">Core exam idea</text>
+  <text x="480" y="493" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">Spot rates price cash flows; par yields describe par bonds; forward rates are implied by spot rates.</text>
+</svg>

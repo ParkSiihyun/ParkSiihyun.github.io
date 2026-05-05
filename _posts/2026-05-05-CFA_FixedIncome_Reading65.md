@@ -31,6 +31,11 @@ Interest rates are a major driver of prepayment speed.
 | Rates fall | More refinancing, higher contraction risk |
 | Rates rise | Less refinancing, higher extension risk |
 
+<figure class="sh-diagram">
+  <img src="/images/cfa/reading65-prepayment-risk-map.svg" alt="Mortgage-backed security prepayment risk map for falling and rising interest rates">
+  <figcaption>MBS는 금리가 떨어지면 조기상환이 늘어 cash flow가 짧아지고, 금리가 오르면 조기상환이 줄어 cash flow가 길어진다.</figcaption>
+</figure>
+
 ---
 
 ## 3. Mortgage Loan Features
@@ -132,4 +137,3 @@ Support tranches absorb more prepayment variability to protect PAC investors.
 - Agency RMBS has government or GSE support; non-agency RMBS relies more on credit enhancement.
 - CMOs redistribute prepayment risk across tranches.
 - CMBS credit depends heavily on commercial property cash flows and call protection.
-

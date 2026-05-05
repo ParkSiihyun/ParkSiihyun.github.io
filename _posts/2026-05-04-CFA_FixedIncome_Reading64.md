@@ -68,6 +68,11 @@ ABS cash flows and losses are allocated through a priority structure.
 
 The junior or equity tranche protects senior tranches by absorbing initial credit losses.
 
+<figure class="sh-diagram">
+  <img src="/images/cfa/reading64-waterfall-tranching.svg" alt="ABS waterfall showing cash priority and loss absorption across senior mezzanine and equity tranches">
+  <figcaption>Waterfall 구조에서는 cash는 senior부터 내려가고, 손실은 equity부터 올라가며 senior tranche를 보호한다.</figcaption>
+</figure>
+
 ---
 
 ## 6. Credit Card ABS
@@ -100,4 +105,3 @@ These structures often include a lockout or revolving period to keep the collate
 - ABS tranching creates different risk levels from the same collateral pool.
 - Junior tranches absorb losses before senior tranches.
 - CLO collateral is usually leveraged bank loans.
-

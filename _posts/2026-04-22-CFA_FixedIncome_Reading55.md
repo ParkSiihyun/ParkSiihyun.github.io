@@ -76,6 +76,11 @@ Forward rates are implied rates, not guaranteed future spot rates.
 
 If the spot curve is upward sloping, longer-maturity spot rates are higher than shorter-maturity spot rates.
 
+<figure class="sh-diagram">
+  <img src="/images/cfa/reading55-term-structure-curves.svg" alt="Conceptual comparison of spot, par, and forward curves">
+  <figcaption>Spot curve는 cash flow 할인용, par curve는 par bond coupon 비교용, forward curve는 현재 spot curve가 내포한 미래 금리 해석용이다.</figcaption>
+</figure>
+
 ### Exam Points
 
 - Use spot rates to value individual bond cash flows.

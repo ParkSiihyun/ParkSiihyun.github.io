@@ -141,7 +141,7 @@ CP는 만기 도래 시 새 CP를 발행하여 기존 CP를 상환하는 경우�
 
 <figure class="sh-diagram">
   <img src="/images/cfa/reading50-abcp-structure.svg" alt="Asset-backed commercial paper structure with originator, SPE, and investors">
-  <figcaption>ABCP separates the asset pool into an SPE, which issues short-term paper backed by the collateral cash flows.</figcaption>
+  <figcaption>ABCP는 receivables 같은 자산을 SPE로 분리하고, SPE가 그 자산의 cash flow를 담보로 단기 paper를 발행하는 구조다.</figcaption>
 </figure>
 
 ---
@@ -154,14 +154,14 @@ CP는 만기 도래 시 새 CP를 발행하여 기존 CP를 상환하는 경우�
 
 ### Repo 구조
 
-| 단계 | Security Buyer / Cash Lender | Security Seller / Cash Borrower |
+| 단계 | Cash Lender | Cash Borrower |
 |------|------|------|
-| **Opening Leg** | 현금을 제공하고 collateral securities를 받음 | securities를 매도하고 현금을 받음 |
-| **Closing Leg** | securities를 돌려줌 | repurchase price를 지급하고 securities를 되사옴 |
+| **Opening Leg** | cash 제공, collateral 받음 | securities 제공, cash 받음 |
+| **Closing Leg** | collateral 반환 | repurchase price 지급, securities 재매입 |
 
 <figure class="sh-diagram">
   <img src="/images/cfa/reading50-repo-flow.svg" alt="Repo opening leg and closing leg cash and collateral flows">
-  <figcaption>A repo starts with cash against collateral and ends with the collateral being returned against the repurchase price.</figcaption>
+  <figcaption>Repo는 시작할 때 cash와 collateral이 서로 반대로 움직이고, 만기에는 collateral과 repurchase price가 다시 반대로 움직인다.</figcaption>
 </figure>
 
 ### 핵심 용어
@@ -222,7 +222,7 @@ $$\text{Variation Margin} = 1{,}001{,}667 - 990{,}000 = 11{,}667$$
 
 <figure class="sh-diagram">
   <img src="/images/cfa/reading50-repo-margin-haircut.svg" alt="Repo initial margin and haircut visualized with collateral value and loan amount">
-  <figcaption>Initial margin measures collateral value relative to the loan. Haircut measures the discount from collateral value to the loan amount.</figcaption>
+  <figcaption>Initial margin은 collateral value가 loan amount보다 얼마나 큰지를 보고, haircut은 collateral value에서 loan amount까지 얼마나 할인되는지를 본다.</figcaption>
 </figure>
 
 ---
@@ -300,11 +300,6 @@ Repo는 short seller가 securities를 확보하는 데 사용될 수 있다.
 | Covenants | 상대적으로 적음 | 더 restrictive할 수 있음 |
 | Maturity flexibility | 여러 만기로 발행 가능 | 보통 더 제한적 |
 | Rollover risk | 낮음 | 높음 |
-
-<figure class="sh-diagram">
-  <img src="/images/cfa/reading50-ig-vs-hy.svg" alt="Investment grade versus high yield corporate issuer funding characteristics">
-  <figcaption>Investment grade issuers usually have more funding flexibility; high yield investors focus more heavily on default probability and recovery value.</figcaption>
-</figure>
 
 ### Loss Given Default (LGD)
 

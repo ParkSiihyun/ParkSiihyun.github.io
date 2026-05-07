@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Forward Contract Payoff and Value</title>
+  <desc id="desc">A payoff diagram and timeline for long and short forward positions.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0f2847"/>
+    </marker>
+  </defs>
+  <rect width="960" height="560" rx="18" fill="#fbfaf7"/>
+  <text x="54" y="54" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#0f2847">Forward Payoff and Pricing Logic</text>
+  <text x="54" y="84" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5b6478">A forward starts at zero value and ends with a payoff based on spot price versus forward price.</text>
+
+  <line x1="100" y1="300" x2="430" y2="300" stroke="#5b6478" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="265" y1="430" x2="265" y2="170" stroke="#5b6478" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="410" y="330" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">S<tspan baseline-shift="sub">T</tspan></text>
+  <text x="180" y="184" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">payoff</text>
+  <line x1="140" y1="398" x2="390" y2="202" stroke="#4c7899" stroke-width="3"/>
+  <line x1="140" y1="202" x2="390" y2="398" stroke="#a94c4c" stroke-width="3"/>
+  <line x1="265" y1="295" x2="265" y2="305" stroke="#0f2847" stroke-width="2"/>
+  <text x="265" y="325" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">F<tspan baseline-shift="sub">0,T</tspan></text>
+  <text x="365" y="215" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#4c7899">Long</text>
+  <text x="365" y="390" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#a94c4c">Short</text>
+
+  <rect x="520" y="160" width="350" height="102" rx="14" fill="#eef5fb" stroke="#4c7899" stroke-width="2"/>
+  <text x="695" y="193" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#0f2847">At initiation</text>
+  <text x="695" y="222" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5b6478">contract value is usually zero</text>
+  <text x="695" y="246" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">no-arbitrage forward price is set today</text>
+
+  <rect x="520" y="300" width="350" height="116" rx="14" fill="#ffffff" stroke="#b08d57" stroke-width="2"/>
+  <text x="695" y="333" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#0f2847">At expiration</text>
+  <text x="695" y="362" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5b6478">Long payoff = S<tspan baseline-shift="sub">T</tspan> - F<tspan baseline-shift="sub">0,T</tspan></text>
+  <text x="695" y="390" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5b6478">Short payoff = F<tspan baseline-shift="sub">0,T</tspan> - S<tspan baseline-shift="sub">T</tspan></text>
+
+  <rect x="190" y="475" width="580" height="50" rx="12" fill="#fff8ea" stroke="#b08d57" stroke-width="2"/>
+  <text x="480" y="497" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f2847">Core idea</text>
+  <text x="480" y="518" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">Forward pricing is no-arbitrage; forward valuation after initiation changes as spot and rates change.</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Derivative Contract Types</title>
+  <desc id="desc">A map separating derivatives into forward commitments and contingent claims.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0f2847"/>
+    </marker>
+  </defs>
+  <rect width="960" height="560" rx="18" fill="#fbfaf7"/>
+  <text x="54" y="54" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#0f2847">Derivative Contract Map</text>
+  <text x="54" y="84" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5b6478">Most Level I derivative instruments fall into two payoff families.</text>
+
+  <rect x="370" y="126" width="220" height="78" rx="14" fill="#ffffff" stroke="#0f2847" stroke-width="2"/>
+  <text x="480" y="158" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f2847">Derivatives</text>
+  <text x="480" y="184" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">value depends on an underlying</text>
+
+  <line x1="435" y1="204" x2="285" y2="280" stroke="#0f2847" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="525" y1="204" x2="675" y2="280" stroke="#0f2847" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="90" y="285" width="300" height="150" rx="16" fill="#eef5fb" stroke="#4c7899" stroke-width="2"/>
+  <text x="240" y="323" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f2847">Forward Commitments</text>
+  <text x="240" y="352" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">both sides must transact later</text>
+  <text x="240" y="382" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f2847">Forwards, Futures, Swaps</text>
+  <text x="240" y="410" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">linear payoff around the contract price</text>
+
+  <rect x="570" y="285" width="300" height="150" rx="16" fill="#fff8ea" stroke="#b08d57" stroke-width="2"/>
+  <text x="720" y="323" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f2847">Contingent Claims</text>
+  <text x="720" y="352" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">payoff depends on an event or choice</text>
+  <text x="720" y="382" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f2847">Options, Credit Derivatives</text>
+  <text x="720" y="410" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">asymmetric payoff profile</text>
+
+  <rect x="190" y="475" width="580" height="50" rx="12" fill="#ffffff" stroke="#b08d57" stroke-width="2"/>
+  <text x="480" y="497" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f2847">Exam shortcut</text>
+  <text x="480" y="518" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">Forwards commit both parties; options give one side a right, not an obligation.</text>
+</svg>

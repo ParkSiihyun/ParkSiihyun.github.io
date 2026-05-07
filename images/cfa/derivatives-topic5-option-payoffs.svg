@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Option Payoff Profiles</title>
+  <desc id="desc">Payoff profiles for long call, short call, long put, and short put options.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0f2847"/>
+    </marker>
+  </defs>
+  <rect width="960" height="560" rx="18" fill="#fbfaf7"/>
+  <text x="54" y="54" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#0f2847">Option Payoff Profiles</text>
+  <text x="54" y="84" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5b6478">Long positions buy convexity; short positions sell the same payoff profile.</text>
+
+  <g transform="translate(70 130)">
+    <rect width="380" height="165" rx="14" fill="#ffffff" stroke="#4c7899" stroke-width="2"/>
+    <text x="190" y="30" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f2847">Long Call</text>
+    <line x1="55" y1="95" x2="330" y2="95" stroke="#5b6478" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="115" y1="135" x2="115" y2="55" stroke="#5b6478" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M70 95 L190 95 L310 55" fill="none" stroke="#4c7899" stroke-width="4"/>
+    <line x1="190" y1="91" x2="190" y2="99" stroke="#5b6478" stroke-width="2"/>
+    <text x="190" y="119" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">K</text>
+    <text x="190" y="70" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#0f2847">max(S - K, 0)</text>
+  </g>
+
+  <g transform="translate(510 130)">
+    <rect width="380" height="165" rx="14" fill="#fff0f0" stroke="#a94c4c" stroke-width="2"/>
+    <text x="190" y="30" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f2847">Short Call</text>
+    <line x1="55" y1="95" x2="330" y2="95" stroke="#5b6478" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="115" y1="135" x2="115" y2="55" stroke="#5b6478" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M70 95 L190 95 L310 135" fill="none" stroke="#a94c4c" stroke-width="4"/>
+    <line x1="190" y1="91" x2="190" y2="99" stroke="#5b6478" stroke-width="2"/>
+    <text x="190" y="119" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">K</text>
+    <text x="206" y="128" font-family="Inter, Arial, sans-serif" font-size="12" fill="#0f2847">-max(S - K, 0)</text>
+  </g>
+
+  <g transform="translate(70 335)">
+    <rect width="380" height="165" rx="14" fill="#eef5fb" stroke="#4c7899" stroke-width="2"/>
+    <text x="190" y="30" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f2847">Long Put</text>
+    <line x1="55" y1="95" x2="330" y2="95" stroke="#5b6478" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="115" y1="135" x2="115" y2="55" stroke="#5b6478" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M70 55 L190 95 L310 95" fill="none" stroke="#4c7899" stroke-width="4"/>
+    <line x1="190" y1="91" x2="190" y2="99" stroke="#5b6478" stroke-width="2"/>
+    <text x="190" y="119" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">K</text>
+    <text x="188" y="70" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#0f2847">max(K - S, 0)</text>
+  </g>
+
+  <g transform="translate(510 335)">
+    <rect width="380" height="165" rx="14" fill="#ffffff" stroke="#b08d57" stroke-width="2"/>
+    <text x="190" y="30" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f2847">Short Put</text>
+    <line x1="55" y1="95" x2="330" y2="95" stroke="#5b6478" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="115" y1="135" x2="115" y2="55" stroke="#5b6478" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M70 135 L190 95 L310 95" fill="none" stroke="#b08d57" stroke-width="4"/>
+    <line x1="190" y1="91" x2="190" y2="99" stroke="#5b6478" stroke-width="2"/>
+    <text x="190" y="119" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5b6478">K</text>
+    <text x="205" y="128" font-family="Inter, Arial, sans-serif" font-size="12" fill="#0f2847">-max(K - S, 0)</text>
+  </g>
+</svg>

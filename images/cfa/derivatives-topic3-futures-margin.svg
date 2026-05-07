@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Futures Daily Settlement and Margin</title>
+  <desc id="desc">A futures margin account diagram showing mark to market, initial margin, maintenance margin, and variation margin.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0f2847"/>
+    </marker>
+  </defs>
+  <rect width="960" height="560" rx="18" fill="#fbfaf7"/>
+  <text x="54" y="54" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#0f2847">Futures: Daily Settlement and Margin</text>
+  <text x="54" y="84" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5b6478">Futures gains and losses are settled every day through the margin account.</text>
+
+  <rect x="74" y="150" width="220" height="92" rx="14" fill="#eef5fb" stroke="#4c7899" stroke-width="2"/>
+  <text x="184" y="184" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#0f2847">Day 0</text>
+  <text x="184" y="213" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">post initial margin</text>
+
+  <line x1="294" y1="196" x2="380" y2="196" stroke="#0f2847" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="390" y="150" width="220" height="92" rx="14" fill="#ffffff" stroke="#b08d57" stroke-width="2"/>
+  <text x="500" y="184" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#0f2847">Each Day</text>
+  <text x="500" y="213" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">mark contract to market</text>
+
+  <line x1="610" y1="196" x2="696" y2="196" stroke="#0f2847" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="706" y="150" width="180" height="92" rx="14" fill="#fff8ea" stroke="#b08d57" stroke-width="2"/>
+  <text x="796" y="184" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#0f2847">Cash Flow</text>
+  <text x="796" y="213" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">gain or loss credited</text>
+
+  <rect x="164" y="315" width="632" height="138" rx="16" fill="#ffffff" stroke="#0f2847" stroke-width="2"/>
+  <line x1="220" y1="410" x2="740" y2="410" stroke="#5b6478" stroke-width="2"/>
+  <line x1="220" y1="365" x2="740" y2="365" stroke="#4c7899" stroke-width="3"/>
+  <line x1="220" y1="388" x2="740" y2="388" stroke="#a94c4c" stroke-width="3" stroke-dasharray="8 8"/>
+  <text x="760" y="370" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#4c7899">Initial margin</text>
+  <text x="760" y="393" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#a94c4c">Maintenance margin</text>
+  <path d="M350 350 C430 430, 500 430, 570 374 C620 332, 665 348, 715 388" fill="none" stroke="#b08d57" stroke-width="4"/>
+  <circle cx="715" cy="388" r="7" fill="#a94c4c"/>
+  <text x="440" y="342" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">margin account balance</text>
+  <text x="480" y="438" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f2847">If balance falls below maintenance margin, variation margin is required.</text>
+
+  <rect x="180" y="485" width="600" height="42" rx="12" fill="#eef5fb" stroke="#4c7899" stroke-width="2"/>
+  <text x="480" y="512" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#0f2847">Marking to market resets the economic entry price each day.</text>
+</svg>

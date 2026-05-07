@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Plain Vanilla Interest Rate Swap</title>
+  <desc id="desc">A plain vanilla interest rate swap showing pay fixed receive floating and net settlement.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0f2847"/>
+    </marker>
+  </defs>
+  <rect width="960" height="560" rx="18" fill="#fbfaf7"/>
+  <text x="54" y="54" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#0f2847">Plain Vanilla Interest Rate Swap</text>
+  <text x="54" y="84" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5b6478">A swap is economically a series of forward rate agreements.</text>
+
+  <rect x="92" y="210" width="230" height="120" rx="16" fill="#eef5fb" stroke="#4c7899" stroke-width="2"/>
+  <text x="207" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f2847">Long Swap</text>
+  <text x="207" y="278" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">pay fixed</text>
+  <text x="207" y="302" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">receive floating</text>
+
+  <rect x="638" y="210" width="230" height="120" rx="16" fill="#fff8ea" stroke="#b08d57" stroke-width="2"/>
+  <text x="753" y="248" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#0f2847">Short Swap</text>
+  <text x="753" y="278" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">receive fixed</text>
+  <text x="753" y="302" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">pay floating</text>
+
+  <line x1="330" y1="245" x2="630" y2="245" stroke="#a94c4c" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="480" y="226" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#a94c4c">fixed rate payment</text>
+  <line x1="630" y1="295" x2="330" y2="295" stroke="#4c7899" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="480" y="322" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#4c7899">floating rate payment</text>
+
+  <rect x="270" y="390" width="420" height="70" rx="12" fill="#ffffff" stroke="#0f2847" stroke-width="2"/>
+  <text x="480" y="418" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f2847">Net settlement</text>
+  <text x="480" y="443" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">(Receive rate - Pay rate) x Notional x Days / 360</text>
+
+  <line x1="230" y1="140" x2="730" y2="140" stroke="#5b6478" stroke-width="2" marker-end="url(#arrow)"/>
+  <circle cx="330" cy="140" r="7" fill="#b08d57"/>
+  <circle cx="460" cy="140" r="7" fill="#b08d57"/>
+  <circle cx="590" cy="140" r="7" fill="#b08d57"/>
+  <circle cx="720" cy="140" r="7" fill="#b08d57"/>
+  <text x="480" y="125" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6478">periodic settlement dates</text>
+</svg>

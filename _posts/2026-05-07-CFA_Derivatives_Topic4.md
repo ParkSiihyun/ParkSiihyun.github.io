@@ -9,6 +9,12 @@ tags: [Derivatives, CFA Level I, Swaps, Interest Rate Swap, FRA]
 
 ## Page 29. Topic 4. Pricing and Valuation of Interest rates and other swaps
 
+![Original Derivatives PDF page 29](/images/cfa/derivatives-pages/derivatives-page-29.jpg)
+
+*원본 PDF p.29*
+
+**OCR transcription**
+
 1. 스왑계약(Swap contracts)
 - 미래의 일정기간 동안 / 서로 다른 현금흐름을 / 주기적으로 교환하기로 약정하는 계약
 Receiving flacting nate
@@ -50,6 +56,12 @@ Salener?.
 
 ## Page 30. 3. 스왑계약과 선도계약의 비교
 
+![Original Derivatives PDF page 30](/images/cfa/derivatives-pages/derivatives-page-30.jpg)
+
+*원본 PDF p.30*
+
+**OCR transcription**
+
 공통점
 - 거래비용 : 일반적으로 초기에 비용에 발생하지 않음
 - 거래조건 : 거래방법, 만기 등에 제한이 없음
@@ -89,6 +101,12 @@ ex) 1개월 SOFR, 6개월 SOFR 교환
 
 ## Page 31. 6. 스왑거래 사용목적
 
+![Original Derivatives PDF page 31](/images/cfa/derivatives-pages/derivatives-page-31.jpg)
+
+*원본 PDF p.31*
+
+**OCR transcription**
+
 
 ### 1) 부채 및 자산의 금리 구조 전환 : IRS를 활용하는 경우, 기존의 금리구조의 전환 가능
 
@@ -111,6 +129,12 @@ fxed
 ---
 
 ## Page 32. 7. Interest rate swap; IRS
+
+![Original Derivatives PDF page 32](/images/cfa/derivatives-pages/derivatives-page-32.jpg)
+
+*원본 PDF p.32*
+
+**OCR transcription**
 
 - 일정기간 동안 서로 다른 금리의 이자를 교환하기로 약정하는 계약
 - 명목원금(notional principal) : 교환할 이자를 계산할 때 사용하는 원금
@@ -150,6 +174,12 @@ SOFRt- 1Q에서 t=0에 결정된 3개월 짜리 SOFR을 말하는 것.
 
 ## Page 33. 8. 금리스왑 예시
 
+![Original Derivatives PDF page 33](/images/cfa/derivatives-pages/derivatives-page-33.jpg)
+
+*원본 PDF p.33*
+
+**OCR transcription**
+
 - 예시 : TY Quarterly Paying IRS, plain vanilla
 - position : pay fixed 2%, receive floating 90 day SOFR, Notional amount $10M
 0
@@ -170,6 +200,12 @@ Recelve SOFR. 1.6%
 ---
 
 ## Page 34. 9. 선도계약으로 스왑계약 부제
+
+![Original Derivatives PDF page 34](/images/cfa/derivatives-pages/derivatives-page-34.jpg)
+
+*원본 PDF p.34*
+
+**OCR transcription**
 
 - Suep Contracts : A Seres of Fornard ContacT
 •IRS : A Seies of FRA
@@ -223,6 +259,12 @@ Swap은 기간 내 고정금리가 모두 같지만 Swap을 FRA로 복제할 경
 
 ## Page 35. 10. Swap contracts pricing
 
+![Original Derivatives PDF page 35](/images/cfa/derivatives-pages/derivatives-page-35.jpg)
+
+*원본 PDF p.35*
+
+**OCR transcription**
+
 - forward contracts pricing : 선도가격을 결정하는 프로세스
 -&gt; 계약시점에서 선도계약의 가치가 0이되도록 설정 -&gt; no arbitrage pricing
 - Swap contracts pricing : 스왑계약의 고정금리(swap fixed rate)을 결정하는 프로세스
@@ -260,6 +302,12 @@ CI+Sa)
 ---
 
 ## Page 36. 11. Swap Contacls Value at t=0 (Pog fired receive floating)
+
+![Original Derivatives PDF page 36](/images/cfa/derivatives-pages/derivatives-page-36.jpg)
+
+*원본 PDF p.36*
+
+**OCR transcription**
 
 Tenor
 IQ
@@ -303,6 +351,12 @@ I V.CTl = o
 ---
 
 ## Page 37. 12. Swap contracts 의 가치변동
+
+![Original Derivatives PDF page 37](/images/cfa/derivatives-pages/derivatives-page-37.jpg)
+
+*원본 PDF p.37*
+
+**OCR transcription**
 
 
 ### 1) Pay fixed Receive Floating

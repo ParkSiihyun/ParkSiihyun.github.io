@@ -9,6 +9,12 @@ tags: [Derivatives, CFA Level I, Forward Commitment, Contingent Claims, CDS]
 
 ## Page 1. Reading 66. Derivative Instrument and Derivative Market features
 
+![Original Derivatives PDF page 1](/images/cfa/derivatives-pages/derivatives-page-01.jpg)
+
+*원본 PDF p.1*
+
+**OCR transcription**
+
 1. 증권
 - 증권 security : 권리와 의무를 증명하는 문서(증서) 형태로 존재하는 금융상품
 - 주식, 채권 -&gt; 전통적인 금융상품
@@ -44,6 +50,12 @@ t=T
 ---
 
 ## Page 2. 4. 옵션계약
+
+![Original Derivatives PDF page 2](/images/cfa/derivatives-pages/derivatives-page-02.jpg)
+
+*원본 PDF p.2*
+
+**OCR transcription**
 
 - 콜옵션(Call option) : 미래 특정 시점에 기초자산을 미리 정한 가격을 살 수 있는 권리
 - 풋옵션(put option) : 미래 특정 시점에 기초자산을 미리 정한 가격을 팔 수 있는 권리
@@ -95,6 +107,12 @@ CDS는 swap 계약이지만, contingent claim 일방의무의 성격을 가지�
 
 ## Page 3. 6. 파생상품이 거래되는 시장(market)에 따른 구분
 
+![Original Derivatives PDF page 3](/images/cfa/derivatives-pages/derivatives-page-03.jpg)
+
+*원본 PDF p.3*
+
+**OCR transcription**
+
 장내파생상품(exchanged-traded derivatives) : 거래소에서 거래되는 파생상품
 - 거래소(exchange) : 기초자산의 종류, 계약단위 만기, 결제 방식, 거래 시간 등 거래방법이 표준화
 되고, 규격화된 시장
@@ -130,6 +148,12 @@ C
 
 ## Page 4. 2) 가격 및 변동성에 대한 정보 제공(information discovery)
 
+![Original Derivatives PDF page 4](/images/cfa/derivatives-pages/derivatives-page-04.jpg)
+
+*원본 PDF p.4*
+
+**OCR transcription**
+
 - 파생상품은 미래시점에 대한 균형가격 정보, 시장에 내재되어 있는 변동성 등에 대한 정보를 제공
 - 선물(futures) : 미래 균형가격에 대한 정보 제공 -&gt; expected future spot price
 -&gt; 현물 원유 가격이 $70인데 선물 가격이 $76이라면 미래에 원유 가격이 현재보다 비싸질 것이라고
@@ -157,6 +181,12 @@ C
 ---
 
 ## Page 5. 8. 파생상품의 위험(risks)
+
+![Original Derivatives PDF page 5](/images/cfa/derivatives-pages/derivatives-page-05.jpg)
+
+*원본 PDF p.5*
+
+**OCR transcription**
 
 
 ### 1) Implicit leverage : 파생상품은 레버리지 효과가 있는 경우 존재함
@@ -196,6 +226,12 @@ basis risk 라고 한다.
 
 ## Page 6. 9. 파생상품 투자 기관
 
+![Original Derivatives PDF page 6](/images/cfa/derivatives-pages/derivatives-page-06.jpg)
+
+*원본 PDF p.6*
+
+**OCR transcription**
+
 
 ### 1) 일반 기업 : 금융기관이 아닌 일반 기업도 파생상품을 거래하는 경우가 있음, 이는 대부분 헷지를 목적으
 
@@ -226,6 +262,12 @@ Net investment hedge : 해외 사업장의 순자산에 대하여 위험을 회�
 ---
 
 ## Page 7. 10. 차익거래(arbitrage)
+
+![Original Derivatives PDF page 7](/images/cfa/derivatives-pages/derivatives-page-07.jpg)
+
+*원본 PDF p.7*
+
+**OCR transcription**
 
 - 정의 : 추가적인 비용이나 위험부담 없이, 이익을 얻고자 하는 거래
 - 대표적인 유형 : 동일한 상품이나 서로 다른 두 개의 시장에서 거래되는 가격이 다를 경우

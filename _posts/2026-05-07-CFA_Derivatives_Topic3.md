@@ -5,15 +5,7 @@ categories: cfa
 tags: [Derivatives, CFA Level I, Futures, Margin, Marking to Market, Interest Rate Futures]
 ---
 
-이 글은 Derivatives PDF의 Topic 3 필기를 축약하지 않고, 선물계약의 표준화, 청산소, 마진, 일일정산, 금리선물까지 원래 흐름대로 옮긴 버전이다.
-
-## Page 23. Toric 3. Prang and Valuation of Futures Conrost.
-
-![Original Derivatives PDF page 23](/images/cfa/derivatives-pages/derivatives-page-23.jpg)
-
-*원본 PDF p.23*
-
-**OCR transcription**
+## Topic 3. Pricing and Valuation of Futures Contracts.
 
 1. 선물계약(Futures Contracts)
 - 미래의 특정시점에 특정 기초자산을 미리 정한 가격으로 매매하기로 약정하는 계약
@@ -67,13 +59,7 @@ C
 
 ---
 
-## Page 24. 4) 정산가격(Settlement price)
-
-![Original Derivatives PDF page 24](/images/cfa/derivatives-pages/derivatives-page-24.jpg)
-
-*원본 PDF p.24*
-
-**OCR transcription**
+## 4) 정산가격(Settlement price)
 
 - 정산가격 : 선물계약의 만기일에 선물계약을 정산할 때 사용하는 현물가격 ~ ST
 5MLong Position
@@ -113,13 +99,7 @@ Short rostion : 기초자산을 판기로 약정한 사람. PayoN: FP- ST
 
 ---
 
-## Page 25. 9) Price limits(1일 가격 변동한도)
-
-![Original Derivatives PDF page 25](/images/cfa/derivatives-pages/derivatives-page-25.jpg)
-
-*원본 PDF p.25*
-
-**OCR transcription**
+## 9) Price limits(1일 가격 변동한도)
 
 - 거래소에서 부과하는 선물계약의 일일 변동의 폭
 - limit up : 일일 변동할 수 있는 상한 가격
@@ -154,13 +134,7 @@ Intal margim 까지
 
 ---
 
-## Page 26. Margin에 대해서
-
-![Original Derivatives PDF page 26](/images/cfa/derivatives-pages/derivatives-page-26.jpg)
-
-*원본 PDF p.26*
-
-**OCR transcription**
+## Margin에 대해서
 
 - Repo나, 주식 대차거래에서의 마진과는 다르다.
 - 앞의 예시에 금 선물 1계약(=100온스), 옵션 가격 온스당 $1950일 때
@@ -189,19 +163,9 @@ Day 1 종가
 -&gt; 선물 계약 자체의 가치는 따라서 거의 매일 0으로 수렴. 매일매일 일일정산되기 때문
 -&gt; 선도 계약은 일일정산이 아니기 때문에 시간이 흐를 수록 선도계약의 가치가 계속 증가
 
-![Futures daily settlement and margin account mechanics](/images/cfa/derivatives-topic3-futures-margin.svg)
-
-*일일정산과 margin account reset 느낌을 잡기 위한 보조 그림.*
-
 ---
 
-## Page 27. 4. 금리선물(Interest rate futures)
-
-![Original Derivatives PDF page 27](/images/cfa/derivatives-pages/derivatives-page-27.jpg)
-
-*원본 PDF p.27*
-
-**OCR transcription**
+## 4. 금리선물(Interest rate futures)
 
 - 기초자산을 금리(이자율) 또는 채권으로 하는 선물 계약 -&gt; MRR or T bonds
 - 선물은 계약의 형태가 표준화되어, 거래소에 상장되어 거래됨
@@ -221,13 +185,7 @@ bu 실제 트레이더들은 100 안하고 2냥 HKR X100해서 3,4, 이름에 bi
 
 ---
 
-## Page 28. 5. 선물 및 선도계약의 비교
-
-![Original Derivatives PDF page 28](/images/cfa/derivatives-pages/derivatives-page-28.jpg)
-
-*원본 PDF p.28*
-
-**OCR transcription**
+## 5. 선물 및 선도계약의 비교
 
 - 기초자산, 만기 등 계약의 조건이 동일하다면, 이론적으로 선도가격과 선물가격은 동일
 Torward Proe: ToCo- SCI+r4)T

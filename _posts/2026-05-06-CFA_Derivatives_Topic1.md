@@ -5,15 +5,7 @@ categories: cfa
 tags: [Derivatives, CFA Level I, Forward Commitment, Contingent Claims, CDS]
 ---
 
-이 글은 Derivatives PDF의 Topic 1 필기를 축약하지 않고, 페이지 순서와 원래 필기 흐름을 유지해서 블로그 형식으로 옮긴 버전이다.
-
-## Page 1. Reading 66. Derivative Instrument and Derivative Market features
-
-![Original Derivatives PDF page 1](/images/cfa/derivatives-pages/derivatives-page-01.jpg)
-
-*원본 PDF p.1*
-
-**OCR transcription**
+## Reading 66. Derivative Instrument and Derivative Market features
 
 1. 증권
 - 증권 security : 권리와 의무를 증명하는 문서(증서) 형태로 존재하는 금융상품
@@ -21,7 +13,7 @@ tags: [Derivatives, CFA Level I, Forward Commitment, Contingent Claims, CDS]
 2. 계약(contracts)
 - 계약서의 형태로 존재하는 금융상품
 - 파생상품(derivatives)
-*정의 : 전통적인 금융상품(주식 및 채권)의 가격 움직임에 의해 그 가치가 결정되는 금융상품
+- 정의 : 전통적인 금융상품(주식 및 채권)의 가격 움직임에 의해 그 가치가 결정되는 금융상품
 - 선도계약, 선물계약, 스왑계약, 옵션계약
 - 기초자산(underlying asset) : 파생상품의 가치를 결정하는 금융상품
 : stock, bond, index, FX(외환), interest rate, commodities, credit 등
@@ -49,13 +41,7 @@ t=T
 
 ---
 
-## Page 2. 4. 옵션계약
-
-![Original Derivatives PDF page 2](/images/cfa/derivatives-pages/derivatives-page-02.jpg)
-
-*원본 PDF p.2*
-
-**OCR transcription**
+## 4. 옵션계약
 
 - 콜옵션(Call option) : 미래 특정 시점에 기초자산을 미리 정한 가격을 살 수 있는 권리
 - 풋옵션(put option) : 미래 특정 시점에 기초자산을 미리 정한 가격을 팔 수 있는 권리
@@ -99,19 +85,9 @@ CDS는 swap 계약이지만, contingent claim 일방의무의 성격을 가지�
 -&gt; 보장 매도자는 아무런 의무가 없음
 - 신용사건이 발생한 경우 : 부도채권에 대한 원금을 보장받을 수 있음
 
-![Map of derivative contract types: forward commitments and contingent claims](/images/cfa/derivatives-topic1-contract-map.svg)
-
-*Forward commitment과 contingent claim을 한 번에 구분하기 위한 보조 그림.*
-
 ---
 
-## Page 3. 6. 파생상품이 거래되는 시장(market)에 따른 구분
-
-![Original Derivatives PDF page 3](/images/cfa/derivatives-pages/derivatives-page-03.jpg)
-
-*원본 PDF p.3*
-
-**OCR transcription**
+## 6. 파생상품이 거래되는 시장(market)에 따른 구분
 
 장내파생상품(exchanged-traded derivatives) : 거래소에서 거래되는 파생상품
 - 거래소(exchange) : 기초자산의 종류, 계약단위 만기, 결제 방식, 거래 시간 등 거래방법이 표준화
@@ -146,13 +122,7 @@ C
 
 ---
 
-## Page 4. 2) 가격 및 변동성에 대한 정보 제공(information discovery)
-
-![Original Derivatives PDF page 4](/images/cfa/derivatives-pages/derivatives-page-04.jpg)
-
-*원본 PDF p.4*
-
-**OCR transcription**
+## 2) 가격 및 변동성에 대한 정보 제공(information discovery)
 
 - 파생상품은 미래시점에 대한 균형가격 정보, 시장에 내재되어 있는 변동성 등에 대한 정보를 제공
 - 선물(futures) : 미래 균형가격에 대한 정보 제공 -&gt; expected future spot price
@@ -180,13 +150,7 @@ C
 
 ---
 
-## Page 5. 8. 파생상품의 위험(risks)
-
-![Original Derivatives PDF page 5](/images/cfa/derivatives-pages/derivatives-page-05.jpg)
-
-*원본 PDF p.5*
-
-**OCR transcription**
+## 8. 파생상품의 위험(risks)
 
 
 ### 1) Implicit leverage : 파생상품은 레버리지 효과가 있는 경우 존재함
@@ -224,13 +188,7 @@ basis risk 라고 한다.
 
 ---
 
-## Page 6. 9. 파생상품 투자 기관
-
-![Original Derivatives PDF page 6](/images/cfa/derivatives-pages/derivatives-page-06.jpg)
-
-*원본 PDF p.6*
-
-**OCR transcription**
+## 9. 파생상품 투자 기관
 
 
 ### 1) 일반 기업 : 금융기관이 아닌 일반 기업도 파생상품을 거래하는 경우가 있음, 이는 대부분 헷지를 목적으
@@ -261,13 +219,7 @@ Net investment hedge : 해외 사업장의 순자산에 대하여 위험을 회�
 
 ---
 
-## Page 7. 10. 차익거래(arbitrage)
-
-![Original Derivatives PDF page 7](/images/cfa/derivatives-pages/derivatives-page-07.jpg)
-
-*원본 PDF p.7*
-
-**OCR transcription**
+## 10. 차익거래(arbitrage)
 
 - 정의 : 추가적인 비용이나 위험부담 없이, 이익을 얻고자 하는 거래
 - 대표적인 유형 : 동일한 상품이나 서로 다른 두 개의 시장에서 거래되는 가격이 다를 경우

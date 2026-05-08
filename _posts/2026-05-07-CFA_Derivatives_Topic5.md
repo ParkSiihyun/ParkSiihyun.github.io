@@ -5,28 +5,20 @@ categories: cfa
 tags: [Derivatives, CFA Level I, Options, Put Call Parity, Binomial Model]
 ---
 
-이 글은 Derivatives PDF의 Topic 5 필기를 축약하지 않고, 옵션 payoff, moneyness, put-call parity, boundary condition, binomial model까지 원래 흐름대로 옮긴 버전이다.
-
-## Page 38. TopiC 5 : Pricing and Valuation of Options
-
-![Original Derivatives PDF page 38](/images/cfa/derivatives-pages/derivatives-page-38.jpg)
-
-*원본 PDF p.38*
-
-**OCR transcription**
+## Topic 5 : Pricing and Valuation of Options
 
 Options vs Forwards
 구분
 계약의 성격
 초기비용
 pitions contract
-Ang postions 권리안
-Short postions 의무안
+Ang positions 권리안
+Short positions 의무안
 - 초기비용(inita ast) f0
 option premium
 Forwards Cortract
 rong positions : 이행의우
-Short postions : 이행의무
+Short positions : 이행의무
 - 초기비용 = 0
 1. 옵션계약(options)
 - 특정자산을 / 특정 미래 시점 또는 그 이전에 / 약정된 가격으로 / 살 수 있는 / 팔 수 있는 권리
@@ -48,13 +40,7 @@ Short postions : 이행의무
 
 ---
 
-## Page 39. 3. 행사방법에 따른 분류
-
-![Original Derivatives PDF page 39](/images/cfa/derivatives-pages/derivatives-page-39.jpg)
-
-*원본 PDF p.39*
-
-**OCR transcription**
+## 3. 행사방법에 따른 분류
 
 
 ### 1) European options : 옵션의 만기에 한 번만 행사가능 -&gt; at expiration date
@@ -70,23 +56,23 @@ Short postions : 이행의무
 -&gt; american option value = MAX(European, early exercise)
 - American option value &gt;= European option value
 4. Option payoff : 만기시점 옵션의 가치
-Poyot
+Payoff
 K
 BFP
-A Payott
+A Payoff
 K
-*
+-
 Max prott : 60
-Call option long pastion
+Call option long position
 Max Loss:-Premium
 주가 ST가 행사가격 K보다 클경우 행사
 Payoff : Max (o,St-K)
-Call option short postion
+Call option short position
 Max Troht: Prenium
 주가 ST가 행사가격보다 클 때 행사당함.
 Max IoSS : - 8
 Poy 9P:-Max(o,k-Sr)
-Per option Short postion
+Per option Short position
 주가 ST가 K보파 작을 때 행사당함
 Payoff:-Max(o.st-k)
 Max prohit : Pr
@@ -103,13 +89,7 @@ Max loss: -Pr
 
 ---
 
-## Page 40. 옵션의 Poyott:/P/L
-
-![Original Derivatives PDF page 40](/images/cfa/derivatives-pages/derivatives-page-40.jpg)
-
-*원본 PDF p.40*
-
-**OCR transcription**
+## 옵션의 Payoff:/P/L
 
 Coll-long
 Cal Short
@@ -120,27 +100,17 @@ KPr
 B?:
 K-Rr
 PL
-5. Moneyness (Payott) 기준)
+5. Moneyness (Payoff) 기준)
 In the Money (ITM) : 옵연 행사 시 이득인 상태
-At the Money (AIM) : 손해도 이들도 아님.
-Dut of the Morg(0) : 지금행사하면 손해
+At the Money (ATM) : 손해도 이들도 아님.
+Out of the Money(0) : 지금행사하면 손해
 Dee ITM : 개이득, Deo OTM : 개손해
 K
 BEP: kt pr
 
-![Payoff profiles for long call short call long put and short put options](/images/cfa/derivatives-topic5-option-payoffs.svg)
-
-*네 가지 기본 옵션 포지션의 payoff 방향을 확인하기 위한 보조 그림.*
-
 ---
 
-## Page 41. 6. 옵션의 현재 시점에서의 가치
-
-![Original Derivatives PDF page 41](/images/cfa/derivatives-pages/derivatives-page-41.jpg)
-
-*원본 PDF p.41*
-
-**OCR transcription**
+## 6. 옵션의 현재 시점에서의 가치
 
 옵션의 가치 = 내재가치(Trtrinsic value)+ 시간가치(Tine Vane of maney)
 Vt
@@ -169,13 +139,7 @@ MaX (-500)=0
 
 ---
 
-## Page 42. 옵션가격과 변수와의 관계
-
-![Original Derivatives PDF page 42](/images/cfa/derivatives-pages/derivatives-page-42.jpg)
-
-*원본 PDF p.42*
-
-**OCR transcription**
+## 옵션가격과 변수와의 관계
 
 Gt:fCSR,r, T, 8) 각변수가 Optim의 가치에 어떤 영향을 주나?
 무위험이자율
@@ -194,7 +158,7 @@ discount
 R2 Max (cnTi -St,0)
 &lt; 변수와 옵션가치의 상관관계&gt;
 Call
-Eurepean
+European
 ④
 t=T
 -Pf=Max(K-S, 0)
@@ -238,13 +202,7 @@ American
 
 ---
 
-## Page 43. 8. 옵션가치와 잔존민기
-
-![Original Derivatives PDF page 43](/images/cfa/derivatives-pages/derivatives-page-43.jpg)
-
-*원본 PDF p.43*
-
-**OCR transcription**
+## 8. 옵션가치와 잔존민기
 
 - 잔존만기가 길어지면, 일반적으로 옵션의 가치는 커짐 -&gt; time value 증가
 - 예외 -&gt; 배당주식에 대한 유러피언 콜옵션, Deep ITM 유러피언 콜옵션
@@ -288,13 +246,7 @@ American
 
 ---
 
-## Page 44. I) Protective put
-
-![Original Derivatives PDF page 44](/images/cfa/derivatives-pages/derivatives-page-44.jpg)
-
-*원본 PDF p.44*
-
-**OCR transcription**
+## I) Protective put
 
 
 ### 2) Fiduciary Call
@@ -328,13 +280,7 @@ C= ato -k/CtrAyT
 
 ---
 
-## Page 45. 3) 합성포지션 (Synthetic postion)
-
-![Original Derivatives PDF page 45](/images/cfa/derivatives-pages/derivatives-page-45.jpg)
-
-*원본 PDF p.45*
-
-**OCR transcription**
+## 3) 합성포지션 (Synthetic position)
 
 - 서로 다른 금융상품을 결합하여 새로운 형폐의 궁융상품 포지션으로 합성하는 것.
 - Sarthetic stocks: S= Cp+K/CH)T
@@ -342,10 +288,10 @@ Synthe Put : P=C-S+K/CItHA)T
 synthetic Cal:C= Stp-k/(ltr4)T
 oynthett bond: Klittyi= 8tp-C
 
-### 4) Put call Foruard Parity
+### 4) Put call Forward Parity
 
 Pot call parity : Pot So= CotK/ CIttP)T
-Put call Foruard Parity
+Put call Forward Parity
 Fo(T)= So(Itrf)T a S= CmsT
 Do+Fo(r)/CHr)T= Co +K/city)
 
@@ -367,13 +313,7 @@ FVCD
 
 ---
 
-## Page 46. 10. Boundary Condition
-
-![Original Derivatives PDF page 46](/images/cfa/derivatives-pages/derivatives-page-46.jpg)
-
-*원본 PDF p.46*
-
-**OCR transcription**
+## 10. Boundary Condition
 
 
 ### 1) European Option
@@ -389,26 +329,20 @@ PoE 2 NX(O,K/CHrA)-5) 크거나 같아야 함 (시간가치20)
 
 ### 2) American Option
 
-Americon option- Max (European option, Fary Everise option)
+American option- Max (European option, Fary Everise option)
 〈coll option〉
 O Earpean call otion lauer boad Max Co, 50-K/CHA)T)
 @ Eary exerse opition louerband- Max Co, So TK) 지금 행사한다고 가정.
 S.-k/CIt) 2So-K a CoA2 Max(So-krHip7,0)
 &lt; put option〉
-O Earopean put option louer pound = Max Co, KIcitef)-50)
+O European put option louer pound = Max Co, KIcitef)-50)
 a Torly exercise ostion louer bound= Max (O, k-So)
 KCItHAT-So&lt;K-So = FA 2 Max(k-50.0)
 Maximun value는 각 Minimumn value 에서 (-) 항목들 모두 0으로 취급.
 
 ---
 
-## Page 47. ex) Min Value of Americah, Europech put options.
-
-![Original Derivatives PDF page 47](/images/cfa/derivatives-pages/derivatives-page-47.jpg)
-
-*원본 PDF p.47*
-
-**OCR transcription**
+## ex) Min Value of Americah, Europech put options.
 
 An/ANE 65m15/5-63/7.52
 PE= Max (K/(tr4) 50, 0) = 0.95
@@ -418,7 +352,7 @@ Min Valve of American W European Coll optrons.
 GE= Mox (So- NeCH4)7,0) =3.79
 Ca=Ma (So-fCttf)5, 0)= 379.
 II option vanation : 이항모형 (Binomial tree model)
-option Valnation : tat'시점에 옵션의 현재가치를 평가
+option Valuation : tat'시점에 옵션의 현재가치를 평가
 aiscount
 (= Max (S:-×,0)
 ST에 대한 정보가 필요
@@ -430,13 +364,7 @@ Orion Valuation model or option Pricing model
 
 ---
 
-## Page 48. 1) Binomial tree model Cheaged PF Method)
-
-![Original Derivatives PDF page 48](/images/cfa/derivatives-pages/derivatives-page-48.jpg)
-
-*원본 PDF p.48*
-
-**OCR transcription**
+## 1) Binomial tree model Cheaged PF Method)
 
 - 기초자산의 수익률이 이항분포를 따른다고 기정 : 내기의 주가는 일정한 비율로 1P doum.
 MSu= Sox (Itu)
@@ -458,13 +386,7 @@ hedged PF의 구축이 가능하다
 
 ---
 
-## Page 49. 60
-
-![Original Derivatives PDF page 49](/images/cfa/derivatives-pages/derivatives-page-49.jpg)
-
-*원본 PDF p.49*
-
-**OCR transcription**
+## 60
 
 55
 Hedged PF의 Vo=-C. th So
@@ -484,16 +406,10 @@ V Vo=-Coth So = 1.66/.03 = 11.34
 
 ---
 
-## Page 50. 2냥외우자.
-
-![Original Derivatives PDF page 50](/images/cfa/derivatives-pages/derivatives-page-50.jpg)
-
-*원본 PDF p.50*
-
-**OCR transcription**
+## 2냥외우자.
 
 
-### 2) Binomial mode with rist neutral Valvation
+### 2) Binomial model with risk neutral Valuation
 
 7S.U
 오를 확률 T어

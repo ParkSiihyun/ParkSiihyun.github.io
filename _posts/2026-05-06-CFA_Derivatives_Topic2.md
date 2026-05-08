@@ -5,15 +5,7 @@ categories: cfa
 tags: [Derivatives, CFA Level I, Forwards, Cost of Carry, FRA, FX Forward]
 ---
 
-이 글은 Derivatives PDF의 Topic 2 필기를 축약하지 않고, 선도가격, valuation, FX forward, FRA 계산 흐름을 원래 페이지 순서대로 옮긴 버전이다.
-
-## Page 8. Topic 2 : Pricing and Valuation of Forward Contracts
-
-![Original Derivatives PDF page 8](/images/cfa/derivatives-pages/derivatives-page-08.jpg)
-
-*원본 PDF p.8*
-
-**OCR transcription**
+## Topic 2 : Pricing and Valuation of Forward Contracts
 
 1. 금융상품이 거래되는 시장(Market)
 현물시장(Spot Market) : 거래가 성립되는 시점과 결제가 동일한 시점에 이루어지는 시장
@@ -37,13 +29,7 @@ t=T
 
 ---
 
-## Page 9. 2. 선도계약(forward contracts)
-
-![Original Derivatives PDF page 9](/images/cfa/derivatives-pages/derivatives-page-09.jpg)
-
-*원본 PDF p.9*
-
-**OCR transcription**
+## 2. 선도계약(forward contracts)
 
 : 미래의 특정시점에 / 특정 기초자산을 / 미리 정한 가격으로 / 매매하기로 약정하는 계약
 선도계약의 구성항목
@@ -87,19 +73,13 @@ t=0 시점에 안기가 T인 선도계약의 가치 = 0
 
 ---
 
-## Page 10. 3. 선도계약의 Payoff and Settlement
-
-![Original Derivatives PDF page 10](/images/cfa/derivatives-pages/derivatives-page-10.jpg)
-
-*원본 PDF p.10*
-
-**OCR transcription**
+## 3. 선도계약의 Payoff and Settlement
 
 
 ### 1) payor : 파생상품 만기시점의 가치(value at expiration) Ut,F
 
 - 1ong porton reyot: dT- 1aCT) 3 센도약 당사자 간의 Zoosumn gone
--Shor postion Papot: Fa-$
+-Shor position Papot: Fa-$
 !
 }
 ST
@@ -121,26 +101,16 @@ tt
 forward long Poation e Peyota ST -Fo(T) 라면 그만큼 현금을 받게 되고,
 forard chor poition 사람은 FOCT)-S 만큼 현금을 지불해야 한다.
 
-![Forward contract payoff diagram for long and short positions](/images/cfa/derivatives-topic2-forward-payoff.svg)
-
-*Long forward와 short forward의 payoff 방향을 확인하기 위한 보조 그림.*
-
 ---
 
-## Page 11. 4. 선도계약의 Valuation
-
-![Original Derivatives PDF page 11](/images/cfa/derivatives-pages/derivatives-page-11.jpg)
-
-*원본 PDF p.11*
-
-**OCR transcription**
+## 4. 선도계약의 Valuation
 
 
 ### 1) 금융상품의 가치
 
 - 미래에 발생하는 모든 현금흐름의 현재가치의 합
 - 선도계약의 현금흐름은
-PayOR (ng postion)=ST-FoT)을 현자화하면 신도약의 가치(alic)가 됨,
+PayOR (ng position)=ST-FoT)을 현자화하면 신도약의 가치(alic)가 됨,
 Vo =
 5-FO(T S.- 5O(T
 (ltr)T
@@ -172,13 +142,7 @@ Fo(T)
 
 ---
 
-## Page 12. 5. 선도가격의 결정 : t= 0 시점에서 선도가격은 어떻게 결정하나?
-
-![Original Derivatives PDF page 12](/images/cfa/derivatives-pages/derivatives-page-12.jpg)
-
-*원본 PDF p.12*
-
-**OCR transcription**
+## 5. 선도가격의 결정 : t= 0 시점에서 선도가격은 어떻게 결정하나?
 
 Cost of carry model
 - 선도가격을 현물가격과 / 현물을 만기까지 보유하는 데 필요한 비용을 합한 금액으로 결정
@@ -217,13 +181,7 @@ SO 만큼 대출해서 들고 있었다면 SO*(1+r) T만큼 비용이 들었을 
 
 ---
 
-## Page 13. Cost of Carry Model의 확장 1-&gt; 기초자산이 금융자산인 경우 -&gt; 추가적인 보유 편익 발생
-
-![Original Derivatives PDF page 13](/images/cfa/derivatives-pages/derivatives-page-13.jpg)
-
-*원본 PDF p.13*
-
-**OCR transcription**
+## Cost of Carry Model의 확장 1-&gt; 기초자산이 금융자산인 경우 -&gt; 추가적인 보유 편익 발생
 
 
 ### 1) 기초자산에서 발생하는 현금흐름 : 배당 dividends, 이자 interests
@@ -262,13 +220,7 @@ FolT= [So+PV of Cost - PV or Bonett ] x (1t))
 
 ---
 
-## Page 14. 6. Currency Forwards = FX forward
-
-![Original Derivatives PDF page 14](/images/cfa/derivatives-pages/derivatives-page-14.jpg)
-
-*원본 PDF p.14*
-
-**OCR transcription**
+## 6. Currency Forwards = FX forward
 
 
 ### 1) 기초자산(underlying asset) : 외국통화(foreign currency)
@@ -306,20 +258,14 @@ tT
 
 ---
 
-## Page 15. IxCIt@ S(Ita).F
-
-![Original Derivatives PDF page 15](/images/cfa/derivatives-pages/derivatives-page-15.jpg)
-
-*원본 PDF p.15*
-
-**OCR transcription**
+## IxCIt@ S(Ita).F
 
 (I+t)
 
 ### 2) 경리면
 
 Clthb)
-#
+\#
 F와 S가 직접표시법든 (F% 5) 간정표시법이든(Ty Sk)
 - 아래에 있는 것을 BaeCineg로, 남로 두고 계산하면공, 등이며 Eu Gase!
 (|+rg)
@@ -339,13 +285,7 @@ Cltra)
 
 ---
 
-## Page 16. 7. 이산복리 연속복리
-
-![Original Derivatives PDF page 16](/images/cfa/derivatives-pages/derivatives-page-16.jpg)
-
-*원본 PDF p.16*
-
-**OCR transcription**
+## 7. 이산복리 연속복리
 
 원금 1원, 이자율 2% , 만기 t= T
 Arnual
@@ -371,13 +311,7 @@ r= in 1.02 = 0.0198 = 1.98%
 
 ---
 
-## Page 17. 8. Valnation : 다양한 시점에서 선도계약의 가치
-
-![Original Derivatives PDF page 17](/images/cfa/derivatives-pages/derivatives-page-17.jpg)
-
-*원본 PDF p.17*
-
-**OCR transcription**
+## 8. Valuation : 다양한 시점에서 선도계약의 가치
 
 Priang-성도가격의 결정. 6(T) S tot of Cony
 Vo(T)=O 계약의 가치 0|IRP
@@ -393,7 +327,7 @@ Valuation
 £=t
 T-t
 /t
-만기시점 Vf(T) Payot : ST- Fo(T)
+만기시점 Vf(T) Payoff : ST- Fo(T)
 FoCT)=S.(tFf)"
 3 Cost of Carry.
 ST- Fo(T)
@@ -406,13 +340,7 @@ Fo(T) &gt; VoCT) =0
 
 ---
 
-## Page 18. 기초자산에서 추가적인 Cost Beneft이 발생하는 경우
-
-![Original Derivatives PDF page 18](/images/cfa/derivatives-pages/derivatives-page-18.jpg)
-
-*원본 PDF p.18*
-
-**OCR transcription**
+## 기초자산에서 추가적인 Cost Beneft이 발생하는 경우
 
 - 선도가격이 달라짐.
 
@@ -444,13 +372,7 @@ V.(T)=0
 
 ---
 
-## Page 19. 9. Forward Rate Agreement(선도금리계약) -&gt; interest Rate Forward
-
-![Original Derivatives PDF page 19](/images/cfa/derivatives-pages/derivatives-page-19.jpg)
-
-*원본 PDF p.19*
-
-**OCR transcription**
+## 9. Forward Rate Agreement(선도금리계약) -&gt; interest Rate Forward
 
 - FRA : 미래의 일정 구간 동안 적용할 금리를 미리 약정하는 계약
 -&gt; 미래의 금리를 사고 팔기로 약정하는 계약
@@ -483,13 +405,7 @@ Fixed bond short : 채권을 빌려서 팔아서 더 싼값에 매입해야 이�
 
 ---
 
-## Page 20. FRA - 금리 위험의 Hedge
-
-![Original Derivatives PDF page 20](/images/cfa/derivatives-pages/derivatives-page-20.jpg)
-
-*원본 PDF p.20*
-
-**OCR transcription**
+## FRA - 금리 위험의 Hedge
 
 - FRA long position 예시
 Company A : 30일 후에 90일간 자금을 차입할 예정 -&gt; 차입금리 : 90-day SOFR
@@ -512,13 +428,7 @@ Company B가 직면한 위험 : 30일 후에 금리가 하락할 위험
 
 ---
 
-## Page 21. FRA Pricing
-
-![Original Derivatives PDF page 21](/images/cfa/derivatives-pages/derivatives-page-21.jpg)
-
-*원본 PDF p.21*
-
-**OCR transcription**
+## FRA Pricing
 
 - 기초자산(underlying asset) : 미래의 일정 구간동안 적용할 금리 -&gt; 선도금리
 - FRA pricing : 미래 구간의 금리를 Forward rate으로 거나 팔자고 약정하면 no arbitrage
@@ -538,19 +448,13 @@ t=3m 시점에서 Sem = 2%라면? FRA long paition 이라면 0.7% 이틀
 5=3m 시점에서 Som = 1X 라면? FRA long pasifion 이라면 0. 3% 이득.
 - 금리가 기초자산인 상품, 특징- 용어
 Notional Frinciple : 계약서 상의 원금
-Amuatized rafe: MRK, Fornard rate 등은 모두 영환산 공리.
+Amuatized rafe: MRK, Forward rate 등은 모두 영환산 공리.
 Arear 위
 Day comt adjustent
 
 ---
 
-## Page 22. FRA Payott and Settement
-
-![Original Derivatives PDF page 22](/images/cfa/derivatives-pages/derivatives-page-22.jpg)
-
-*원본 PDF p.22*
-
-**OCR transcription**
+## FRA Payoff and Settement
 
 PAYA: 파생상품 계약 만기시점의 기치
 FRA POSOP = Notional Princpal x (5-F) X D360
@@ -561,7 +465,7 @@ Som은 이 시점에서 확정
 - 근데 그 금리가 적용되는 대상은 그 이후 6개월.
 3 그래서 PO4O는 9m 시점의 이자차이
 - 하지만 실제 FRA는 그럴 3m 시점에 확인해서 바크 정산.
-ex) Poyotig: (1.57-1.32) X 8IM X 6R = 91000.
+ex) Payoffig: (1.57-1.32) X 8IM X 6R = 91000.
 ^
 NP
 이라는 POR는 9n에서 발생.

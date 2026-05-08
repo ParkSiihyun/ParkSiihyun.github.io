@@ -1,9 +1,27 @@
 ---
-title: "CFA FSA Reading 27 — Introduction to Financial Statement Analysis"
+title: "Introduction to Financial Statement Analysis (Reading 27)"
 date: 2026-01-06
 categories: cfa
-tags: [FSA, CFA Level I]
+tags: [FSA, CFA Level I, Reading 27]
+excerpt: "Sihyun CFA Notes - Introduction to Financial Statement Analysis (Reading 27)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Introduction to Financial Statement Analysis**
+- 먼저 잡을 축: Standard Setting Bodies (기준 제정 기관), Financial Statement Components, SEC Required Filings
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Standard Setting Bodies (기준 제정 기관)
+2. Financial Statement Components
+3. SEC Required Filings
+4. Business Segment (Operating Segment)
+5. Audit (외부 감사)
+6. Internal Controls (내부통제)
+
+## Main Notes
 
 ## 1. Standard Setting Bodies (기준 제정 기관)
 

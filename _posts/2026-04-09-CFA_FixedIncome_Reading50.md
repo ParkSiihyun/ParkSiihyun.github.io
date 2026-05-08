@@ -1,9 +1,33 @@
 ---
-title: "CFA Fixed Income Reading 50 — Fixed Income Markets for Corporate Issuers"
+title: "Fixed Income Markets for Corporate Issuers (Reading 50)"
 date: 2026-04-09
 categories: cfa
-tags: [Fixed Income, CFA Level I, Corporate Issuers, Commercial Paper, Repo, High Yield]
+tags: [Fixed Income, CFA Level I, Corporate Issuers, Commercial Paper, Repo, High Yield, Reading 50]
+excerpt: "Sihyun CFA Notes - Fixed Income Markets for Corporate Issuers (Reading 50)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Fixed Income Markets for Corporate Issuers**
+- 먼저 잡을 축: Short-Term Funding for Nonfinancial Corporations, External Loan Financing, Secured / Asset-Backed Loans
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Short-Term Funding for Nonfinancial Corporations
+2. External Loan Financing
+3. Secured / Asset-Backed Loans
+4. Commercial Paper (CP)
+5. Short-Term Funding for Financial Institutions
+6. Asset-Backed Commercial Paper (ABCP)
+7. Repurchase Agreement (Repo)
+8. Repo Example
+9. Repo and Short Selling
+10. Factors Affecting Repo Rate
+11. Repo Risks
+12. Long-Term Funding: Investment Grade vs High Yield Issuers
+
+## Main Notes
 
 ## 1. Short-Term Funding for Nonfinancial Corporations
 

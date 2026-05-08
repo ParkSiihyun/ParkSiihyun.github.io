@@ -1,9 +1,33 @@
 ---
-title: "CFA FSA Reading 30 — Analyzing Statements of Cash Flow"
+title: "Analyzing Statements of Cash Flow (Reading 30)"
 date: 2026-01-14
 categories: cfa
-tags: [FSA, CFA Level I, Cash Flow]
+tags: [FSA, CFA Level I, Cash Flow, Reading 30]
+excerpt: "Sihyun CFA Notes - Analyzing Statements of Cash Flow (Reading 30)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Analyzing Statements of Cash Flow**
+- 먼저 잡을 축: Cash Flow Statement 개요, US GAAP vs IFRS — CF 분류 차이, Direct Method vs Indirect Method
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Cash Flow Statement 개요
+2. US GAAP vs IFRS — CF 분류 차이
+3. Direct Method vs Indirect Method
+4. CFO — Direct Method 계산
+5. CFO — Indirect Method 계산
+6. CFI 계산 (Direct)
+7. CFF 계산 (Direct)
+8. EBITDA와 CFO의 관계
+9. Working Capital 분석
+10. 기업 생애주기별 CF 패턴
+11. CFO vs EBIT
+12. Free Cash Flow
+
+## Main Notes
 
 ## 1. Cash Flow Statement 개요
 

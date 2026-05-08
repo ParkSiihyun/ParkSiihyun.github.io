@@ -1,9 +1,29 @@
 ---
-title: "CFA FSA Reading 32 — Analysis of Inventories"
+title: "Analysis of Inventories (Reading 32)"
 date: 2026-01-18
 categories: cfa
-tags: [FSA, CFA Level I, Inventory]
+tags: [FSA, CFA Level I, Inventory, Reading 32]
+excerpt: "Sihyun CFA Notes - Analysis of Inventories (Reading 32)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Analysis of Inventories**
+- 먼저 잡을 축: Inventory 회계 방법, Inventory Measurement (재고자산 측정), Inflation 환경에서 FIFO vs LIFO 비교
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Inventory 회계 방법
+2. Inventory Measurement (재고자산 측정)
+3. Inflation 환경에서 FIFO vs LIFO 비교
+4. Inventory Write-down의 재무제표 영향
+5. LIFO Liquidation
+6. LIFO Reserve
+7. Inventory 구성 분석
+8. 주요 재고 관련 지표
+
+## Main Notes
 
 ## 1. Inventory 회계 방법
 

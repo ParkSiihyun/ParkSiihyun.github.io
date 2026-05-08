@@ -1,9 +1,26 @@
 ---
-title: "CFA Fixed Income Reading 61 - Credit Analysis for Government Issuers"
+title: "Credit Analysis for Government Issuers (Reading 61)"
 date: 2026-05-01
 categories: cfa
-tags: [Fixed Income, CFA Level I, Sovereign Credit, Government Issuers, Municipal Bonds]
+tags: [Fixed Income, CFA Level I, Sovereign Credit, Government Issuers, Municipal Bonds, Reading 61]
+excerpt: "Sihyun CFA Notes - Credit Analysis for Government Issuers (Reading 61)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Credit Analysis for Government Issuers**
+- 먼저 잡을 축: Sovereign Credit Analysis, Qualitative Factors, Quantitative Factors
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Sovereign Credit Analysis
+2. Qualitative Factors
+3. Quantitative Factors
+4. Regional and Municipal Governments
+5. Key Risks
+
+## Main Notes
 
 ## 1. Sovereign Credit Analysis
 
@@ -74,4 +91,3 @@ Revenue bonds often have higher credit risk because repayment depends on the suc
 - Debt in reserve currency can reduce funding pressure.
 - External debt exposes the issuer to foreign currency risk.
 - General obligation bonds are backed by taxing power; revenue bonds are backed by project revenue.
-

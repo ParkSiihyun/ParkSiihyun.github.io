@@ -1,9 +1,27 @@
 ---
-title: "CFA Fixed Income Reading 63 - Fixed Income Securitization"
+title: "Fixed Income Securitization (Reading 63)"
 date: 2026-05-03
 categories: cfa
-tags: [Fixed Income, CFA Level I, Securitization, SPE, Asset-Backed Securities]
+tags: [Fixed Income, CFA Level I, Securitization, SPE, Asset-Backed Securities, Reading 63]
+excerpt: "Sihyun CFA Notes - Fixed Income Securitization (Reading 63)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Fixed Income Securitization**
+- 먼저 잡을 축: Securitization, Basic Process, Role of the SPE
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Securitization
+2. Basic Process
+3. Role of the SPE
+4. Benefits to Issuers
+5. Benefit to Investors
+6. Key Risks
+
+## Main Notes
 
 ## 1. Securitization
 

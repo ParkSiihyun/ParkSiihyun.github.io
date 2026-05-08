@@ -1,9 +1,33 @@
 ---
-title: "CFA Equity Reading 46 — Equity Valuation: Concepts and Basic Tools"
+title: "Equity Valuation: Concepts and Basic Tools (Reading 46)"
 date: 2026-03-24
 categories: cfa
-tags: [Equity, CFA Level I, Valuation, DDM, DCF]
+tags: [Equity, CFA Level I, Valuation, DDM, DCF, Reading 46]
+excerpt: "Sihyun CFA Notes - Equity Valuation: Concepts and Basic Tools (Reading 46)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Equity Valuation: Concepts and Basic Tools**
+- 먼저 잡을 축: DDM — Dividend Discount Model, Free Cash Flow to Equity (FCFE), Estimating the Required Return for Equity
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. DDM — Dividend Discount Model
+2. Free Cash Flow to Equity (FCFE)
+3. Estimating the Required Return for Equity
+4. Preferred Stock Valuation
+5. Gordon Growth Model (Constant Growth Model)
+6. Key Insight: $k_e$ vs $g_c$ 관계
+7. Estimating Growth Rate in Dividends
+8. A Firm with No Current Dividend
+9. Multi-Stage Dividend Growth Model
+10. Appropriate Models 정리
+11. Relative Valuation Measures (상대가치평가)
+12. Enterprise Value (EV) Multiples
+
+## Main Notes
 
 ## 1. DDM — Dividend Discount Model
 

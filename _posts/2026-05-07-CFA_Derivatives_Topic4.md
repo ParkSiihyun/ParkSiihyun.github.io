@@ -1,9 +1,33 @@
 ---
-title: "CFA Derivatives Topic 4 - Pricing and Valuation of Interest Rate Swaps"
+title: "Pricing and Valuation of Interest Rate Swaps (Reading 69)"
 date: 2026-05-07
 categories: cfa
-tags: [Derivatives, CFA Level I, Swaps, Interest Rate Swap, FRA]
+tags: [Derivatives, CFA Level I, Swaps, Interest Rate Swap, FRA, Reading 69]
+excerpt: "Sihyun CFA Notes - Pricing and Valuation of Interest Rate Swaps (Reading 69)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Pricing and Valuation of Interest Rate Swaps**
+- 먼저 잡을 축: 스왑계약 swap contracts, 스왑계약의 구성요소, 스왑계약과 선도계약의 비교
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. 스왑계약 swap contracts
+2. 스왑계약의 구성요소
+3. 스왑계약과 선도계약의 비교
+4. 스왑계약의 종류
+5. IRS의 유형
+6. 스왑거래 사용목적
+7. Interest rate swap, IRS
+8. 금리스왑 예시
+9. 선도계약으로 스왑계약 복제
+10. Swap contracts pricing
+11. Swap contract value at t = 0
+12. Swap contract의 가치변동
+
+## Main Notes
 
 ## 1. 스왑계약 swap contracts
 

@@ -1,9 +1,28 @@
 ---
-title: "CFA FSA Reading 34 — Topics in Long-Term Liabilities and Equity"
+title: "Topics in Long-Term Liabilities and Equity (Reading 34)"
 date: 2026-01-26
 categories: cfa
-tags: [FSA, CFA Level I, Liabilities, Leases]
+tags: [FSA, CFA Level I, Liabilities, Leases, Reading 34]
+excerpt: "Sihyun CFA Notes - Topics in Long-Term Liabilities and Equity (Reading 34)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Topics in Long-Term Liabilities and Equity**
+- 먼저 잡을 축: Leases 개요, Operating Lease vs Finance Lease, Lessee 회계처리
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Leases 개요
+2. Operating Lease vs Finance Lease
+3. Lessee 회계처리
+4. Finance Lease 상각 스케줄 예시
+5. Lessor 회계처리
+6. Pension Plans (연금)
+7. Share-Based Compensation (주식기준보상)
+
+## Main Notes
 
 ## 1. Leases 개요
 

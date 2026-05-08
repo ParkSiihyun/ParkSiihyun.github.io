@@ -1,9 +1,26 @@
 ---
-title: "CFA Fixed Income Reading 57 - Yield-Based Bond Duration Measures and Properties"
+title: "Yield-Based Bond Duration Measures and Properties (Reading 57)"
 date: 2026-04-26
 categories: cfa
-tags: [Fixed Income, CFA Level I, Duration, Modified Duration, PVBP]
+tags: [Fixed Income, CFA Level I, Duration, Modified Duration, PVBP, Reading 57]
+excerpt: "Sihyun CFA Notes - Yield-Based Bond Duration Measures and Properties (Reading 57)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Yield-Based Bond Duration Measures and Properties**
+- 먼저 잡을 축: Modified Duration, Approximate Modified Duration, Money Duration and Dollar Duration
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Modified Duration
+2. Approximate Modified Duration
+3. Money Duration and Dollar Duration
+4. Price Value of a Basis Point
+5. Duration Properties
+
+## Main Notes
 
 ## 1. Modified Duration
 
@@ -82,4 +99,3 @@ Zero-coupon bonds have duration equal to maturity because all cash flow is recei
 - Modified duration estimates percentage price change.
 - PVBP estimates price change for a 1 bp yield move.
 - Lower-coupon and longer-maturity bonds usually carry more interest rate risk.
-

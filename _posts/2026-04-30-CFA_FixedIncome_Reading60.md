@@ -1,9 +1,28 @@
 ---
-title: "CFA Fixed Income Reading 60 - Credit Risk"
+title: "Credit Risk (Reading 60)"
 date: 2026-04-30
 categories: cfa
-tags: [Fixed Income, CFA Level I, Credit Risk, Expected Loss, Credit Spread]
+tags: [Fixed Income, CFA Level I, Credit Risk, Expected Loss, Credit Spread, Reading 60]
+excerpt: "Sihyun CFA Notes - Credit Risk (Reading 60)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Credit Risk**
+- 먼저 잡을 축: Credit Risk, Illiquidity vs Insolvency, Expected Loss
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Credit Risk
+2. Illiquidity vs Insolvency
+3. Expected Loss
+4. Expected Loss and Credit Spread
+5. Credit Ratings
+6. Credit Spread Risk
+7. Yield Spread Components
+
+## Main Notes
 
 ## 1. Credit Risk
 
@@ -123,4 +142,3 @@ Bid-offer spread is a common proxy for liquidity risk.
 - Recovery rate reduces LGD.
 - Ratings are useful but lag market information.
 - Credit spreads widen in weaker economic conditions and when liquidity deteriorates.
-

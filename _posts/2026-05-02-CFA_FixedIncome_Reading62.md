@@ -1,9 +1,27 @@
 ---
-title: "CFA Fixed Income Reading 62 - Credit Analysis for Corporate Issuers"
+title: "Credit Analysis for Corporate Issuers (Reading 62)"
 date: 2026-05-02
 categories: cfa
-tags: [Fixed Income, CFA Level I, Corporate Credit, Covenants, Recovery Rate]
+tags: [Fixed Income, CFA Level I, Corporate Credit, Covenants, Recovery Rate, Reading 62]
+excerpt: "Sihyun CFA Notes - Credit Analysis for Corporate Issuers (Reading 62)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Credit Analysis for Corporate Issuers**
+- 먼저 잡을 축: Corporate Credit Analysis, Qualitative Factors, Covenants
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Corporate Credit Analysis
+2. Qualitative Factors
+3. Covenants
+4. Quantitative Factors
+5. Seniority and Recovery
+6. Structural Subordination
+
+## Main Notes
 
 ## 1. Corporate Credit Analysis
 
@@ -99,4 +117,3 @@ Reason:
 - High yield bonds usually rely more heavily on restrictive covenants.
 - Secured debt usually has higher recovery than unsecured debt.
 - Structural subordination can weaken parent-company bondholder claims.
-

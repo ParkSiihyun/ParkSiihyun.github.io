@@ -1,9 +1,29 @@
 ---
-title: "CFA Fixed Income Reading 48 — Fixed Income Contingency Provisions"
+title: "Fixed Income Contingency Provisions (Reading 48)"
 date: 2026-04-02
 categories: cfa
-tags: [Fixed Income, CFA Level I, Callable Bond, Putable Bond, Convertible Bond]
+tags: [Fixed Income, CFA Level I, Callable Bond, Putable Bond, Convertible Bond, Reading 48]
+excerpt: "Sihyun CFA Notes - Fixed Income Contingency Provisions (Reading 48)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Fixed Income Contingency Provisions**
+- 먼저 잡을 축: Contingency Provisions 개요, Callable Bonds, Putable Bonds
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Contingency Provisions 개요
+2. Callable Bonds
+3. Putable Bonds
+4. Warrants 신주인수권
+5. Convertible Bonds (CB)
+6. Contingent Convertible Bonds (CoCo)
+7. Legal, Regulatory, and Tax Considerations
+8. Taxation of Bond Income
+
+## Main Notes
 
 ## 1. Contingency Provisions 개요
 

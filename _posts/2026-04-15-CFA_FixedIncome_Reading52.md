@@ -1,9 +1,29 @@
 ---
-title: "CFA Fixed Income Reading 52 - Fixed Income Bond Valuation: Prices and Yields"
+title: "Fixed Income Bond Valuation: Prices and Yields (Reading 52)"
 date: 2026-04-15
 categories: cfa
-tags: [Fixed Income, CFA Level I, Bond Valuation, YTM, Accrued Interest]
+tags: [Fixed Income, CFA Level I, Bond Valuation, YTM, Accrued Interest, Reading 52]
+excerpt: "Sihyun CFA Notes - Fixed Income Bond Valuation: Prices and Yields (Reading 52)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Fixed Income Bond Valuation: Prices and Yields**
+- 먼저 잡을 축: Bond Value, Price, Coupon, and Yield, Semiannual Coupon Bonds
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Bond Value
+2. Price, Coupon, and Yield
+3. Semiannual Coupon Bonds
+4. Yield to Maturity
+5. Accrued Interest
+6. Clean and Dirty Price
+7. Price Convergence
+8. Matrix Pricing
+
+## Main Notes
 
 ## 1. Bond Value
 
@@ -131,4 +151,3 @@ Common approach:
 - Premium bonds have coupon rates above YTM.
 - Dirty price includes accrued interest; clean price does not.
 - Matrix pricing is useful when the bond itself is illiquid or not recently traded.
-

@@ -1,9 +1,30 @@
 ---
-title: "CFA Equity Reading 39 — Market Organization and Structure"
+title: "Market Organization and Structure (Reading 39)"
 date: 2026-02-24
 categories: cfa
-tags: [Equity, CFA Level I, Market Structure]
+tags: [Equity, CFA Level I, Market Structure, Reading 39]
+excerpt: "Sihyun CFA Notes - Market Organization and Structure (Reading 39)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Market Organization and Structure**
+- 먼저 잡을 축: Financial System, Classification of Assets and Markets, Type of Assets
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Financial System
+2. Classification of Assets and Markets
+3. Type of Assets
+4. Financial Intermediaries
+5. Position
+6. Execution / Validity / Clearing
+7. Primary vs Secondary Capital Market
+8. Market Structures
+9. Characteristics of Well-Functioning Financial System
+
+## Main Notes
 
 ## 1. Financial System
 

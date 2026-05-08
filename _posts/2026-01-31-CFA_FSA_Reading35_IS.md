@@ -1,9 +1,31 @@
 ---
-title: "CFA FSA Reading 35 — Analyzing Income Statements"
+title: "Analyzing Income Statements (Reading 35)"
 date: 2026-01-31
 categories: cfa
-tags: [FSA, CFA Level I, Income Statement, Revenue Recognition]
+tags: [FSA, CFA Level I, Income Statement, Revenue Recognition, Reading 35]
+excerpt: "Sihyun CFA Notes - Analyzing Income Statements (Reading 35)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Analyzing Income Statements**
+- 먼저 잡을 축: Revenue Recognition 기본 개념, Revenue Recognition 5단계 (IFRS & US GAAP 통합 기준), 수익 인식 시점: Over Time vs At a Point in Time
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Revenue Recognition 기본 개념
+2. Revenue Recognition 5단계 (IFRS & US GAAP 통합 기준)
+3. 수익 인식 시점: Over Time vs At a Point in Time
+4. Revenue Recognition 예시
+5. 특수 수익 인식 케이스
+6. Expense Recognition
+7. Nonrecurring Items
+8. Discontinued Operations (중단영업)
+9. Changes in Accounting Policies & Estimates
+10. EPS (Earnings Per Share)
+
+## Main Notes
 
 ## 1. Revenue Recognition 기본 개념
 

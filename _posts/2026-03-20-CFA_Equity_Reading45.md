@@ -1,9 +1,29 @@
 ---
-title: "CFA Equity Reading 45 — Company Analysis: Forecasting"
+title: "Company Analysis: Forecasting (Reading 45)"
 date: 2026-03-20
 categories: cfa
-tags: [Equity, CFA Level I, Company Analysis, Forecasting, Financial Modeling]
+tags: [Equity, CFA Level I, Company Analysis, Forecasting, Financial Modeling, Reading 45]
+excerpt: "Sihyun CFA Notes - Company Analysis: Forecasting (Reading 45)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Company Analysis: Forecasting**
+- 먼저 잡을 축: Forecast Approaches (예측 방법론), Revenue Forecasting (매출 예측), COGS & SG&A Forecasting (비용 예측)
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Forecast Approaches (예측 방법론)
+2. Revenue Forecasting (매출 예측)
+3. COGS & SG&A Forecasting (비용 예측)
+4. Working Capital Forecasting (운전자본 예측)
+5. CAPEX Forecasting (자본적 지출 예측)
+6. Capital Structure Forecasting (자본구조 예측)
+7. Scenario Analysis (시나리오 분석)
+8. Behavioral Biases in Analyst Forecasts (애널리스트 예측의 편향)
+
+## Main Notes
 
 ## 1. Forecast Approaches (예측 방법론)
 

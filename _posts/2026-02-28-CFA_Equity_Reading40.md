@@ -1,9 +1,30 @@
 ---
-title: "CFA Equity Reading 40 — Security Market Index"
+title: "Security Market Index (Reading 40)"
 date: 2026-02-28
 categories: cfa
-tags: [Equity, CFA Level I, Index]
+tags: [Equity, CFA Level I, Index, Reading 40]
+excerpt: "Sihyun CFA Notes - Security Market Index (Reading 40)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Security Market Index**
+- 먼저 잡을 축: Security Market Index, Price Index vs Return Index, Choices in Index Construction and Management
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Security Market Index
+2. Price Index vs Return Index
+3. Choices in Index Construction and Management
+4. Weighting Methods
+5. Rebalancing & Reconstitution
+6. Uses of Market Indexes
+7. Type of Equity Indexes
+8. Types of Fixed Income Indexes
+9. Indexes for Alternative Investments
+
+## Main Notes
 
 ## 1. Security Market Index
 

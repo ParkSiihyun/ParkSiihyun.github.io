@@ -1,9 +1,23 @@
 ---
-title: "CFA FSA Reading 38 — Introduction to Financial Statement Modeling"
+title: "Introduction to Financial Statement Modeling (Reading 38)"
 date: 2026-02-18
 categories: cfa
-tags: [FSA, CFA Level I, Modeling, Forecasting]
+tags: [FSA, CFA Level I, Modeling, Forecasting, Reading 38]
+excerpt: "Sihyun CFA Notes - Introduction to Financial Statement Modeling (Reading 38)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Introduction to Financial Statement Modeling**
+- 먼저 잡을 축: Behavioral Biases in Analyst Forecasts, Porter's Five Forces (포터의 5가지 경쟁력)
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Behavioral Biases in Analyst Forecasts
+2. Porter's Five Forces (포터의 5가지 경쟁력)
+
+## Main Notes
 
 ## 1. Behavioral Biases in Analyst Forecasts
 

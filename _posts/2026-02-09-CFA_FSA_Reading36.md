@@ -1,9 +1,28 @@
 ---
-title: "CFA FSA Reading 36 — Financial Reporting Quality"
+title: "Financial Reporting Quality (Reading 36)"
 date: 2026-02-09
 categories: cfa
-tags: [FSA, CFA Level I, Reporting Quality]
+tags: [FSA, CFA Level I, Reporting Quality, Reading 36]
+excerpt: "Sihyun CFA Notes - Financial Reporting Quality (Reading 36)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Financial Reporting Quality**
+- 먼저 잡을 축: Quality of Earnings, Conservative vs Aggressive Accounting, Aggressive Accounting 기법
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Quality of Earnings
+2. Conservative vs Aggressive Accounting
+3. Aggressive Accounting 기법
+4. Conservative Accounting 기법
+5. Fraud Triangle
+6. 부정 방지 메커니즘
+7. 조작 가능한 주요 회계 항목
+
+## Main Notes
 
 ## 1. Quality of Earnings
 

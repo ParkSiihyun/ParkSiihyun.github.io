@@ -1,9 +1,28 @@
 ---
-title: "CFA Fixed Income Reading 64 - Asset-Backed Security Instrument and Market Features"
+title: "Asset-Backed Security Instrument and Market Features (Reading 64)"
 date: 2026-05-04
 categories: cfa
-tags: [Fixed Income, CFA Level I, ABS, Covered Bonds, CDO, CLO]
+tags: [Fixed Income, CFA Level I, ABS, Covered Bonds, CDO, CLO, Reading 64]
+excerpt: "Sihyun CFA Notes - Asset-Backed Security Instrument and Market Features (Reading 64)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Asset-Backed Security Instrument and Market Features**
+- 먼저 잡을 축: Covered Bonds, Credit Enhancement in Covered Bonds, Hard Bullet vs Soft Bullet Covered Bonds
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Covered Bonds
+2. Credit Enhancement in Covered Bonds
+3. Hard Bullet vs Soft Bullet Covered Bonds
+4. ABS Credit Enhancement
+5. Tranching and Waterfall
+6. Credit Card ABS
+7. CDO, CBO, and CLO
+
+## Main Notes
 
 ## 1. Covered Bonds
 

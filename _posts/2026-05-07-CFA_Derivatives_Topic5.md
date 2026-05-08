@@ -1,9 +1,33 @@
 ---
-title: "CFA Derivatives Topic 5 - Pricing and Valuation of Options"
+title: "Pricing and Valuation of Options (Reading 70)"
 date: 2026-05-07
 categories: cfa
-tags: [Derivatives, CFA Level I, Options, Put Call Parity, Binomial Model]
+tags: [Derivatives, CFA Level I, Options, Put Call Parity, Binomial Model, Reading 70]
+excerpt: "Sihyun CFA Notes - Pricing and Valuation of Options (Reading 70)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Pricing and Valuation of Options**
+- 먼저 잡을 축: Options vs forwards, 옵션계약 options, 행사방법에 따른 분류
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Options vs forwards
+2. 옵션계약 options
+3. 행사방법에 따른 분류
+4. Option payoff
+5. Option P/L과 break-even point
+6. Moneyness
+7. 옵션의 현재 시점 가치
+8. 옵션가격과 변수의 관계
+9. 옵션가치와 잔존만기
+10. Put-call parity
+11. Synthetic position
+12. Put-call forward parity
+
+## Main Notes
 
 ## 1. Options vs forwards
 

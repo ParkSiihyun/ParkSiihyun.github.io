@@ -1,9 +1,24 @@
 ---
-title: "CFA FSA Reading 29 — Analyzing Balance Sheets"
+title: "Analyzing Balance Sheets (Reading 29)"
 date: 2026-01-10
 categories: cfa
-tags: [FSA, CFA Level I]
+tags: [FSA, CFA Level I, Reading 29]
+excerpt: "Sihyun CFA Notes - Analyzing Balance Sheets (Reading 29)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Analyzing Balance Sheets**
+- 먼저 잡을 축: Balance Sheet 개요, Common-Size Balance Sheet, Accounting of Financial Instruments
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Balance Sheet 개요
+2. Common-Size Balance Sheet
+3. Accounting of Financial Instruments
+
+## Main Notes
 
 ## 1. Balance Sheet 개요
 

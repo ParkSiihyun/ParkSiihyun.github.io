@@ -1,9 +1,26 @@
 ---
-title: "CFA FSA Reading 37 — Financial Analysis Techniques"
+title: "Financial Analysis Techniques (Reading 37)"
 date: 2026-02-13
 categories: cfa
-tags: [FSA, CFA Level I, Ratios, Analysis]
+tags: [FSA, CFA Level I, Ratios, Analysis, Reading 37]
+excerpt: "Sihyun CFA Notes - Financial Analysis Techniques (Reading 37)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Financial Analysis Techniques**
+- 먼저 잡을 축: Activity Ratios (활동성 지표), Liquidity Ratios (유동성 지표), Solvency Ratios (안정성 지표)
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Activity Ratios (활동성 지표)
+2. Liquidity Ratios (유동성 지표)
+3. Solvency Ratios (안정성 지표)
+4. Profitability Ratios (수익성 지표)
+5. ROE — DuPont Analysis
+
+## Main Notes
 
 ## 1. Activity Ratios (활동성 지표)
 

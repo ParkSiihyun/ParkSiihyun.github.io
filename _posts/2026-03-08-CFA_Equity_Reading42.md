@@ -1,9 +1,30 @@
 ---
-title: "CFA Equity Reading 42 — Overview of Equity Securities"
+title: "Overview of Equity Securities (Reading 42)"
 date: 2026-03-08
 categories: cfa
-tags: [Equity, CFA Level I, Equity Securities]
+tags: [Equity, CFA Level I, Equity Securities, Reading 42]
+excerpt: "Sihyun CFA Notes - Overview of Equity Securities (Reading 42)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Overview of Equity Securities**
+- 먼저 잡을 축: Common Shares (보통주), Preference Shares (우선주), Equity Classes
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Common Shares (보통주)
+2. Preference Shares (우선주)
+3. Equity Classes
+4. Private vs Public Equity
+5. Investing in Non-Domestic Equity
+6. Risk and Return Characteristics
+7. Role of Equity — Why Issue Equity?
+8. Book Value vs Market Value of Equity
+9. ROE, Cost of Equity, Required Rate of Return
+
+## Main Notes
 
 ## 1. Common Shares (보통주)
 

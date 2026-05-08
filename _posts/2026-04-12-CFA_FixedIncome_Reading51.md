@@ -1,9 +1,26 @@
 ---
-title: "CFA Fixed Income Reading 51 - Fixed Income Markets for Government Issuers"
+title: "Fixed Income Markets for Government Issuers (Reading 51)"
 date: 2026-04-12
 categories: cfa
-tags: [Fixed Income, CFA Level I, Government Bonds, Sovereign Debt, Public Auctions]
+tags: [Fixed Income, CFA Level I, Government Bonds, Sovereign Debt, Public Auctions, Reading 51]
+excerpt: "Sihyun CFA Notes - Fixed Income Markets for Government Issuers (Reading 51)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Fixed Income Markets for Government Issuers**
+- 먼저 잡을 축: Government Issuers, Sovereign Debt, Non-Sovereign Government Debt
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Government Issuers
+2. Sovereign Debt
+3. Non-Sovereign Government Debt
+4. Government Bond Issuance
+5. Primary Dealers and Secondary Market
+
+## Main Notes
 
 ## 1. Government Issuers
 
@@ -85,4 +102,3 @@ After issuance, government securities usually trade in the secondary market thro
 - Domestic currency debt is generally less exposed to foreign currency repayment risk than external debt.
 - General obligation bonds rely on taxing power; revenue bonds rely on project revenue.
 - Competitive bids set auction pricing; noncompetitive bids accept the auction result.
-

@@ -1,9 +1,27 @@
 ---
-title: "CFA Fixed Income Reading 59 - Curve-Based and Empirical Fixed Income Risk Measures"
+title: "Curve-Based and Empirical Fixed Income Risk Measures (Reading 59)"
 date: 2026-04-29
 categories: cfa
-tags: [Fixed Income, CFA Level I, Effective Duration, Key Rate Duration, Embedded Options]
+tags: [Fixed Income, CFA Level I, Effective Duration, Key Rate Duration, Embedded Options, Reading 59]
+excerpt: "Sihyun CFA Notes - Curve-Based and Empirical Fixed Income Risk Measures (Reading 59)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Curve-Based and Empirical Fixed Income Risk Measures**
+- 먼저 잡을 축: Why Yield-Based Measures Are Limited, Effective Duration, Effective Convexity
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Why Yield-Based Measures Are Limited
+2. Effective Duration
+3. Effective Convexity
+4. Callable and Putable Bonds
+5. Key Rate Duration
+6. Empirical Duration
+
+## Main Notes
 
 ## 1. Why Yield-Based Measures Are Limited
 
@@ -98,4 +116,3 @@ It can be useful when:
 - Callable bonds may have negative convexity at low yields.
 - Key rate duration is designed for nonparallel curve shifts.
 - Yield-based duration assumes a single yield change; curve-based measures are more flexible.
-

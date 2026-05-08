@@ -1,9 +1,27 @@
 ---
-title: "CFA Equity Reading 44 — Industry and Competitive Analysis"
+title: "Industry and Competitive Analysis (Reading 44)"
 date: 2026-03-16
 categories: cfa
-tags: [Equity, CFA Level I, Industry Analysis, Porter's Five Forces, PESTLE]
+tags: [Equity, CFA Level I, Industry Analysis, Porter's Five Forces, PESTLE, Reading 44]
+excerpt: "Sihyun CFA Notes - Industry and Competitive Analysis (Reading 44)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Industry and Competitive Analysis**
+- 먼저 잡을 축: Role of Industry Analysis, Industry Classification, Industry Size, Growth, Profitability, Market Share
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Role of Industry Analysis
+2. Industry Classification
+3. Industry Size, Growth, Profitability, Market Share
+4. Porter's Five Forces
+5. PESTLE Analysis (외부 환경 분석)
+6. Competitive Strategies (경쟁 전략)
+
+## Main Notes
 
 ## 1. Role of Industry Analysis
 

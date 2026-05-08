@@ -1,9 +1,28 @@
 ---
-title: "CFA Derivatives Topic 3 - Pricing and Valuation of Futures Contracts"
+title: "Pricing and Valuation of Futures Contracts (Reading 68)"
 date: 2026-05-07
 categories: cfa
-tags: [Derivatives, CFA Level I, Futures, Margin, Marking to Market, Interest Rate Futures]
+tags: [Derivatives, CFA Level I, Futures, Margin, Marking to Market, Interest Rate Futures, Reading 68]
+excerpt: "Sihyun CFA Notes - Pricing and Valuation of Futures Contracts (Reading 68)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Pricing and Valuation of Futures Contracts**
+- 먼저 잡을 축: 선물계약 futures contracts, 선물계약과 선도계약 비교, 선물계약의 주요 특성
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. 선물계약 futures contracts
+2. 선물계약과 선도계약 비교
+3. 선물계약의 주요 특성
+4. Margin 예시
+5. Margin에 대해서
+6. 금리선물 interest rate futures
+7. 선물 및 선도계약 비교
+
+## Main Notes
 
 ## 1. 선물계약 futures contracts
 

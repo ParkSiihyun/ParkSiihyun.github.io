@@ -1,9 +1,29 @@
 ---
-title: "CFA Fixed Income Reading 49 — Fixed Income Issuance and Trading"
+title: "Fixed Income Issuance and Trading (Reading 49)"
 date: 2026-04-06
 categories: cfa
-tags: [Fixed Income, CFA Level I, Bond Market, Primary Market, Secondary Market]
+tags: [Fixed Income, CFA Level I, Bond Market, Primary Market, Secondary Market, Reading 49]
+excerpt: "Sihyun CFA Notes - Fixed Income Issuance and Trading (Reading 49)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Fixed Income Issuance and Trading**
+- 먼저 잡을 축: Bond Market Overview, Credit Quality, Original Maturity
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Bond Market Overview
+2. Credit Quality
+3. Original Maturity
+4. Credit / Maturity Spectrum
+5. Investor Positioning
+6. Fixed Income Indexes
+7. Primary Market
+8. Secondary Market
+
+## Main Notes
 
 ## 1. Bond Market Overview
 

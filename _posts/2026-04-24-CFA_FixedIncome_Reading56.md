@@ -1,9 +1,27 @@
 ---
-title: "CFA Fixed Income Reading 56 - Interest Rate Risk and Return"
+title: "Interest Rate Risk and Return (Reading 56)"
 date: 2026-04-24
 categories: cfa
-tags: [Fixed Income, CFA Level I, Interest Rate Risk, Holding Period Return, Macaulay Duration]
+tags: [Fixed Income, CFA Level I, Interest Rate Risk, Holding Period Return, Macaulay Duration, Reading 56]
+excerpt: "Sihyun CFA Notes - Interest Rate Risk and Return (Reading 56)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Interest Rate Risk and Return**
+- 먼저 잡을 축: Sources of Bond Return, Holding Period Return, Carrying Value
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Sources of Bond Return
+2. Holding Period Return
+3. Carrying Value
+4. Price Risk and Reinvestment Risk
+5. Change in YTM
+6. Macaulay Duration
+
+## Main Notes
 
 ## 1. Sources of Bond Return
 

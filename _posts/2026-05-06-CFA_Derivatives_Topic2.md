@@ -1,9 +1,33 @@
 ---
-title: "CFA Derivatives Topic 2 - Pricing and Valuation of Forward Contracts"
+title: "Pricing and Valuation of Forward Contracts (Reading 67)"
 date: 2026-05-06
 categories: cfa
-tags: [Derivatives, CFA Level I, Forwards, Cost of Carry, FRA, FX Forward]
+tags: [Derivatives, CFA Level I, Forwards, Cost of Carry, FRA, FX Forward, Reading 67]
+excerpt: "Sihyun CFA Notes - Pricing and Valuation of Forward Contracts (Reading 67)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Pricing and Valuation of Forward Contracts**
+- 먼저 잡을 축: 금융상품이 거래되는 시장, 선도계약 forward contracts, 선도계약의 payoff and settlement
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. 금융상품이 거래되는 시장
+2. 선도계약 forward contracts
+3. 선도계약의 payoff and settlement
+4. 선도계약의 valuation
+5. 선도가격의 결정: cost of carry model
+6. Cost of carry model의 확장
+7. Currency forwards = FX forward
+8. 이산복리와 연속복리
+9. 다양한 시점에서 선도계약의 가치
+10. Forward Rate Agreement
+11. FRA로 금리 위험 hedge
+12. FRA pricing
+
+## Main Notes
 
 ## 1. 금융상품이 거래되는 시장
 

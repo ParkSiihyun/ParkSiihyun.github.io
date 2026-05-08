@@ -1,9 +1,28 @@
 ---
-title: "CFA Equity Reading 41 — Market Efficiency"
+title: "Market Efficiency (Reading 41)"
 date: 2026-03-04
 categories: cfa
-tags: [Equity, CFA Level I, EMH, Market Efficiency]
+tags: [Equity, CFA Level I, EMH, Market Efficiency, Reading 41]
+excerpt: "Sihyun CFA Notes - Market Efficiency (Reading 41)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Market Efficiency**
+- 먼저 잡을 축: Informationally Efficient Capital Market, Market Value vs Intrinsic Value, Factors Affecting Market Efficiency
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Informationally Efficient Capital Market
+2. Market Value vs Intrinsic Value
+3. Factors Affecting Market Efficiency
+4. Efficient Market Hypothesis (EMH)
+5. Implications of EMH
+6. Market Anomalies
+7. Behavioral Finance
+
+## Main Notes
 
 ## 1. Informationally Efficient Capital Market
 

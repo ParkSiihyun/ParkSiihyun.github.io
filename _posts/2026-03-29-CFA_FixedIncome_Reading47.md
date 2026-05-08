@@ -1,9 +1,32 @@
 ---
-title: "CFA Fixed Income Reading 47 — Fixed Income Instrument Features"
+title: "Fixed Income Instrument Features (Reading 47)"
 date: 2026-03-29
 categories: cfa
-tags: [Fixed Income, CFA Level I, Bonds, Coupon, Yield]
+tags: [Fixed Income, CFA Level I, Bonds, Coupon, Yield, Reading 47]
+excerpt: "Sihyun CFA Notes - Fixed Income Instrument Features (Reading 47)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Fixed Income Instrument Features**
+- 먼저 잡을 축: Fixed Income Instruments 기본 개념, Key Features of Bonds, Coupon Rate and Frequency
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Fixed Income Instruments 기본 개념
+2. Key Features of Bonds
+3. Coupon Rate and Frequency
+4. Zero Coupon Bonds (Pure Discount Bonds)
+5. Other Coupon Structures
+6. Principal Repayment Structures
+7. Waterfall Structures
+8. Seniority (선순위)
+9. Yield Measures
+10. Bond Indenture (채권 계약서)
+11. Bond Covenants (채권 내 의무 조항)
+
+## Main Notes
 
 ## 1. Fixed Income Instruments 기본 개념
 

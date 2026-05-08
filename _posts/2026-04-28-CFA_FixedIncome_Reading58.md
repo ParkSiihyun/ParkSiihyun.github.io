@@ -1,9 +1,26 @@
 ---
-title: "CFA Fixed Income Reading 58 - Yield-Based Bond Convexity and Portfolio Properties"
+title: "Yield-Based Bond Convexity and Portfolio Properties (Reading 58)"
 date: 2026-04-28
 categories: cfa
-tags: [Fixed Income, CFA Level I, Convexity, Portfolio Duration, Barbell]
+tags: [Fixed Income, CFA Level I, Convexity, Portfolio Duration, Barbell, Reading 58]
+excerpt: "Sihyun CFA Notes - Yield-Based Bond Convexity and Portfolio Properties (Reading 58)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Yield-Based Bond Convexity and Portfolio Properties**
+- 먼저 잡을 축: Why Convexity Matters, Approximate Convexity, Convexity Properties
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Why Convexity Matters
+2. Approximate Convexity
+3. Convexity Properties
+4. Bullet vs Barbell
+5. Portfolio Duration and Convexity
+
+## Main Notes
 
 ## 1. Why Convexity Matters
 
@@ -81,4 +98,3 @@ This approach assumes that every bond's yield changes by the same amount, meanin
 - Positive convexity benefits investors for large rate moves.
 - Barbell portfolios generally have more convexity than comparable bullet portfolios.
 - Weighted-average duration assumes parallel yield curve shifts.
-

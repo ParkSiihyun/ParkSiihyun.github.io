@@ -1,9 +1,30 @@
 ---
-title: "CFA FSA Reading 35 — Analysis of Income Taxes"
+title: "Analysis of Income Taxes (Reading 35)"
 date: 2026-02-04
 categories: cfa
-tags: [FSA, CFA Level I, Taxes, DTA, DTL]
+tags: [FSA, CFA Level I, Taxes, DTA, DTL, Reading 35]
+excerpt: "Sihyun CFA Notes - Analysis of Income Taxes (Reading 35)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Analysis of Income Taxes**
+- 먼저 잡을 축: 핵심 용어 정리, 회계이익 vs 과세소득의 차이, Temporary vs Permanent Difference
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. 핵심 용어 정리
+2. 회계이익 vs 과세소득의 차이
+3. Temporary vs Permanent Difference
+4. DTL vs DTA
+5. 세율 적용 원칙
+6. Tax Loss Carryforward와 DTA
+7. Realizability of DTA (DTA 실현가능성)
+8. Reverse 가능성이 낮은 DTL
+9. 계산 예시
+
+## Main Notes
 
 ## 1. 핵심 용어 정리
 

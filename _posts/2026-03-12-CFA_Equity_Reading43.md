@@ -1,9 +1,27 @@
 ---
-title: "CFA Equity Reading 43 — Company Analysis: Past and Present"
+title: "Company Analysis: Past and Present (Reading 43)"
 date: 2026-03-12
 categories: cfa
-tags: [Equity, CFA Level I, Company Analysis, Business Model]
+tags: [Equity, CFA Level I, Company Analysis, Business Model, Reading 43]
+excerpt: "Sihyun CFA Notes - Company Analysis: Past and Present (Reading 43)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Company Analysis: Past and Present**
+- 먼저 잡을 축: Company Research Report, Business Model, Revenue & Revenue Drivers
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Company Research Report
+2. Business Model
+3. Revenue & Revenue Drivers
+4. Operating Profitability
+5. Working Capital (운전자본)
+6. CAPEX & Capital Structure
+
+## Main Notes
 
 ## 1. Company Research Report
 

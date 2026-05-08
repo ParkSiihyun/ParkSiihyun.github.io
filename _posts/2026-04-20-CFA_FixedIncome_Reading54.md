@@ -1,9 +1,26 @@
 ---
-title: "CFA Fixed Income Reading 54 - Yield and Yield Spread Measures for Floating-Rate Instruments"
+title: "Yield and Yield Spread Measures for Floating-Rate Instruments (Reading 54)"
 date: 2026-04-20
 categories: cfa
-tags: [Fixed Income, CFA Level I, Floating Rate Notes, Money Markets, Discount Yield]
+tags: [Fixed Income, CFA Level I, Floating Rate Notes, Money Markets, Discount Yield, Reading 54]
+excerpt: "Sihyun CFA Notes - Yield and Yield Spread Measures for Floating-Rate Instruments (Reading 54)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Yield and Yield Spread Measures for Floating-Rate Instruments**
+- 먼저 잡을 축: Floating-Rate Notes, FRN Price and Margin, FRN Valuation Example
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Floating-Rate Notes
+2. FRN Price and Margin
+3. FRN Valuation Example
+4. Money Market Yield Measures
+5. Bond Equivalent Yield
+
+## Main Notes
 
 ## 1. Floating-Rate Notes
 
@@ -99,4 +116,3 @@ This makes the instrument more comparable with bond yields.
 - Discount yield uses face value in the denominator.
 - Add-on yield uses beginning price or investment amount.
 - EAY is the cleanest annual comparison when compounding matters.
-

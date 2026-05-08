@@ -1,9 +1,28 @@
 ---
-title: "CFA Fixed Income Reading 53 - Yield and Yield Spread Measures for Fixed-Rate Bonds"
+title: "Yield and Yield Spread Measures for Fixed-Rate Bonds (Reading 53)"
 date: 2026-04-18
 categories: cfa
-tags: [Fixed Income, CFA Level I, Yield Measures, Yield Spreads, OAS]
+tags: [Fixed Income, CFA Level I, Yield Measures, Yield Spreads, OAS, Reading 53]
+excerpt: "Sihyun CFA Notes - Yield and Yield Spread Measures for Fixed-Rate Bonds (Reading 53)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Yield and Yield Spread Measures for Fixed-Rate Bonds**
+- 먼저 잡을 축: Periodicity and Effective Annual Yield, Yield Basis Conversion, Street Convention and True Yield
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Periodicity and Effective Annual Yield
+2. Yield Basis Conversion
+3. Street Convention and True Yield
+4. Current Yield and Simple Yield
+5. Callable Bonds
+6. Option-Adjusted Yield
+7. Yield Spreads
+
+## Main Notes
 
 ## 1. Periodicity and Effective Annual Yield
 
@@ -109,4 +128,3 @@ $$OAS = Z\text{-spread} - \text{Option Yield Component}$$
 - Yield to worst matters for callable bonds.
 - Z-spread uses the full spot curve; YTM is a single weighted-average yield.
 - OAS is cleaner for bonds with embedded options.
-

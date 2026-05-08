@@ -1,9 +1,30 @@
 ---
-title: "CFA Fixed Income Reading 65 - Mortgage-Backed Security Instrument and Market Features"
+title: "Mortgage-Backed Security Instrument and Market Features (Reading 65)"
 date: 2026-05-05
 categories: cfa
-tags: [Fixed Income, CFA Level I, MBS, RMBS, CMBS, Prepayment Risk]
+tags: [Fixed Income, CFA Level I, MBS, RMBS, CMBS, Prepayment Risk, Reading 65]
+excerpt: "Sihyun CFA Notes - Mortgage-Backed Security Instrument and Market Features (Reading 65)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Mortgage-Backed Security Instrument and Market Features**
+- 먼저 잡을 축: Mortgage-Backed Securities, Prepayment Risk, Mortgage Loan Features
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Mortgage-Backed Securities
+2. Prepayment Risk
+3. Mortgage Loan Features
+4. LTV and DTI
+5. Agency and Non-Agency RMBS
+6. Mortgage Pass-Through Securities
+7. Collateralized Mortgage Obligations
+8. CMBS
+9. PAC and Support Tranches
+
+## Main Notes
 
 ## 1. Mortgage-Backed Securities
 

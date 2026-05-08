@@ -1,9 +1,26 @@
 ---
-title: "CFA Fixed Income Reading 55 - Term Structure of Interest Rates: Spot, Par, and Forward Curves"
+title: "Term Structure of Interest Rates: Spot, Par, and Forward Curves (Reading 55)"
 date: 2026-04-22
 categories: cfa
-tags: [Fixed Income, CFA Level I, Term Structure, Spot Rates, Forward Rates]
+tags: [Fixed Income, CFA Level I, Term Structure, Spot Rates, Forward Rates, Reading 55]
+excerpt: "Sihyun CFA Notes - Term Structure of Interest Rates: Spot, Par, and Forward Curves (Reading 55)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Term Structure of Interest Rates: Spot, Par, and Forward Curves**
+- 먼저 잡을 축: Spot Rates, No-Arbitrage Valuation, Par Yield
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Spot Rates
+2. No-Arbitrage Valuation
+3. Par Yield
+4. Forward Rates
+5. Spot, Par, and Forward Curves
+
+## Main Notes
 
 ## 1. Spot Rates
 

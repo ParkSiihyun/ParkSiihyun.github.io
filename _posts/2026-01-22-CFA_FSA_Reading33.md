@@ -1,9 +1,32 @@
 ---
-title: "CFA FSA Reading 33 — Analysis of Long-Term Assets"
+title: "Analysis of Long-Term Assets (Reading 33)"
 date: 2026-01-22
 categories: cfa
-tags: [FSA, CFA Level I, Long-Term Assets]
+tags: [FSA, CFA Level I, Long-Term Assets, Reading 33]
+excerpt: "Sihyun CFA Notes - Analysis of Long-Term Assets (Reading 33)"
 ---
+
+## Quick Take
+
+- 중심 주제: **Analysis of Long-Term Assets**
+- 먼저 잡을 축: Intangible Assets (무형자산), Identifiable vs Unidentifiable IA, 내부 창출 무형자산 (Internally Created IA)
+- 본문은 원본 필기 흐름을 유지하면서 정의, 비교, 공식, 예제를 읽기 좋게 정리한다.
+
+## Reading Map
+
+1. Intangible Assets (무형자산)
+2. Identifiable vs Unidentifiable IA
+3. 내부 창출 무형자산 (Internally Created IA)
+4. 외부 구매 무형자산 (Purchased IA)
+5. 사업결합으로 취득한 IA (Business Combination)
+6. Impairment (손상)
+7. Impairment의 재무제표 영향
+8. 무한수명 IA의 손상검사
+9. Derecognition (제거)
+10. Spin-off
+11. Long-Lived Asset 분석 지표
+
+## Main Notes
 
 ## 1. Intangible Assets (무형자산)
 

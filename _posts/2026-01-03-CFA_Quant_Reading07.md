@@ -1,6 +1,6 @@
 ---
 title: "Estimation and Inference (Reading 7)"
-date: 2026-01-03
+date: 2026-01-03 08:00:00 -0800
 categories: cfa
 tags: [Quantitative Methods, CFA Level I, Reading 7, Quant]
 excerpt: "Sihyun CFA Notes - Estimation and Inference (Reading 7)"

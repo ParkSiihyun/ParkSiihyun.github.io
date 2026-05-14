@@ -1,6 +1,6 @@
 ---
 title: "Understanding Business Cycles (Reading 13)"
-date: 2026-01-04
+date: 2026-01-04 10:00:00 -0800
 categories: cfa
 tags: [Economics, CFA Level I, Reading 13, Economics]
 excerpt: "Sihyun CFA Notes - Understanding Business Cycles (Reading 13)"
@@ -45,66 +45,92 @@ Business cycle은 real GDP가 시간에 따라 expansion과 contraction을 반�
 
 Credit contraction이 심해지면 policy response로 QE가 등장할 수 있다.
 
-Business cycles and Resource use fluctuation
-inventory sales ratio 재고 매출 비율
-- expansion : 매출이 서서히 감소하면서 팔리지 않는 재고가 쌓인다.
-- contraction : 계획되지 않은 재고의 증가는 생산의 감소로 이어진다
-- 계획된 재고이든, 계획되지 않은 재고이든 재고의 증가는 GDP의 증가로 이어지고, inventory
-sales ratio를 보지 않는 analyst는 이를 경제 성장으로 해석할 수 있다
-Consumer Sector Activity
-- consumer spending : the largest component of GDP
-Y = C + I + G + NX -> C가 엄청난 부분을 차지
-- Consumption : 현재 소득과 미래 소득의 함수
-- 경기팽창기에는 소비가 증가, 경기침체기에는 소비가 감소
-- 특히 durable goods의 소비는 경기에 예민하게 반응함
-- 단위가 큰 내구재 소비는 경기 팽창기에 특히 더 많이 더 소비하고, 경기침체기에 특히 더 많이 줄
-어든다
-- Services도 내구재와 마찬기자로 경기와 순행하는 성격을 띈다(내구재 많큼 심하지는 않음)
-- non-durable goods(food) 는 경기와 관계없이 대체적으로 안정적으로 유지된다
-Housing Sector Activity
-- Mortgage rates : 낮은 대출이자율은, 주택 구매와 건설의 증가로 이어진다
-- Housing costs relative to income : 소득 대비 주택 가격. 소득이 주택 가격에 대비해서 상대적으
-로 더 많이 증가하면, 주택 구매와 건설의 증가로 이어진다
-- speculative activity : 주택 가격이 상승할 것을 예상해서 부동산 투기를 할 경우 주택 가격 상승이
-어지고 더 많은 주택 구매와 건설의 증가로 이어진다 -> 버블이 끼고, 버블이 꺼질 경우 경기 침체
-- Demographic factors : 인구통계적인 요인. 경제 활동인구가 증가하면 주택 수요가 늘어난다
-External Trade Sector Activity
-- NX = X - M
-- 수출과 수입을 결정짓는 중요한 요인은 -> 자국 GDP의 증가, 상대국 GDP의 증가, 환율
-- 자국의 GDP 국내 총소득이 증가하면 더 많은 해외 제품 소비 증가로 이어진다
-- 자국의 GDP 국내 총소득이 감소하면 수입을 줄인다.
-- 자국의 환율이 상승하면(원화가치 절하) 해외의 자국 제품 표시 가격이 하락해 수출에 유리하다
-- 자국의 환율이 하락하면(원화가치 절상) 해외의 자국 제품 표시 가격이 증가해 수출에 불리하다
+## 3. Resource Use and Inventory Cycle
 
-Typical business cycle characteristics
-Trough(전환국면)
-- The GDP growth rate changes from negative to positive
-- There is a high unemployment rate, and an increasing use of overtime and temporary workers
--> 경기침체기에는 고정비를 줄이기 위해서 임시직 고용을 더 늘린다
-- Spending on consumer durable goods and housing may increase
--> 이제 다시 사기 시작하는 것임, 경기침체로 중앙은행이 금리도 낮춤
-- There is a moderate or decreasing inflation rate
-Expansion
-- the GDP growth rate increases
-- The unemployment rate decreases as hiring accelerates
-- There are investment increases in producers’ equipment and home construction
-- The inflation rate may increase
-Peak
-- the GDP growth rate changes from positive to negative
-- The unemployment rate decreases, but hiring slows
-- Consumer spending and business investments grow at slower rates
-- The inflation rate increases
-Contraction / recession
-- the GDP growth rate is negative
-- Hours worked decrease, unemployment rate increases
-- Consumer spending, home construction, and business investments decrease
-- The inflation rate decreases with a lag
-- Imports decrease as domestic income growth slows
-실업률과 인플레이션은 둘 다 경기 후행지수이기 때문에 한 템포 늦게 나타난다
-Economic indicators 경기 지수
-- leading indicators 경기선행지수
-ex) 장단기 스프레드 : 단기금리가 상승하면서 기업이 자금압박을 받는다, 장단기 금리가 역전되기도 한다
--> 이후에는 불황이 찾아온다
-- coincident indicators 경기동행지수
-- lagging indicators 경기후행짓
-ex) 실업률, 물가상승률
+Business cycles는 resource use fluctuation과 연결된다.
+
+**Inventory-sales ratio / 재고 매출 비율**:
+
+| Phase | 필기 정리 |
+|-------|-----------|
+| Expansion | 매출이 서서히 감소하면서 팔리지 않는 재고가 쌓임 |
+| Contraction | 계획되지 않은 재고의 증가는 생산 감소로 이어짐 |
+
+계획된 재고이든 계획되지 않은 재고이든, 재고의 증가는 GDP의 증가로 이어진다. 그래서 inventory-sales ratio를 보지 않는 analyst는 이를 경제 성장으로 해석할 수 있다.
+
+## 4. Sector Activity
+
+### Consumer Sector Activity
+
+Consumer spending은 GDP의 가장 큰 component다.
+
+$$Y=C+I+G+NX$$
+
+여기서 C가 엄청난 부분을 차지한다.
+
+Consumption은 현재 소득과 미래 소득의 함수다.
+
+| 소비 항목 | 경기 민감도 |
+|-----------|-------------|
+| Durable goods | 경기에 예민하게 반응. 경기 팽창기에 더 많이 소비하고, 경기침체기에 더 많이 줄어듦 |
+| Services | 경기와 순행하지만 durable goods만큼 심하지는 않음 |
+| Non-durable goods | Food처럼 경기와 관계없이 대체적으로 안정적으로 유지 |
+
+### Housing Sector Activity
+
+Housing sector에 영향을 주는 요인:
+
+| Factor | 필기 정리 |
+|--------|-----------|
+| Mortgage rates | 낮은 대출이자율은 주택 구매와 건설 증가로 이어짐 |
+| Housing costs relative to income | 소득이 주택 가격 대비 상대적으로 더 많이 증가하면 주택 구매와 건설 증가로 이어짐 |
+| Speculative activity | 주택 가격 상승을 예상한 부동산 투기는 주택 가격 상승과 더 많은 주택 구매, 건설 증가로 이어짐 |
+| Demographic factors | 경제활동인구가 증가하면 주택 수요가 늘어남 |
+
+Speculative activity는 버블로 이어질 수 있고, 버블이 꺼질 경우 경기침체로 이어질 수 있다.
+
+### External Trade Sector Activity
+
+$$NX=X-M$$
+
+수출과 수입을 결정짓는 중요한 요인:
+
+- 자국 GDP의 증가
+- 상대국 GDP의 증가
+- 환율
+
+자국의 GDP, 즉 국내 총소득이 증가하면 더 많은 해외 제품 소비 증가로 이어진다. 반대로 국내 총소득이 감소하면 수입을 줄인다.
+
+환율 효과:
+
+| 환율 변화 | 효과 |
+|-----------|------|
+| 자국 환율 상승 / 원화가치 절하 | 해외의 자국 제품 표시 가격이 하락해 수출에 유리 |
+| 자국 환율 하락 / 원화가치 절상 | 해외의 자국 제품 표시 가격이 증가해 수출에 불리 |
+
+## 5. Typical Business Cycle Characteristics
+
+| Phase | GDP / Labor | Spending / Investment | Inflation |
+|-------|-------------|-----------------------|-----------|
+| Trough / 전환국면 | GDP growth rate가 negative에서 positive로 전환. High unemployment rate, overtime and temporary workers 사용 증가 | Consumer durable goods and housing spending이 증가할 수 있음 | Moderate or decreasing inflation rate |
+| Expansion | GDP growth rate 증가. Unemployment rate 감소 as hiring accelerates | Producers' equipment and home construction investment 증가 | Inflation rate may increase |
+| Peak | GDP growth rate가 positive에서 negative로 전환. Unemployment rate는 감소하지만 hiring은 둔화 | Consumer spending and business investments grow at slower rates | Inflation rate increases |
+| Contraction / recession | GDP growth rate negative. Hours worked 감소, unemployment rate 증가 | Consumer spending, home construction, business investments 감소. Domestic income growth 둔화로 imports 감소 | Inflation rate decreases with a lag |
+
+Trough에서 경기침체기에는 고정비를 줄이기 위해 임시직 고용을 더 늘린다. Consumer durable goods와 housing spending이 증가할 수 있는 이유는 이제 다시 사기 시작하고, 경기침체로 중앙은행이 금리도 낮추기 때문이다.
+
+실업률과 인플레이션은 둘 다 경기 후행지수이기 때문에 한 템포 늦게 나타난다.
+
+## 6. Economic Indicators
+
+| Indicator | 한국어 | 예시 |
+|-----------|--------|------|
+| Leading indicators | 경기선행지수 | 장단기 스프레드 |
+| Coincident indicators | 경기동행지수 | 현재 경기 상태와 같이 움직이는 지표 |
+| Lagging indicators | 경기후행지수 | 실업률, 물가상승률 |
+
+장단기 스프레드 예시:
+
+- 단기금리가 상승하면서 기업이 자금압박을 받는다.
+- 장단기 금리가 역전되기도 한다.
+- 이후에는 불황이 찾아온다.

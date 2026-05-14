@@ -1,6 +1,6 @@
 ---
 title: "Simulation Methods (Reading 6)"
-date: 2026-01-02
+date: 2026-01-02 10:00:00 -0800
 categories: cfa
 tags: [Quantitative Methods, CFA Level I, Reading 6, Quant]
 excerpt: "Sihyun CFA Notes - Simulation Methods (Reading 6)"

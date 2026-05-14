@@ -1,6 +1,6 @@
 ---
 title: "Hypothesis Testing (Reading 8)"
-date: 2026-01-03
+date: 2026-01-03 09:00:00 -0800
 categories: cfa
 tags: [Quantitative Methods, CFA Level I, Reading 8, Quant]
 excerpt: "Sihyun CFA Notes - Hypothesis Testing (Reading 8)"

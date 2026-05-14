@@ -1,6 +1,6 @@
 ---
 title: "Rates and Returns (Reading 1)"
-date: 2026-01-01
+date: 2026-01-01 08:00:00 -0800
 categories: cfa
 tags: [Quantitative Methods, CFA Level I, Reading 1, Quant]
 excerpt: "Sihyun CFA Notes - Rates and Returns (Reading 1)"

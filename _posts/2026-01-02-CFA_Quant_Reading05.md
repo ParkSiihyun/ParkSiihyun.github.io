@@ -1,6 +1,6 @@
 ---
 title: "Portfolio Mathematics (Reading 5)"
-date: 2026-01-02
+date: 2026-01-02 09:00:00 -0800
 categories: cfa
 tags: [Quantitative Methods, CFA Level I, Reading 5, Quant]
 excerpt: "Sihyun CFA Notes - Portfolio Mathematics (Reading 5)"

@@ -1,6 +1,6 @@
 ---
 title: "Capital Structure (Reading 25)"
-date: 2026-01-05
+date: 2026-01-05 19:00:00 -0800
 categories: cfa
 tags: [Corporate Issuers, CFA Level I, Reading 25, Corporate Issuers]
 excerpt: "Sihyun CFA Notes - Capital Structure (Reading 25)"

@@ -1,6 +1,6 @@
 ---
 title: "Simple Linear Regression (Reading 10)"
-date: 2026-01-04
+date: 2026-01-04 08:00:00 -0800
 categories: cfa
 tags: [Quantitative Methods, CFA Level I, Reading 10, Quant]
 excerpt: "Sihyun CFA Notes - Simple Linear Regression (Reading 10)"

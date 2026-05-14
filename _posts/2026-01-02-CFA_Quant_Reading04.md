@@ -1,6 +1,6 @@
 ---
 title: "Probability Trees and Conditional Expectations (Reading 4)"
-date: 2026-01-02
+date: 2026-01-02 08:00:00 -0800
 categories: cfa
 tags: [Quantitative Methods, CFA Level I, Reading 4, Quant]
 excerpt: "Sihyun CFA Notes - Probability Trees and Conditional Expectations (Reading 4)"

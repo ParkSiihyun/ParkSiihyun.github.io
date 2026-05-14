@@ -1,6 +1,6 @@
 ---
 title: "Parametric and Non-parametric Tests of Independence (Reading 9)"
-date: 2026-01-03
+date: 2026-01-03 10:00:00 -0800
 categories: cfa
 tags: [Quantitative Methods, CFA Level I, Reading 9, Quant]
 excerpt: "Sihyun CFA Notes - Parametric and Non-parametric Tests of Independence (Reading 9)"

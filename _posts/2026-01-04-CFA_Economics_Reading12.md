@@ -1,6 +1,6 @@
 ---
 title: "Firms and Market Structure (Reading 12)"
-date: 2026-01-04
+date: 2026-01-04 09:00:00 -0800
 categories: cfa
 tags: [Economics, CFA Level I, Reading 12, Economics]
 excerpt: "Sihyun CFA Notes - Firms and Market Structure (Reading 12)"

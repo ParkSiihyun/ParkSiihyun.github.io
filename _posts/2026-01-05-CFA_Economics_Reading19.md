@@ -1,6 +1,6 @@
 ---
 title: "Exchange Rate Calculations (Reading 19)"
-date: 2026-01-05
+date: 2026-01-05 13:00:00 -0800
 categories: cfa
 tags: [Economics, CFA Level I, Reading 19, Economics]
 excerpt: "Sihyun CFA Notes - Exchange Rate Calculations (Reading 19)"

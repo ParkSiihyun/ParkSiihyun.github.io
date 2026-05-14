@@ -1,6 +1,6 @@
 ---
 title: "Time Value of Money in Finance (Reading 2)"
-date: 2026-01-01
+date: 2026-01-01 09:00:00 -0800
 categories: cfa
 tags: [Quantitative Methods, CFA Level I, Reading 2, Quant]
 excerpt: "Sihyun CFA Notes - Time Value of Money in Finance (Reading 2)"

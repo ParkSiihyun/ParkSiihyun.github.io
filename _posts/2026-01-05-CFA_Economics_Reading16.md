@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Geopolitics (Reading 16)"
-date: 2026-01-05
+date: 2026-01-05 10:00:00 -0800
 categories: cfa
 tags: [Economics, CFA Level I, Reading 16, Economics]
 excerpt: "Sihyun CFA Notes - Introduction to Geopolitics (Reading 16)"

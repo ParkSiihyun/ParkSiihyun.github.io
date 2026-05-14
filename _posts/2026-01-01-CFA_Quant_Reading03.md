@@ -1,6 +1,6 @@
 ---
 title: "Statistical Measures of Asset Returns (Reading 3)"
-date: 2026-01-01
+date: 2026-01-01 10:00:00 -0800
 categories: cfa
 tags: [Quantitative Methods, CFA Level I, Reading 3, Quant]
 excerpt: "Sihyun CFA Notes - Statistical Measures of Asset Returns (Reading 3)"

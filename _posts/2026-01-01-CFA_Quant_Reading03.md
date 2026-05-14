@@ -41,10 +41,10 @@ excerpt: "Sihyun CFA Notes - Statistical Measures of Asset Returns (Reading 3)"
 
 필기 예시:
 
-```text
-original:    11 12 13 17 20 30 200
-winsorized: 11 12 13 17 20 30 30
-```
+| Series | Values |
+|--------|--------|
+| Original | 11, 12, 13, 17, 20, 30, 200 |
+| Winsorized | 11, 12, 13, 17, 20, 30, 30 |
 
 ## 3. Measures of Location
 
@@ -58,34 +58,33 @@ winsorized: 11 12 13 17 20 30 30
 
 Box and whisker plot:
 
-```text
-min - Q1 - median - Q3 - max
-IQR = Q3 - Q1
-```
+$$
+\text{min}\;-\;Q_1\;-\;\text{median}\;-\;Q_3\;-\;\text{max}
+$$
+
+$$IQR=Q_3-Q_1$$
 
 ## 4. Measures of Dispersion
 
 ### Mean Absolute Deviation
 
-```text
-MAD = sum |Xi - mean| / n
-```
+$$MAD=\frac{\sum_{i=1}^{n}|X_i-\bar{X}|}{n}$$
 
 ### Variance and Standard Deviation
 
-```text
-sample variance s^2 = sum (Xi - Xbar)^2 / (n - 1)
-population variance sigma^2 = sum (Xi - mu)^2 / N
-sample standard deviation s = sqrt(sample variance)
-```
+$$
+\begin{aligned}
+s^2&=\frac{\sum_{i=1}^{n}(X_i-\bar{X})^2}{n-1}\\
+\sigma^2&=\frac{\sum_{i=1}^{N}(X_i-\mu)^2}{N}\\
+s&=\sqrt{s^2}
+\end{aligned}
+$$
 
 ### Coefficient of Variation
 
 **Coefficient of Variation(CV)**은 relative dispersion이다.
 
-```text
-CV = standard deviation / mean return
-```
+$$CV=\frac{\text{Standard Deviation}}{\text{Mean Return}}$$
 
 필기 예시:
 
@@ -101,9 +100,7 @@ CV = standard deviation / mean return
 
 Target downside deviation은 target보다 낮은 return만 downside risk로 본다.
 
-```text
-target downside deviation = sqrt[sum(min(0, Ri - target)^2) / n]
-```
+$$\text{Target Downside Deviation}=\sqrt{\frac{\sum_{i=1}^{n}\min(0,R_i-R_{target})^2}{n}}$$
 
 ## 5. Skewness
 
@@ -126,16 +123,16 @@ Kurtosis는 tail의 두꺼움과 peak를 보는 지표.
 
 ### Covariance
 
-```text
-population Cov(X,Y) = E[(X - mu_x)(Y - mu_y)]
-sample Cov(X,Y) = sum[(Xi - Xbar)(Yi - Ybar)] / (n - 1)
-```
+$$
+\begin{aligned}
+\operatorname{Cov}(X,Y)&=E[(X-\mu_X)(Y-\mu_Y)]\\
+s_{XY}&=\frac{\sum_{i=1}^{n}(X_i-\bar{X})(Y_i-\bar{Y})}{n-1}
+\end{aligned}
+$$
 
 ### Correlation
 
-```text
-rho_xy = Cov(X,Y) / (sigma_x sigma_y)
-```
+$$\rho_{XY}=\frac{\operatorname{Cov}(X,Y)}{\sigma_X\sigma_Y}$$
 
 - correlation은 covariance를 표준화한 값이다.
 - spurious correlation에 주의한다.

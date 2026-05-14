@@ -49,9 +49,7 @@ Step 4. Monitoring decisions and conducting a post audit
 NPV(Net present value)
 - the sum of the present values of all the expected incremental CF if a project is undertaken
 
-```text
-NPV = PV(operating cash flows) - investment capital
-```
+$$NPV=PV(\text{Operating Cash Flows})-\text{Investment Capital}$$
 
 - discount rate는 cost of capital을 사용한다.
 - positive NPV project is expected to increase shareholder wealth

@@ -25,24 +25,22 @@ excerpt: "Sihyun CFA Notes - Portfolio Mathematics (Reading 5)"
 
 Portfolio expected return은 각 asset expected return의 weighted average다.
 
-```text
-E(Rp) = w1E(R1) + w2E(R2) + ... + wnE(Rn)
-```
+$$E(R_p)=w_1E(R_1)+w_2E(R_2)+\cdots+w_nE(R_n)$$
 
 ## 2. Covariance and Correlation
 
 ### Covariance
 
-```text
-Cov(Ri, Rj) = E[(Ri - E(Ri))(Rj - E(Rj))]
-sample Cov(Ri, Rj) = sum[(Ri - Ribar)(Rj - Rjbar)] / (n - 1)
-```
+$$
+\begin{aligned}
+\operatorname{Cov}(R_i,R_j)&=E[(R_i-E(R_i))(R_j-E(R_j))]\\
+s_{ij}&=\frac{\sum_{t=1}^{n}(R_{i,t}-\bar{R}_i)(R_{j,t}-\bar{R}_j)}{n-1}
+\end{aligned}
+$$
 
 ### Correlation
 
-```text
-Corr(Ri, Rj) = Cov(Ri, Rj) / (sigma_i sigma_j)
-```
+$$\rho_{ij}=\frac{\operatorname{Cov}(R_i,R_j)}{\sigma_i\sigma_j}$$
 
 ## 3. Covariance Matrix
 
@@ -61,28 +59,25 @@ Covariance matrix는 asset return 간의 variance/covariance를 한 번에 정�
 
 일반식:
 
-```text
-Var(Rp) = sum_i sum_j wi wj Cov(Ri, Rj)
-```
+$$\operatorname{Var}(R_p)=\sum_i\sum_j w_iw_j\operatorname{Cov}(R_i,R_j)$$
 
 ### Two Risky Assets
 
-```text
-Var(Rp)
-= w1^2 sigma1^2
-+ w2^2 sigma2^2
-+ 2w1w2 sigma1 sigma2 rho12
-```
+$$
+\operatorname{Var}(R_p)=w_1^2\sigma_1^2+w_2^2\sigma_2^2+2w_1w_2\sigma_1\sigma_2\rho_{12}
+$$
 
 ### Three Assets
 
-```text
-Var(Rp)
-= w1^2 sigma1^2 + w2^2 sigma2^2 + w3^2 sigma3^2
-+ 2w1w2 Cov(1,2)
-+ 2w1w3 Cov(1,3)
-+ 2w2w3 Cov(2,3)
-```
+$$
+\begin{aligned}
+\operatorname{Var}(R_p)
+&=w_1^2\sigma_1^2+w_2^2\sigma_2^2+w_3^2\sigma_3^2\\
+&+2w_1w_2\operatorname{Cov}(1,2)\\
+&+2w_1w_3\operatorname{Cov}(1,3)\\
+&+2w_2w_3\operatorname{Cov}(2,3)
+\end{aligned}
+$$
 
 ## 5. Shortfall Risk
 
@@ -96,21 +91,20 @@ Var(Rp)
 
 Roy's safety-first ratio:
 
-```text
-SFRatio = [E(Rp) - RL] / sigma_p
-```
+$$SF\ Ratio=\frac{E(R_p)-R_L}{\sigma_p}$$
 
 - `RL`: threshold return.
 - ratio가 클수록 threshold 아래로 떨어질 위험이 낮다.
 
 필기 예시:
 
-```text
-Rp ~ Normal(mean = 10%, standard deviation = 5%)
-target return = 2%
-
-Z = (2% - 10%) / 5% = -1.6
-P(Z < -1.6) = 0.0548 = 5.48%
-```
+$$
+\begin{aligned}
+R_p&\sim N(\mu=10\%,\sigma=5\%)\\
+R_L&=2\%\\
+Z&=\frac{2\%-10\%}{5\%}=-1.6\\
+P(Z<-1.6)&=0.0548=5.48\%
+\end{aligned}
+$$
 
 따라서 이 portfolio의 shortfall risk는 **5.48%**.

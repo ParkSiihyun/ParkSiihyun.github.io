@@ -26,11 +26,12 @@ excerpt: "Sihyun CFA Notes - Capital Structure (Reading 25)"
 
 **WACC(weighted average cost of capital)**:
 
-```text
+$$
+\begin{aligned}
 WACC
-= (weight of debt * pretax cost of debt * (1 - tax rate))
-+ (weight of equity * cost of equity)
-```
+&=w_d r_d(1-t)+w_e r_e
+\end{aligned}
+$$
 
 필기 예시:
 
@@ -42,11 +43,13 @@ WACC
 | Cost of equity | 11% |
 | Tax rate | 30% |
 
-```text
-WACC = (0.5 * 0.08 * 0.7) + (0.5 * 0.11)
-     = 0.083
-     = 8.3%
-```
+$$
+\begin{aligned}
+WACC&=(0.5)(0.08)(0.7)+(0.5)(0.11)\\
+&=0.083\\
+&=8.3\%
+\end{aligned}
+$$
 
 기업은 WACC를 최소화하는 capital structure를 target으로 한다.
 
@@ -103,9 +106,7 @@ Debt를 더 감당하기 좋은 회사:
 
 MM Proposition 2의 구조:
 
-```text
-re = r0 + (D/E)(r0 - rd)
-```
+$$r_e=r_0+\frac{D}{E}(r_0-r_d)$$
 
 | 기호 | 의미 |
 |------|------|
@@ -122,9 +123,7 @@ Taxes가 있으면 debt는 tax shield를 제공한다.
 - tax shield는 tax rate와 debt amount에 의해 결정된다.
 - 부채를 사용하는 기업이 tax shield 때문에 더 많은 수익을 남긴다.
 
-```text
-Value of levered firm = Value of unlevered firm + Value of tax shield
-```
+$$V_L=V_U+PV(\text{Tax Shield})$$
 
 이 관점에서는 debt 100%를 사용하는 것이 WACC를 최소화하고 firm value를 극대화하는 길이다.
 
@@ -146,12 +145,11 @@ Financial distress cost는 debt financing level이 높아질수록 증가한다.
 - debt 사용으로 얻는 tax shield benefit과 financial distress cost를 balance한다.
 - 파산비용과 세금 방어막이 정확히 상쇄되는 지점이 optimal capital structure.
 
-```text
-Value of levered firm
-= Value of unlevered firm
-+ PV(tax shield)
-- PV(costs of financial distress)
-```
+$$
+\begin{aligned}
+V_L&=V_U+PV(\text{Tax Shield})-PV(\text{Costs of Financial Distress})
+\end{aligned}
+$$
 
 흐름:
 

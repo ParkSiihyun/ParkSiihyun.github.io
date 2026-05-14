@@ -24,35 +24,33 @@ excerpt: "Sihyun CFA Notes - Probability Trees and Conditional Expectations (Rea
 
 Expected value는 가능한 결과에 probability를 곱해서 더한 값이다.
 
-```text
-E(X) = P(x1)x1 + P(x2)x2 + ... + P(xn)xn
-```
+$$E(X)=P(x_1)x_1+P(x_2)x_2+\cdots+P(x_n)x_n$$
 
 ## 2. Variance
 
-```text
-Var(X) = E[(X - E(X))^2]
-       = sum [(xi - mu)^2 * P(xi)]
-```
+$$
+\begin{aligned}
+\operatorname{Var}(X)&=E[(X-E(X))^2]\\
+&=\sum_i (x_i-\mu)^2P(x_i)
+\end{aligned}
+$$
 
 ## 3. Conditional Probability
 
-```text
-P(A | B) = P(A and B) / P(B)
-```
+$$P(A\mid B)=\frac{P(A\cap B)}{P(B)}$$
 
 독립이면:
 
-```text
-P(A | B) = P(A)
-P(A and B) = P(A)P(B)
-```
+$$
+\begin{aligned}
+P(A\mid B)&=P(A)\\
+P(A\cap B)&=P(A)P(B)
+\end{aligned}
+$$
 
 ## 4. Bayes' Formula
 
-```text
-P(A | B) = [P(B | A)P(A)] / P(B)
-```
+$$P(A\mid B)=\frac{P(B\mid A)P(A)}{P(B)}$$
 
 Probability tree에서는 각 branch의 확률을 곱해 joint probability를 만들고, 필요한 조건부확률은 해당 branch들을 합산해서 계산한다.
 
@@ -76,7 +74,10 @@ Probability tree에서는 각 branch의 확률을 곱해 joint probability를 �
 
 예시 계산의 핵심:
 
-```text
-P(EPS condition) = sum of joint probabilities from all matching branches
-P(scenario | EPS condition) = joint probability / P(EPS condition)
-```
+$$
+\begin{aligned}
+P(\text{EPS condition})&=\sum \text{matching joint probabilities}\\
+P(\text{scenario}\mid \text{EPS condition})
+&=\frac{\text{joint probability}}{P(\text{EPS condition})}
+\end{aligned}
+$$

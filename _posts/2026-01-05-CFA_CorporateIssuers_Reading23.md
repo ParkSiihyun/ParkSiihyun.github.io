@@ -46,10 +46,12 @@ How to decrease its CCC
 
 할인을 포기하면 20일 동안 `$980`을 빌리고 `$20`의 이자를 내는 것과 같다.
 
-```text
-20 / 980 = 2.04%
-EAR는 약 44%
-```
+$$
+\begin{aligned}
+\frac{20}{980}&=2.04\%\\
+EAR&\approx44\%
+\end{aligned}
+$$
 .
 
 Working capital

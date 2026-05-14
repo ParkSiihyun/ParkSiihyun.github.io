@@ -28,9 +28,7 @@ Simulation은 특정 distribution을 가정하고 여러 번의 random path를 �
 
 어떤 변수 `X`가 lognormal distribution을 따른다는 말은:
 
-```text
-ln(X) ~ Normal distribution
-```
+$$\ln(X)\sim N(\mu,\sigma^2)$$
 
 Asset price나 gross return은 음수가 될 수 없기 때문에 lognormal distribution으로 다루기 좋다.
 
@@ -44,40 +42,42 @@ Asset price나 gross return은 음수가 될 수 없기 때문에 lognormal dist
 
 필기 예시:
 
-```text
-R = 10%
-gross return = 1.1
-log return = ln(1.1) = 0.0953 = 9.53%
-```
+$$
+\begin{aligned}
+R&=10\%\\
+1+R&=1.1\\
+r&=\ln(1.1)=0.0953=9.53\%
+\end{aligned}
+$$
 
-```text
-R = 20%
-gross return = 1.2
-log return = ln(1.2) = 18.23%
-```
+$$
+\begin{aligned}
+R&=20\%\\
+1+R&=1.2\\
+r&=\ln(1.2)=18.23\%
+\end{aligned}
+$$
 
 ## 4. Multiperiod Compounding
 
 가격은 각 기간의 gross return을 곱해서 계산한다.
 
-```text
-Pt = P0(1 + R1)(1 + R2)(1 + R3)...(1 + Rn)
-```
+$$P_t=P_0(1+R_1)(1+R_2)(1+R_3)\cdots(1+R_n)$$
 
 log를 취하면 곱이 합으로 바뀐다.
 
-```text
-ln(Pt) = ln(P0) + ln(1 + R1) + ln(1 + R2) + ... + ln(1 + Rn)
-```
+$$\ln(P_t)=\ln(P_0)+\ln(1+R_1)+\ln(1+R_2)+\cdots+\ln(1+R_n)$$
 
 즉 log return은 여러 기간을 더하기 쉽다.
 
 ## 5. Exponential Compounding
 
-```text
-Pt = P0 * e^r
-r = ln(1 + R)
-```
+$$
+\begin{aligned}
+P_t&=P_0e^r\\
+r&=\ln(1+R)
+\end{aligned}
+$$
 
 ## 6. Monte Carlo Simulation
 

@@ -26,16 +26,16 @@ excerpt: "Sihyun CFA Notes - Parametric and Non-parametric Tests of Independence
 
 핵심 질문:
 
-```text
-두 변수 간의 correlation coefficient가 0인가?
-```
+> 두 변수 간의 correlation coefficient가 0인가?
 
 ## 2. Parametric Test: Pearson Correlation Coefficient
 
-```text
-H0: rho = 0
-Ha: rho != 0
-```
+$$
+\begin{aligned}
+H_0&:\rho=0\\
+H_a&:\rho\ne0
+\end{aligned}
+$$
 
 | 기호 | 의미 |
 |------|------|
@@ -44,18 +44,18 @@ Ha: rho != 0
 
 검정통계량:
 
-```text
-t = r * sqrt(n - 2) / sqrt(1 - r^2)
-df = n - 2
-```
+$$
+\begin{aligned}
+t&=\frac{r\sqrt{n-2}}{\sqrt{1-r^2}}\\
+df&=n-2
+\end{aligned}
+$$
 
 ## 3. Non-Parametric Test: Spearman Rank Correlation
 
 Spearman rank correlation test는 두 rank set이 correlated되어 있는지 검정한다.
 
-```text
-rs = 1 - [6 * sum(di^2)] / [n(n^2 - 1)]
-```
+$$r_s=1-\frac{6\sum d_i^2}{n(n^2-1)}$$
 
 | 기호 | 의미 |
 |------|------|
@@ -88,27 +88,27 @@ Observed frequency:
 
 Expected frequency:
 
-```text
-Eij = (row total_i * column total_j) / grand total
-```
+$$E_{ij}=\frac{(\text{row total}_i)(\text{column total}_j)}{\text{grand total}}$$
 
 Degrees of freedom:
 
-```text
-df = (number of rows - 1)(number of columns - 1)
-df = (3 - 1)(3 - 1) = 4
-```
+$$
+\begin{aligned}
+df&=(\text{number of rows}-1)(\text{number of columns}-1)\\
+&=(3-1)(3-1)=4
+\end{aligned}
+$$
 
 Test statistic:
 
-```text
-chi-square = sum [(Oij - Eij)^2 / Eij]
-```
+$$\chi^2=\sum\frac{(O_{ij}-E_{ij})^2}{E_{ij}}$$
 
 필기 예시의 한 cell:
 
-```text
-O22 = 32
-E22 = (113 * 110) / 324
-cell contribution = (O22 - E22)^2 / E22 = 1.0667
-```
+$$
+\begin{aligned}
+O_{22}&=32\\
+E_{22}&=\frac{113\times110}{324}\\
+\text{cell contribution}&=\frac{(O_{22}-E_{22})^2}{E_{22}}=1.0667
+\end{aligned}
+$$

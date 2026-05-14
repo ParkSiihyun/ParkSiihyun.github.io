@@ -54,14 +54,14 @@ Cluster sampling의 포인트:
 
 - 표본의 관측치 `n`이 충분히 크면, 모집단의 분포가 어떻든 표본평균의 분포는 정규분포를 따른다.
 
-```text
-E(Xbar) = mu
-Var(Xbar) = sigma^2 / n
-SE(Xbar) = sigma / sqrt(n)
-```
+$$
+\begin{aligned}
+E(\bar{X})&=\mu\\
+\operatorname{Var}(\bar{X})&=\frac{\sigma^2}{n}\\
+SE(\bar{X})&=\frac{\sigma}{\sqrt{n}}
+\end{aligned}
+$$
 
 모집단 표준편차 `sigma`를 모르면 sample standard deviation `s`를 사용한다.
 
-```text
-SE(Xbar) = s / sqrt(n)
-```
+$$SE(\bar{X})=\frac{s}{\sqrt{n}}$$

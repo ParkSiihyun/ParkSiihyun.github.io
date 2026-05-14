@@ -53,42 +53,36 @@ excerpt: "Sihyun CFA Notes - Rates and Returns (Reading 1)"
 | Liquidity risk | 국채보다 회사채가 유동성 리스크가 더 크다. |
 | Maturity risk | 만기가 긴 상품일수록 리스크가 더 크다. |
 
-```text
-nominal rate of interest
-= real risk-free rate
-+ inflation premium
-+ default risk premium
-+ liquidity premium
-+ maturity premium
-```
+$$
+\begin{aligned}
+\text{nominal rate of interest}
+&= \text{real risk-free rate}\\
+&+ \text{inflation premium}\\
+&+ \text{default risk premium}\\
+&+ \text{liquidity premium}\\
+&+ \text{maturity premium}
+\end{aligned}
+$$
 
 ## 2. Holding Period Return
 
 **Holding Period Return(HPR)**: 보유기간 동안 발생한 수익률.
 
-```text
-HPR = (ending value - beginning value + income) / beginning value
-```
+$$HPR=\frac{\text{Ending Value}-\text{Beginning Value}+\text{Income}}{\text{Beginning Value}}$$
 
 여러 기간의 HPR은 단순합이 아니라 곱으로 연결한다.
 
-```text
-multi-period HPR = (1 + HPR1)(1 + HPR2)...(1 + HPRn) - 1
-```
+$$\text{Multi-period HPR}=(1+HPR_1)(1+HPR_2)\cdots(1+HPR_n)-1$$
 
 ## 3. Average Return
 
 ### Arithmetic Mean Return
 
-```text
-arithmetic mean = (R1 + R2 + ... + Rn) / n
-```
+$$\text{Arithmetic Mean}=\frac{R_1+R_2+\cdots+R_n}{n}$$
 
 ### Geometric Mean Return
 
-```text
-geometric mean = [(1 + R1)(1 + R2)...(1 + Rn)]^(1/n) - 1
-```
+$$\text{Geometric Mean}=\left[(1+R_1)(1+R_2)\cdots(1+R_n)\right]^{1/n}-1$$
 
 필기 예시:
 
@@ -114,16 +108,16 @@ geometric mean = [(1 + R1)(1 + R2)...(1 + Rn)]^(1/n) - 1
 | $9 | 111.11 |
 | $10 | 100.00 |
 
-```text
-total shares = 125.00 + 111.11 + 100.00 = 336.11
-average cost = $3,000 / 336.11 = $8.926 per share
-```
+$$
+\begin{aligned}
+\text{Total Shares} &=125.00+111.11+100.00=336.11\\
+\text{Average Cost} &=\frac{\$3{,}000}{336.11}=\$8.926\ \text{per share}
+\end{aligned}
+$$
 
 평균의 관계:
 
-```text
-harmonic mean <= geometric mean <= arithmetic mean
-```
+$$\text{Harmonic Mean}\le \text{Geometric Mean}\le \text{Arithmetic Mean}$$
 
 ### Trimmed / Winsorized Mean
 
@@ -138,10 +132,12 @@ harmonic mean <= geometric mean <= arithmetic mean
 - IRR(internal rate of return)을 사용한다.
 - 현금 유입의 현재가치와 현금 유출의 현재가치를 같게 만드는 할인율이다.
 
-```text
-PV of cash inflows - PV of cash outflows = 0
-NPV = 0이면 r = IRR
-```
+$$
+\begin{aligned}
+PV(\text{cash inflows})-PV(\text{cash outflows})&=0\\
+NPV=0 &\Rightarrow r=IRR
+\end{aligned}
+$$
 
 필기 예시:
 
@@ -165,30 +161,26 @@ NPV = 0이면 r = IRR
 | 1기 | 22% |
 | 2기 | 10% |
 
-```text
-time-weighted return = [(1.22)(1.10)]^(1/2) - 1 = 15.84%
-```
+$$\text{Time-weighted Return}=\left[(1.22)(1.10)\right]^{1/2}-1=15.84\%$$
 
 ## 6. Common Measures of Return
 
 ### Annualized Return
 
-```text
-annualized return = (1 + HPR)^(365 / days) - 1
-```
+$$\text{Annualized Return}=(1+HPR)^{365/\text{days}}-1$$
 
 예시:
 
-```text
-90-day HPR = (100.75 - 100) / 100 = 0.75%
-annualized return = (1 + 0.0075)^(365/90) - 1 = 3.08%
-```
+$$
+\begin{aligned}
+\text{90-day HPR}&=\frac{100.75-100}{100}=0.75\%\\
+\text{Annualized Return}&=(1+0.0075)^{365/90}-1=3.08\%
+\end{aligned}
+$$
 
 ### Present Value
 
-```text
-PV = FV / (1 + I/Y / m)^(mN)
-```
+$$PV=\frac{FV}{\left(1+\frac{I/Y}{m}\right)^{mN}}$$
 
 | 기호 | 의미 |
 |------|------|
@@ -198,17 +190,21 @@ PV = FV / (1 + I/Y / m)^(mN)
 
 ### Continuous Compounding
 
-```text
-1 + HPR = e^r
-r = ln(1 + HPR)
-```
+$$
+\begin{aligned}
+1+HPR&=e^r\\
+r&=\ln(1+HPR)
+\end{aligned}
+$$
 
 예시:
 
-```text
-HPR = 20%
-r = ln(1.20) = 18.232%
-```
+$$
+\begin{aligned}
+HPR&=20\%\\
+r&=\ln(1.20)=18.232\%
+\end{aligned}
+$$
 
 ## 7. Return Conventions
 
@@ -221,10 +217,12 @@ r = ln(1.20) = 18.232%
 
 Real / nominal 관계:
 
-```text
-1 + nominal = (1 + real)(1 + inflation)
-nominal rate ≈ real rate + inflation rate
-```
+$$
+\begin{aligned}
+1+r_{\text{nominal}}&=(1+r_{\text{real}})(1+\pi)\\
+r_{\text{nominal}}&\approx r_{\text{real}}+\pi
+\end{aligned}
+$$
 
 ## 8. Leveraged Return
 
@@ -235,17 +233,14 @@ nominal rate ≈ real rate + inflation rate
 | `i` | borrowing interest rate |
 | `r` | earned by investment |
 
-```text
-leveraged return = [(V0 + VB)r - iVB] / V0
-```
+$$\text{Leveraged Return}=\frac{(V_0+V_B)r-iV_B}{V_0}$$
 
 예시:
 
-```text
-V0 = 100
-VB = 100
-r = 20%
-i = 10%
-
-leveraged return = [(200)(20%) - (100)(10%)] / 100 = 30%
-```
+$$
+\begin{aligned}
+V_0&=100,\quad V_B=100,\quad r=20\%,\quad i=10\%\\
+\text{Leveraged Return}
+&=\frac{(200)(20\%)-(100)(10\%)}{100}=30\%
+\end{aligned}
+$$

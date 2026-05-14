@@ -44,10 +44,12 @@ Resource에는 labor와 capital이 포함된다.
 
 ### Cost
 
-```text
-Total cost = Total fixed cost + Total variable cost
-TC = TFC + TVC
-```
+$$
+\begin{aligned}
+\text{Total Cost}&=\text{Total Fixed Cost}+\text{Total Variable Cost}\\
+TC&=TFC+TVC
+\end{aligned}
+$$
 
 Marginal cost는 output을 한 단위 더 만들 때 추가되는 cost다.
 
@@ -60,9 +62,7 @@ Marginal cost는 output을 한 단위 더 만들 때 추가되는 cost다.
 
 ### Average Revenue and Shutdown Rule
 
-```text
-AR = revenue / quantity
-```
+$$AR=\frac{\text{Revenue}}{Q}$$
 
 | 조건 | 의사결정 |
 |------|----------|
@@ -74,10 +74,12 @@ AR = revenue / quantity
 
 Short run에서는 plant size가 fixed다. Long run에서는 기업이 가장 수익성 높은 scale을 선택할 수 있다.
 
-```text
-Q = f(L, K)
-LRATC = long-run average total cost
-```
+$$
+\begin{aligned}
+Q&=f(L,K)\\
+LRATC&=\text{Long-run Average Total Cost}
+\end{aligned}
+$$
 
 | 구분 | 의미 |
 |------|------|
@@ -145,10 +147,12 @@ LRATC 흐름:
 
 Firm의 output decision:
 
-```text
-profit = TR - TC
-profit maximization condition: MR = MC
-```
+$$
+\begin{aligned}
+\pi&=TR-TC\\
+\text{profit maximization condition:}\quad MR&=MC
+\end{aligned}
+$$
 
 완전경쟁시장과 독점적 경쟁시장의 장기균형 차이:
 
@@ -236,9 +240,7 @@ Collusion이 성공하기 위한 요건:
 - dominant firm이 market price를 결정한다.
 - other competitive firms는 이 market price를 given으로 받아들인다.
 
-```text
-Q_market = Q_dominant firm + Q_competitive firms
-```
+$$Q_{market}=Q_{dominant firm}+Q_{competitive firms}$$
 
 ## 10. 결과: Collusion and Welfare
 
@@ -254,15 +256,11 @@ Collusion의 결과는 하나의 담합기업처럼 행동하는 것이다.
 
 ### N-Firm Concentration Ratio
 
-```text
-CR_N = sum of market shares of the N largest firms
-```
+$$CR_N=\sum_{i=1}^{N}\text{Market Share}_i$$
 
 ### Herfindahl-Hirschman Index
 
-```text
-HHI = sum of squared market shares
-```
+$$HHI=\sum_{i=1}^{N}s_i^2$$
 
 - 독점 정도가 높다고 반드시 규제하는 것은 아니다.
 - 해당 시장의 진입장벽이 낮다면 굳이 규제할 필요가 없다.

@@ -25,9 +25,7 @@ excerpt: "Sihyun CFA Notes - Understanding Business Cycles (Reading 13)"
 
 Business cycle은 real GDP가 시간에 따라 expansion과 contraction을 반복하는 흐름이다.
 
-```text
-Trough -> Expansion / Recovery -> Peak -> Contraction / Recession -> Trough
-```
+> Trough to Expansion / Recovery to Peak to Contraction / Recession to Trough
 
 | Phase | 의미 |
 |-------|------|

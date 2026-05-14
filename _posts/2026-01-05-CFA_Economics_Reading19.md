@@ -29,32 +29,32 @@ excerpt: "Sihyun CFA Notes - Exchange Rate Calculations (Reading 19)"
 
 필기 예시:
 
-```text
-MXN / USD = 10.70
-USD / AUD = 0.60
-
-MXN / AUD = (MXN / USD) * (USD / AUD)
-          = 10.70 * 0.60
-          = 6.42
-```
+$$
+\begin{aligned}
+MXN/USD&=10.70\\
+USD/AUD&=0.60\\
+MXN/AUD&=(MXN/USD)(USD/AUD)\\
+&=10.70\times0.60\\
+&=6.42
+\end{aligned}
+$$
 
 ## 2. Arbitrage Condition: Spot and Forward
 
 Spot exchange rate와 forward exchange rate는 interest rate parity(IRP)로 연결된다.
 
-```text
-F(x/y) = S(x/y) * [(1 + r_x) / (1 + r_y)]
-```
+$$F_{x/y}=S_{x/y}\left(\frac{1+r_x}{1+r_y}\right)$$
 
 필기 예시:
 
-```text
-S(ABE/DUB) = 4.5671
-90-day rate of ABE = 5%
-90-day rate of DUB = 3%
-
-F(ABE/DUB) = 4.5898
-```
+$$
+\begin{aligned}
+S_{ABE/DUB}&=4.5671\\
+r_{ABE,90d}&=5\%\\
+r_{DUB,90d}&=3\%\\
+F_{ABE/DUB}&=4.5898
+\end{aligned}
+$$
 
 ## 3. No-Arbitrage Forward Rate
 
@@ -70,23 +70,27 @@ F(ABE/DUB) = 4.5898
 
 예시 숫자 흐름:
 
-```text
-borrow 1000 DUB
-spot: 1000 DUB * 4.5671 = 4567.1 ABE
-invest ABE at 5%: 4567.1 * 1.05 = 4795.45 ABE
-forward at 4.6000 ABE/DUB: 4795.45 / 4.6000 = 1042.49 DUB
-repay DUB at 3%: 1000 * 1.03 = 1030 DUB
-profit = 1042.49 - 1030 = 12.49 DUB
-```
+$$
+\begin{aligned}
+\text{Borrow} &: 1000\ DUB\\
+\text{Spot conversion} &: 1000\times4.5671=4567.1\ ABE\\
+\text{Invest ABE} &: 4567.1\times1.05=4795.45\ ABE\\
+\text{Forward conversion} &: \frac{4795.45}{4.6000}=1042.49\ DUB\\
+\text{Repay} &: 1000\times1.03=1030\ DUB\\
+\text{Profit} &: 1042.49-1030=12.49\ DUB
+\end{aligned}
+$$
 
 ## 4. Forward Quote in Points or Percentage Terms
 
 Forward exchange rate는 points 또는 percentage terms로 표시할 수 있다.
 
-```text
-1 point = 0.0001
-18.3 points = 0.00183
-```
+$$
+\begin{aligned}
+1\ \text{point}&=0.0001\\
+18.3\ \text{points}&=0.00183
+\end{aligned}
+$$
 
 - forward points가 positive면 spot에 더한다.
 - forward points가 negative면 spot에서 뺀다.
@@ -97,13 +101,13 @@ Forward rate가 spot보다 높으면 forward premium, 낮으면 forward discount
 
 필기 예시:
 
-```text
-USD/EUR spot = 1.312
-USD/EUR forward = 1.320
-```
+$$
+\begin{aligned}
+USD/EUR_{\text{spot}}&=1.312\\
+USD/EUR_{\text{forward}}&=1.320
+\end{aligned}
+$$
 
-```text
-forward premium = (forward - spot) / spot
-```
+$$\text{Forward Premium}=\frac{F-S}{S}$$
 
 90-day forward premium을 annualize할 때는 4를 곱한다.

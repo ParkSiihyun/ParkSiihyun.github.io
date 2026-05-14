@@ -97,35 +97,35 @@ routing basis
 
 - 소득이 한 단위 증가했을 때 소비를 얼마나 늘리는가?
 
-```text
-AD = C + I + G
-C = f(Y - T)
-C = a + b(Y - T)
-b = MPC
-```
+$$
+\begin{aligned}
+AD&=C+I+G\\
+C&=f(Y-T)\\
+C&=a+b(Y-T)\\
+b&=MPC
+\end{aligned}
+$$
 
 Disposable income:
 
-```text
-disposable income = Y * (1 - tax rate)
-```
+$$\text{Disposable Income}=Y(1-t)$$
 
 Fiscal multiplier:
 
-```text
-fiscal multiplier = 1 / [1 - MPC(1 - tax rate)]
-```
+$$\text{Fiscal Multiplier}=\frac{1}{1-MPC(1-t)}$$
 
 필기 예시:
 
-```text
-tax rate = 25%
-MPC = 80%
-
-fiscal multiplier = 1 / [1 - 0.8(1 - 0.25)]
-                  = 1 / [1 - 0.6]
-                  = 2.5
-```
+$$
+\begin{aligned}
+t&=25\%\\
+MPC&=80\%\\
+\text{Fiscal Multiplier}
+&=\frac{1}{1-0.8(1-0.25)}\\
+&=\frac{1}{1-0.6}\\
+&=2.5
+\end{aligned}
+$$
 
 따라서 재정지출이 100억 늘어나면 총수요는 250억 늘어난다.
 

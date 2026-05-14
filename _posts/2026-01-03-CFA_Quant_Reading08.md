@@ -33,10 +33,12 @@ excerpt: "Sihyun CFA Notes - Hypothesis Testing (Reading 8)"
 
 예시: 유의수준 `alpha = 5%`.
 
-```text
-critical values = -1.96, +1.96
-decision rule: test statistic < -1.96 또는 > +1.96이면 reject H0
-```
+$$
+\begin{aligned}
+\text{critical values}&=-1.96,\ +1.96\\
+\text{reject }H_0&\text{ if test statistic }<-1.96\text{ or }>1.96
+\end{aligned}
+$$
 
 | Test | alpha | Critical value |
 |------|-------|----------------|
@@ -84,16 +86,17 @@ decision rule: test statistic < -1.96 또는 > +1.96이면 reject H0
 
 예시:
 
-```text
-sample mean = 0.1%
-s = 0.25%
-n = 250
-H0: mu = 0
-Ha: mu != 0
-
-t statistic = (0.001 - 0) / (0.0025 / sqrt(250)) = 6.33
-critical value = ±1.96
-```
+$$
+\begin{aligned}
+\bar{X}&=0.1\%\\
+s&=0.25\%\\
+n&=250\\
+H_0&:\mu=0\\
+H_a&:\mu\ne 0\\
+t&=\frac{0.001-0}{0.0025/\sqrt{250}}=6.33\\
+\text{critical value}&=\pm1.96
+\end{aligned}
+$$
 
 `6.33 > 1.96`이므로 `H0`를 reject.
 
@@ -107,17 +110,21 @@ critical value = ±1.96
 
 가설 형태:
 
-```text
-H0: mu1 = mu2
-Ha: mu1 != mu2
-```
+$$
+\begin{aligned}
+H_0&:\mu_1=\mu_2\\
+H_a&:\mu_1\ne\mu_2
+\end{aligned}
+$$
 
 또는 단측검정:
 
-```text
-H0: mu1 <= mu2
-Ha: mu1 > mu2
-```
+$$
+\begin{aligned}
+H_0&:\mu_1\le\mu_2\\
+H_a&:\mu_1>\mu_2
+\end{aligned}
+$$
 
 핵심은 두 sample이 independent인지 확인하고, variance 가정에 따라 pooled variance 또는 별도 variance를 사용한다.
 
@@ -132,51 +139,58 @@ Ha: mu1 > mu2
 
 각 pair의 차이를 새로운 변수 `d`로 만든다.
 
-```text
-d = X_after - X_before
-t = (dbar - mu_d) / (s_d / sqrt(n))
-```
+$$
+\begin{aligned}
+d&=X_{\text{after}}-X_{\text{before}}\\
+t&=\frac{\bar{d}-\mu_d}{s_d/\sqrt{n}}
+\end{aligned}
+$$
 
 ## 8. Value of Population Variance
 
 Population variance 검정은 chi-square statistic을 사용한다.
 
-```text
-H0: sigma^2 = sigma0^2
-Ha: sigma^2 != sigma0^2
-
-chi-square statistic = (n - 1)s^2 / sigma0^2
-```
+$$
+\begin{aligned}
+H_0&:\sigma^2=\sigma_0^2\\
+H_a&:\sigma^2\ne\sigma_0^2\\
+\chi^2&=\frac{(n-1)s^2}{\sigma_0^2}
+\end{aligned}
+$$
 
 필기 예시:
 
-```text
-sigma0^2 = 0.04
-n = 24
-s^2 = 0.038
-alpha = 5%
-
-chi-square statistic = (24 - 1)(0.038) / 0.04 = 20.76
-```
+$$
+\begin{aligned}
+\sigma_0^2&=0.04\\
+n&=24\\
+s^2&=0.038\\
+\alpha&=5\%\\
+\chi^2&=\frac{(24-1)(0.038)}{0.04}=20.76
+\end{aligned}
+$$
 
 ## 9. Comparing Two Population Variances: F-Test
 
 두 population variance를 비교할 때 F-test를 사용한다.
 
-```text
-H0: sigma1^2 = sigma2^2
-Ha: sigma1^2 != sigma2^2
-
-F statistic = s1^2 / s2^2
-```
+$$
+\begin{aligned}
+H_0&:\sigma_1^2=\sigma_2^2\\
+H_a&:\sigma_1^2\ne\sigma_2^2\\
+F&=\frac{s_1^2}{s_2^2}
+\end{aligned}
+$$
 
 필기 예시:
 
-```text
-s1 = 4.3
-s2 = 3.8
-F = (4.3^2) / (3.8^2) = 1.28
-critical value = 1.94
-```
+$$
+\begin{aligned}
+s_1&=4.3\\
+s_2&=3.8\\
+F&=\frac{4.3^2}{3.8^2}=1.28\\
+\text{critical value}&=1.94
+\end{aligned}
+$$
 
 `1.28 < 1.94`이면 `H0`를 reject하지 못한다.

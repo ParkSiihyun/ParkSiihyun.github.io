@@ -33,15 +33,11 @@ excerpt: "Sihyun CFA Notes - Simple Linear Regression (Reading 10)"
 
 핵심 질문:
 
-```text
-X가 Y를 얼마나 잘 설명하나?
-```
+> X가 Y를 얼마나 잘 설명하나?
 
 Simple linear regression model:
 
-```text
-Yi = b0 + b1Xi + ei
-```
+$$Y_i=b_0+b_1X_i+e_i$$
 
 | 구성 | 의미 |
 |------|------|
@@ -55,11 +51,13 @@ Yi = b0 + b1Xi + ei
 
 **OLS(Ordinary Least Squares)**는 residual의 제곱합을 최소화하는 regression line을 찾는다.
 
-```text
-Yhat_i = b0 + b1Xi
-ei = Yi - Yhat_i
-SSE = sum ei^2
-```
+$$
+\begin{aligned}
+\hat{Y}_i&=b_0+b_1X_i\\
+e_i&=Y_i-\hat{Y}_i\\
+SSE&=\sum e_i^2
+\end{aligned}
+$$
 
 회귀분석의 목적:
 
@@ -71,15 +69,11 @@ SSE = sum ei^2
 
 Slope coefficient:
 
-```text
-b1 = Cov(X,Y) / Var(X)
-```
+$$b_1=\frac{\operatorname{Cov}(X,Y)}{\operatorname{Var}(X)}$$
 
 Intercept:
 
-```text
-b0 = Ybar - b1 Xbar
-```
+$$b_0=\bar{Y}-b_1\bar{X}$$
 
 필기 예시:
 
@@ -90,10 +84,12 @@ b0 = Ybar - b1 Xbar
 | Mean return, S&P 500 | -2.7% |
 | Mean return, ABC | -4.05% |
 
-```text
-b1 = 0.000336 / 0.000522 = 0.64
-b0 = -4.05% - 0.64(-2.7%) = -2.3%
-```
+$$
+\begin{aligned}
+b_1&=\frac{0.000336}{0.000522}=0.64\\
+b_0&=-4.05\%-0.64(-2.7\%)=-2.3\%
+\end{aligned}
+$$
 
 해석:
 
@@ -110,24 +106,22 @@ b0 = -4.05% - 0.64(-2.7%) = -2.3%
    - 오차항의 분산이 모든 관측치 `X`에 대해 동일하다.
    - 회귀선 주변 데이터들이 퍼져있는 정도가 비슷해야 한다.
 
-```text
-Var(ei) = sigma^2
-```
+$$\operatorname{Var}(e_i)=\sigma^2$$
 
 3. **Error terms are independent**
    - 한 관측치의 오차가 다른 관측치의 오차와 상관관계가 없다.
    - 오차에 상관관계가 생기면 설명변수가 누락되었을 수도 있다는 뜻.
 
-```text
-Corr(ei, ej) = 0
-```
+$$\operatorname{Corr}(e_i,e_j)=0$$
 
 4. **Error terms are normally distributed**
 
-```text
-ei ~ N(0, sigma^2)
-E(ei) = 0
-```
+$$
+\begin{aligned}
+e_i&\sim N(0,\sigma^2)\\
+E(e_i)&=0
+\end{aligned}
+$$
 
 ## 5. 왜 오차항의 분산이 존재하나?
 
@@ -152,12 +146,14 @@ E(ei) = 0
 
 ## 6. Goodness of Fit
 
-```text
-SST = sum(Yi - Ybar)^2
-SSR = sum(Yhat_i - Ybar)^2
-SSE = sum(Yi - Yhat_i)^2
-SST = SSR + SSE
-```
+$$
+\begin{aligned}
+SST&=\sum(Y_i-\bar{Y})^2\\
+SSR&=\sum(\hat{Y}_i-\bar{Y})^2\\
+SSE&=\sum(Y_i-\hat{Y}_i)^2\\
+SST&=SSR+SSE
+\end{aligned}
+$$
 
 | Measure | 의미 |
 |---------|------|
@@ -175,59 +171,57 @@ SST = SSR + SSE
 
 ## 7. Model Fit Measures
 
-```text
-MSR = SSR / k
-MSE = SSE / (n - k - 1)
-```
+$$
+\begin{aligned}
+MSR&=\frac{SSR}{k}\\
+MSE&=\frac{SSE}{n-k-1}
+\end{aligned}
+$$
 
 - MSR이 높을수록 좋은 회귀 모델.
 - MSE가 낮을수록 좋은 회귀 모델.
 
 R-squared:
 
-```text
-R^2 = SSR / SST
-```
+$$R^2=\frac{SSR}{SST}$$
 
 ## 8. Hypothesis Test of Regression Coefficient
 
-```text
-H0: b1 = 0
-Ha: b1 != 0
-t = (b1 - 0) / SE(b1)
-df = n - 2
-```
+$$
+\begin{aligned}
+H_0&:b_1=0\\
+H_a&:b_1\ne0\\
+t&=\frac{b_1-0}{SE(b_1)}\\
+df&=n-2
+\end{aligned}
+$$
 
 필기 예시:
 
-```text
-b1 = 0.64
-SE(b1) = 0.26
-t = 0.64 / 0.26 = 2.46
-```
+$$
+\begin{aligned}
+b_1&=0.64\\
+SE(b_1)&=0.26\\
+t&=\frac{0.64}{0.26}=2.46
+\end{aligned}
+$$
 
 ## 9. Non-Linear Relationship
 
 ### Log-Lin Model
 
-```text
-ln(Yi) = b0 + b1Xi + ei
-```
+$$\ln(Y_i)=b_0+b_1X_i+e_i$$
 
 `X`가 1단위 증가할 때 `Y`의 percentage change를 해석한다.
 
 ### Lin-Log Model
 
-```text
-Yi = b0 + b1 ln(Xi) + ei
-```
+$$Y_i=b_0+b_1\ln(X_i)+e_i$$
 
 `X`가 1% 증가할 때 `Y`가 얼마나 변하는지 해석한다.
 
 ### Log-Log Model
 
-```text
-ln(Yi) = b0 + b1 ln(Xi) + ei
-```
+$$\ln(Y_i)=b_0+b_1\ln(X_i)+e_i$$
 
 `X`가 1% 증가할 때 `Y`가 몇 % 변하는지 해석한다.

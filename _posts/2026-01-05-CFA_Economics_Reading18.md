@@ -45,9 +45,7 @@ Type of Exchange rates
 - nominal exchange rate : exchange rate at a point in time
 - Real exchange rate : the purchasing power of one currency
 
-```text
-real exchange rate = nominal exchange rate * (foreign price level / domestic price level)
-```
+$$\text{Real Exchange Rate}=\text{Nominal Exchange Rate}\times\frac{P_{foreign}}{P_{domestic}}$$
 
 - spot exchange rate : the currency exchange rate for immediate delivery
 -> take place two business days after the trade

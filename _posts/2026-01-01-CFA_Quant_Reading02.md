@@ -25,10 +25,12 @@ excerpt: "Sihyun CFA Notes - Time Value of Money in Finance (Reading 2)"
 
 ### Discounted Cash Flow Valuation
 
-```text
-FV = PV(1 + r)^N
-FV = PV * e^(rT)   // continuous compounding
-```
+$$
+\begin{aligned}
+FV&=PV(1+r)^N\\
+FV&=PV\cdot e^{rT}\quad \text{(continuous compounding)}
+\end{aligned}
+$$
 
 ## 2. Fixed Income Securities
 
@@ -41,9 +43,7 @@ FV = PV * e^(rT)   // continuous compounding
 
 Perpetuity:
 
-```text
-PV of perpetuity = A / r
-```
+$$PV_{\text{perpetuity}}=\frac{A}{r}$$
 
 Loan payment 예시:
 
@@ -57,19 +57,18 @@ Loan payment 예시:
 
 Preferred stock은 일정한 dividend를 perpetuity처럼 할인한다.
 
-```text
-preferred stock value = dividend / required rate of return
-```
+$$V_{\text{preferred}}=\frac{D}{r}$$
 
 예시:
 
-```text
-par value = $100
-annual dividend = $5
-required rate of return = 8%
-
-V = 5 / 0.08 = $62.50
-```
+$$
+\begin{aligned}
+\text{Par Value}&=\$100\\
+D&=\$5\\
+r&=8\%\\
+V&=\frac{5}{0.08}=\$62.50
+\end{aligned}
+$$
 
 ### Common Stock
 
@@ -77,9 +76,7 @@ Common stock valuation은 DDM(Dividend Discount Model)을 사용한다.
 
 #### Constant Growth DDM / Gordon Growth Model
 
-```text
-V0 = D1 / (r - g)
-```
+$$V_0=\frac{D_1}{r-g}$$
 
 #### Multistage DDM
 
@@ -92,20 +89,19 @@ V0 = D1 / (r - g)
 | 초기 성장률 | 15% |
 | 안정 성장률 | 5% |
 
-```text
-D1 = 1.00(1.15) = 1.15
-D2 = 1.15(1.15) = 1.3225
-D3 = 1.3225(1.05) = 1.386
-
-terminal value at t=2 = D3 / (0.11 - 0.05) = $23.10
-V0 = D1/1.11 + (D2 + terminal value)/1.11^2
-```
+$$
+\begin{aligned}
+D_1&=1.00(1.15)=1.15\\
+D_2&=1.15(1.15)=1.3225\\
+D_3&=1.3225(1.05)=1.386\\
+TV_2&=\frac{D_3}{0.11-0.05}=\$23.10\\
+V_0&=\frac{D_1}{1.11}+\frac{D_2+TV_2}{1.11^2}
+\end{aligned}
+$$
 
 ## 4. Cash Flow Additivity Principle
 
-```text
-V(CF1 + CF2) = V(CF1) + V(CF2)
-```
+$$V(CF_1+CF_2)=V(CF_1)+V(CF_2)$$
 
 - 4-year coupon bond는 여러 개의 zero-coupon bond로 분해해서 볼 수 있다.
 - 이 원리가 no-arbitrage principle과 연결된다.
@@ -114,17 +110,13 @@ V(CF1 + CF2) = V(CF1) + V(CF2)
 
 Spot rate와 forward rate의 no-arbitrage 관계:
 
-```text
-(1 + S2)^2 = (1 + S1)(1 + 1y1y)
-```
+$$(1+S_2)^2=(1+S_1)(1+f_{1,1})$$
 
 - 장기 spot return은 짧은 spot rate와 forward rate를 이어 붙인 return과 같아야 한다.
 
 ## 6. Forward Currency Exchange Rate
 
-```text
-F(x/y) = S(x/y) * [(1 + r_x) / (1 + r_y)]
-```
+$$F_{x/y}=S_{x/y}\left(\frac{1+r_x}{1+r_y}\right)$$
 
 필기 예시:
 
